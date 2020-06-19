@@ -88,6 +88,7 @@
 <script>
 
 export default {
+  transition: 'fade',
   data() {
     return {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
