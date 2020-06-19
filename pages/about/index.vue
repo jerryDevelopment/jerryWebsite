@@ -20,7 +20,6 @@
 <script>
 
 export default {
-  components: {  },
   data() {
     return {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
@@ -36,6 +35,8 @@ export default {
 </script>
 
 <style>
+
+vue-flickity { display: block; }
 
 .carousel-cell {
   width: 100vw;
