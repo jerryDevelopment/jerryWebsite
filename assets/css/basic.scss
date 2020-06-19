@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    #BASIC
+\*------------------------------------*/
+
+/*--- all ----------------------------*/
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+  
+  word-wrap: break-word;
+  
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+      
+}
+
+/*--- links --------------------------*/
+
+a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+
+  line-height: inherit;
+  
+  letter-spacing: inherit;
+  color: inherit;
+  
+  text-transform: inherit;
+  
+  cursor: pointer;
+}
+
+/*--- span, bold, italic -------------*/
+
+span, strong, em, b, i {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+
+  line-height: inherit;
+  
+  letter-spacing: inherit;
+  color: inherit;
+  
+  text-transform: inherit;
+  
+}
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+/*--- buttons, input -----------------*/
+
+button,
+input {
+  background: transparent;
+  font-weight: inherit;
+  color: inherit;
+  border-radius: 0;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*--- lists --------------------------*/
+
+ul {
+  list-style: none;
+}
+
+/*--- tables -------------------------*/
+
+table, thead, tbody, tr, td {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+
+  line-height: inherit;
+  
+  letter-spacing: inherit;
+  color: inherit;
+  
+  text-transform: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}

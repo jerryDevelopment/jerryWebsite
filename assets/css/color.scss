@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    #COLOR
+\*------------------------------------*/
+
+/*--- background ---------------------*/
+
+.bg-white      { background-color: rgba(255,255,255,1); }
+.bg-black      { background-color: rgba(0,0,0,1); }
+.bg-dark-grey  { background-color: rgba(35,35,35,1); }
+.bg-grey       { background-color: rgba(225,225,225,1); }
+.bg-light-grey { background-color: rgba(240,240,240,1); }
+
+.bg-white-trans      { background-color: rgba(255,255,255,.95); }
+.bg-black-trans      { background-color: rgba(0,0,0,.9); }
+.bg-light-grey-trans { background-color: rgba(248,248,248,.9); }
+
+.bg-trans { background-color: transparent; }
+
+/*--- font ---------------------------*/
+
+.c-white { color: rgba(255,255,255,1); }
+.c-grey  { color: rgba(128,128,128,1); }
+
+/*--- border -------------------------*/
+
+.bor-grey       { border-color: rgba(60,60,60,1); }
+.bor-light-grey { border-color: rgba(204,204,204,1); }
+
+/*--- vector graphics ----------------*/
+
+.fill-white { fill: rgba(255,255,255,1); }
+.fill-grey  { fill: rgba(150,150,150,1); }
+
+
+.stroke-white { stroke: rgba(255,255,255,1); }
+.stroke-grey  { stroke: rgba(150,150,150,1); }

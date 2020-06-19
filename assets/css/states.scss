@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    #STATES
+\*------------------------------------*/
+
+/*--- visibility ---------------------*/
+
+.hidden { display: none; }
+.transparent { opacity: 0; }
+.not-visible { visibility: hidden; }
+
+/*--- transitions --------------------*/
+
+.no-transition {
+  transition: none !important;
+}
+
+/*--- cursor -------------------------*/
+
+.pointer {
+  cursor: pointer;
+}

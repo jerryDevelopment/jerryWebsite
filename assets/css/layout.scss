@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/*--- views --------------------------*/
+
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.screen.screen-50-per { width: 50%; }
+.screen.screen-25-per { width: 25%; }
+
+.screen.screen-r { left: auto; right: 0 }
+
+
+/*--- corners ------------------------*/
+
+.cor-tl {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cor-tr {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cor-bl {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cor-br {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*--- edges --------------------------*/
+
+.edge-t {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.edge-b {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.edge-r {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.edge-l {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/*--- vh-center ----------------------*/
+
+.vh-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+/*--- content frames -----------------*/
+
+.c-frame,
+.c-area {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.c-frame {
+  // max-width: 1920px;
+}
+
+.c-area.c-area-unit-10  { width: 83.333%; }
+.c-area.c-area-unit-8   { width: 66.667%;  }
+.c-area.c-area-unit-6   { width: 50%;  }
+.c-area.c-area-unit-4   { width: 33.333%;  }
+.c-area.c-area-unit-2   { width: 16.667%;  }
+
+/*--- columns ------------------------*/
+
+.col {
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  transition: .05s;
+}
+
+.col.col-100 { width: 100%; }
+.col.col-85  { width: 85%;  }
+.col.col-75  { width: 75%;  }
+.col.col-66  { width: 66.666%;  }
+.col.col-60  { width: 60%;  }
+.col.col-50  { width: 50%;  }
+.col.col-47  { width: 47%;  }
+.col.col-45-75  { width: 45.75%;  }
+.col.col-40  { width: 40%;  }
+.col.col-33  { width: 33.333%;  }
+.col.col-30  { width: 30%;  }
+.col.col-25  { width: 25%;  }
+.col.col-24  { width: 24%;  }
+.col.col-20  { width: 20%;  }
+
+.col-50-text {
+  width: 50%;
+  column-count: 2;
+  column-gap: 4em;
+}
+
+/*--- images/videos ------------------*/
+
+.media-container {
+  line-height: 0;
+}
+
+img.inline   { width: 100%; height: auto; }
+video.inline { width: 100%; height: auto;  }
+
+.img-cover,
+.video-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bg-img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-img-contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*--- layout clearfix ----------------*/
+
+.c-frame:after,
+.c-area:after,
+.col:after {
+    content: '.';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+}
+
+/*--- modifications ------------------*/
+
+.static   { position: static; }
+.fixed    { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+.scrollable   { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+
+.clear        { clear: both; }
+.float-left   { float: left; }
+.float-right  { float: right; }
+
+.inline-block  { display: inline-block; }
+.display-block { display: block; }
+
+.bor-box  { box-sizing: border-box; }
+.v-center { vertical-align: middle; }
+
+.vp-min-height { min-height: 100vh; }
+.auto-height   { height: auto; }
+
+.v-trans-center {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}

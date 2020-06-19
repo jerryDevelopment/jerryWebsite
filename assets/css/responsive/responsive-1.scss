@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    #RESPONSIVE 1
+\*------------------------------------*/
+
+@media all and (max-width: 1440px) {
+
+  html { font-size: .8rem; }
+
+  /*--- colums -------------------------*/
+
+  .col.col-resp-1-100 { width: 100%; }
+  .col.col-resp-1-50  { width: 50%; }
+
+  /*--- padding ------------------------*/
+
+  .pad-resp-1-a-1  { padding: 1em; }
+
+  .pad-resp-1-tb-1 { padding-top: 1em; padding-bottom: 1em; }
+
+  .pad-resp-1-b-1  { padding-bottom: 1em; }
+
+  .pad-resp-1-t-1  { padding-top: 1em; }
+
+  .pad-resp-1-lr-1 { padding-left: 1em; padding-right: 1em; }
+
+  .pad-resp-1-l-1  { padding-left: 1em; }
+
+  .pad-resp-1-r-1  { padding-right: 1em; }
+
+  /*--- margins ------------------------*/
+
+  .mar-resp-1-b-1  { margin-bottom: 1em; }
+
+  .mar-resp-1-t-1  { margin-top: 1em; }
+   
+  .mar-resp-1-tb-1 { margin-top: 1em; margin-bottom: 1em; }
+
+  .mar-resp-1-l-1  { margin-left: 1em; }
+
+  .mar-resp-1-r-1  { margin-right: 1em; }
+
+  .mar-resp-1-lr-1 { margin-left: 1em; margin-right: 1em; }
+
+  /*--- borders ------------------------*/
+
+  .bor-resp-1-1   { border-width: 1px; border-style: solid }
+
+  .bor-resp-1-b-1 { border-bottom-width: 1px; border-style: solid }
+
+  .bor-resp-1-t-1 { border-top-width: 1px; border-style: solid }
+
+  .bor-resp-1-l-1 { border-left-width: 1px; border-style: solid }
+
+  .bor-resp-1-r-1 { border-right-width: 1px; border-style: solid }
+
+}
