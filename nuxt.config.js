@@ -1,8 +1,17 @@
 module.exports = {
   // mode: 'spa',
   // router: {
-  //   base: '/playground/nuxtjs/dist/'
+  //   base: '/.../dist/'
   // },
+  env: {
+      // staticImageSrcBase: 'http://192.168.178.48/.../static/images/',
+      // restBaseEndpoint: 'http://192.168.178.48/.../rest-api/',
+      // staticMediaSrcBase: 'http://192.168.178.34/nuxt/static/',
+      // restBaseEndpoint: 'http://192.168.178.34/nuxt/rest-api/',
+      staticMediaSrcBase: '/',
+      restBaseEndpoint: '/',
+  },
+
   /*
   ** Headers of the page
   */
@@ -22,7 +31,19 @@ module.exports = {
   */
   css: [
     // CSS file in the project
-    '@/assets/css/main.css'  
+    '@/assets/css/fontface.scss',
+    '@/assets/css/basic.scss',
+    '@/assets/css/layout.scss',
+    '@/assets/css/typography.scss',
+    '@/assets/css/color.scss',
+    '@/assets/css/spacing.scss',
+    '@/assets/css/states.scss',
+    '@/assets/css/custom.scss',
+    '@/assets/css/styling.scss',
+    '@/assets/css/responsive/responsive-1.scss',
+    '@/assets/css/responsive/responsive-2.scss',
+    '@/assets/css/responsive/responsive-3.scss',
+    '@/assets/css/responsive/responsive-4.scss',
   ],
   /*
   ** Customize the progress bar color
@@ -44,9 +65,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
+    }
+  },
+  plugins: [
+    { src: '~/plugins/vue-flickity', ssr: false },
+    { src: '~/plugins/vue-packery', ssr: false }
+  ]
 
-    vendor: ['axios']
-
-  }
 }
