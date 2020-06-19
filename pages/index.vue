@@ -87,21 +87,7 @@
 
 <script>
 
-import axios from 'axios'
-
 export default {
-  asyncData ({ params }) {
-    // return axios.get(process.env.restBaseEndpoint + 'front-page/')
-    // .then((res) => {
-    //   return { 
-    //     name: res.data.name,
-    //     text: res.data.text
-    //   }
-    // })
-    // .catch((e) => {
-    //   error({ statusCode: 404, message: 'Post not found' })
-    // })
-  },
   data() {
     return {
       staticMediaSrcBase: process.env.staticMediaSrcBase,

@@ -1,7 +1,7 @@
 <template>
   <section class="container">
-<!--     <h1>{{ name }}</h1>
-    <p>{{ text }}</p> -->
+    <h1>{{ name }}</h1>
+    <p>{{ text }}</p>
     <div class="c-frame">
       <div class="c-area c-area-unit-10 mar-b-unit-1 mar-t-unit-1">
         <div class="col col-100 pad-lr-1-5 pad-tb-0-75">
@@ -90,21 +90,11 @@
 import axios from 'axios'
 
 export default {
-  asyncData ({ params }) {
-    // return axios.get(process.env.restBaseEndpoint + 'front-page/')
-    // .then((res) => {
-    //   return { 
-    //     name: res.data.name,
-    //     text: res.data.text
-    //   }
-    // })
-    // .catch((e) => {
-    //   error({ statusCode: 404, message: 'Post not found' })
-    // })
-  },
   data() {
     return {
-      staticMediaSrcBase: process.env.staticMediaSrcBase
+      staticMediaSrcBase: process.env.staticMediaSrcBase,
+      name: 'test',
+      text: 'test'
     }
   },
   created() {

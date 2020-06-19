@@ -2,7 +2,7 @@
   <section class="container">
     <h1>{{ name }}</h1>
     <p>{{ text }}</p>
-    <vue-flickity ref="flickity">
+    <vue-flickity ref="flickity" :options="flickityOptions">
       <div class="carousel-cell">1</div>
       <div class="carousel-cell">2</div>
       <div class="carousel-cell">3</div>
@@ -19,29 +19,16 @@
 
 <script>
 
-import axios from 'axios'
-
 export default {
   components: {  },
-  asyncData ({ params }) {
-    // return axios.get(process.env.restBaseEndpoint + 'about-page/')
-    // .then((res) => {
-    //   return { 
-    //     name: res.data.name, 
-    //     text: res.data.text 
-    //   }
-    // })
-    // .catch((e) => {
-    //   error({ statusCode: 404, message: 'Post not found' })
-    // })
-
-
-  },
   data() {
     return {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
       name: 'test',
-      text: 'test'
+      text: 'test',
+      flickityOptions: {
+        wrapAround: true
+      }
     }
   }
 }
@@ -49,5 +36,9 @@ export default {
 </script>
 
 <style>
+
+.carousel-cell {
+  width: 100vw;
+}
 
 </style>
