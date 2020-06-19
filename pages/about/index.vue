@@ -36,6 +36,13 @@ export default {
     // })
 
 
+  },
+  data() {
+    return {
+      staticMediaSrcBase: process.env.staticMediaSrcBase,
+      name: 'test',
+      text: 'test'
+    }
   }
 }
 
