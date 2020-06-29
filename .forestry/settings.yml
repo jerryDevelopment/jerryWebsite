@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content
   label: Front Page
-  match: "**/*"
 upload_dir: static
 public_path: ''
 front_matter_path: ''
