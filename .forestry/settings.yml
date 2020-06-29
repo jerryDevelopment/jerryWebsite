@@ -10,7 +10,7 @@ sections:
   create: all
   match: "*"
 - type: document
-  path: content
+  path: content/front-page.md
   label: Front Page
 upload_dir: static
 public_path: ''
