@@ -7,3 +7,13 @@ fields:
   config:
     required: false
   label: Test
+- name: projects
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: project
+  label: Projects
