@@ -5,6 +5,7 @@ projects:
 - content/projects/test-project-2.md
 test: Headline
 images:
+- "/small.mp4"
 - "/images/placeholders/placeholder-4-3.jpg"
 - "/images/placeholders/placeholder-1-2.jpg"
 
