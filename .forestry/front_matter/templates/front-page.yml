@@ -1,9 +1,0 @@
----
-label: front page
-hide_body: false
-fields:
-- name: headline
-  type: text
-  config:
-    required: false
-  label: Headline
