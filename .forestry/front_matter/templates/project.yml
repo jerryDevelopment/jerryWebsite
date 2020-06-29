@@ -8,4 +8,4 @@ fields:
     required: false
   label: Title
 pages:
-- project-1.md
+- test-project.md
