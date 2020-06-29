@@ -6,7 +6,8 @@ webhook_url:
 sections:
 - type: document
   path: content
-  label: Front page
+  label: Front Page
+  match: "**/*"
 upload_dir: static
 public_path: ''
 front_matter_path: ''
