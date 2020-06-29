@@ -7,8 +7,8 @@ sections:
 - type: directory
   path: pages
   label: Test
-  create: all
-  match: pages/*
+  create: documents
+  match: "*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
