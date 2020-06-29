@@ -17,5 +17,9 @@ fields:
       type: pages
       section: project
   label: Projects
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
 pages:
 - content/front-page.md
