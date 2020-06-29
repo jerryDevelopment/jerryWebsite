@@ -15,7 +15,9 @@
   "dependencies": {
     "axios": "^0.19.2",
     "nuxt": "^2.13.0",
+    "nuxt-cookie-control": "^1.8.6",
     "vue-flickity": "^1.2.1",
+    "vue-instagram": "^3.0.0",
     "vue-packery-plugin": "^1.4.8"
   },
   "devDependencies": {

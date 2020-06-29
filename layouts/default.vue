@@ -2,6 +2,7 @@
   <div>
   	<main-navigation></main-navigation>
     <nuxt/>
+    <CookieControl locale="de"/>
   </div>
 </template>
 
