@@ -17,3 +17,5 @@ fields:
       type: pages
       section: project
   label: Projects
+pages:
+- content/front-page.md
