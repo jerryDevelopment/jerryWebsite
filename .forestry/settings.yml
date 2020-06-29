@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: pages
-  label: Test
-  create: documents
-  match: "*"
+- type: document
+  path: content
+  label: Front page
+  match: "**/*"
+  read_only: false
 upload_dir: static
 public_path: ''
 front_matter_path: ''
