@@ -6,53 +6,49 @@
 
 @media all and (max-width: 1024px) {
 
-  html { font-size: .7rem; }
+  html { font-size: 1rem; }
 
-  /*--- colums -------------------------*/
 
-  .col.col-resp-2-100 { width: 100%; }
-  .col.col-resp-2-50  { width: 50%; }
 
-  /*--- padding ------------------------*/
 
-  .pad-resp-2-a-1  { padding: 1em; }
+  .col.col-resp-2-unit-12 { width: 100%; }
+  .col.col-resp-2-unit-11 { width: 91.667%; }
+  .col.col-resp-2-unit-10 { width: 83.333%; }
+  .col.col-resp-2-unit-9  { width: 75%; }
+  .col.col-resp-2-unit-8  { width: 66.667%; }
+  .col.col-resp-2-unit-7  { width: 58.333%; }
+  .col.col-resp-2-unit-6  { width: 50%; }
+  .col.col-resp-2-unit-5  { width: 41.667%; }
+  .col.col-resp-2-unit-4  { width: 33.333%; }
+  .col.col-resp-2-unit-3  { width: 25%; }
+  .col.col-resp-2-unit-2  { width: 16.667%; }
+  .col.col-resp-2-unit-1  { width:  8.333%; }
 
-  .pad-resp-2-tb-1 { padding-top: 1em; padding-bottom: 1em; }
 
-  .pad-resp-2-b-1  { padding-bottom: 1em; }
+  .pad-resp-2-lr-3-5 { padding-left: 3.5em; padding-right: 3.5em; }
+  .pad-resp-2-lr-2-75 { padding-left: 2.75em; padding-right: 2.75em; }
 
-  .pad-resp-2-t-1  { padding-top: 1em; }
+  .pad-resp-2-b-4 { padding-bottom: 4em; }
+  .pad-resp-2-b-1 { padding-bottom: 1em; }
 
-  .pad-resp-2-lr-1 { padding-left: 1em; padding-right: 1em; }
+  .pad-resp-2-r-6 { padding-right: 6em; }
 
-  .pad-resp-2-l-1  { padding-left: 1em; }
+  .mar-resp-2-lr-0-5 { margin-left: .5em; margin-right: .5em; }
 
-  .pad-resp-2-r-1  { padding-right: 1em; }
 
-  /*--- margins ------------------------*/
+  .resp-2-align-center {
+    text-align: center;
+  }
 
-  .mar-resp-2-b-1  { margin-bottom: 1em; }
 
-  .mar-resp-2-t-1  { margin-top: 1em; }
-   
-  .mar-resp-2-tb-1 { margin-top: 1em; margin-bottom: 1em; }
+  .pop-up {
+    width: 85% !important;
+  }
 
-  .mar-resp-2-l-1  { margin-left: 1em; }
+  .info-icon {
+    width: 2em;
+    height: 2em;
+  }
 
-  .mar-resp-2-r-1  { margin-right: 1em; }
-
-  .mar-resp-2-lr-1 { margin-left: 1em; margin-right: 1em; }
-
-  /*--- borders ------------------------*/
-
-  .bor-resp-2-1   { border-width: 1px; border-style: solid }
-
-  .bor-resp-2-b-1 { border-bottom-width: 1px; border-style: solid }
-
-  .bor-resp-2-t-1 { border-top-width: 1px; border-style: solid }
-
-  .bor-resp-2-l-1 { border-left-width: 1px; border-style: solid }
-
-  .bor-resp-2-r-1 { border-right-width: 1px; border-style: solid }
 
 }

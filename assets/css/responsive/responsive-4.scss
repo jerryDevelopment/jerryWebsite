@@ -6,32 +6,86 @@
 
 @media all and (max-width: 425px) {
 
-  html { font-size: .6em; }
+  html { font-size: .75em; }
+
+/*--- size ---------------------------*/
+
+.text-xxl { font-size: 3.40rem; line-height: 1; letter-spacing: .01em; } // 64,75pt
+.text-xl  { font-size: 2.90rem; line-height: 1.4; letter-spacing: .01em; } // 46,25pt
+.text-l   { font-size: 1.7rem; line-height: 1.2; letter-spacing: .01em; } // 27,75pt
+.cookieControl__ModalContent h3,
+.cookieControl__BarContainer h3,
+.cookieControl__ModalContent li span,
+.cookieControl__ModalContent button,
+.cookieControl__BarContainer p,
+.cookieControl__BarContainer button,
+.text-m, // 23.125pt
+.text-s, // 18.5pt
+.text-xs  { font-size: 1.25rem; line-height: 1.5; letter-spacing: .01em; } // 15.25pt
+
+.text-resp-4-m  { font-size: 1.7rem; line-height: 1.2; letter-spacing: .01em; } // 27,75pt
+.text-resp-4-xs { font-size:  .95rem; line-height: 1.5; letter-spacing: .01em; }
+
+.text-menu    { font-size: 2.30rem; line-height: 1; letter-spacing: .01em; } // 64,75pt
+.text-numbers { font-size: 7.00rem; line-height: .75; letter-spacing: .01em; } // 64,75pt
+
 
   /*--- colums -------------------------*/
 
-  .col.col-resp-4-100 { width: 100%; }
-  .col.col-resp-4-50  { width: 50%; }
+  .col.col-resp-4-unit-12 { width: 100%; }
+  .col.col-resp-4-unit-11 { width: 91.667%; }
+  .col.col-resp-4-unit-10 { width: 83.333%; }
+  .col.col-resp-4-unit-9  { width: 75%; }
+  .col.col-resp-4-unit-8  { width: 66.667%; }
+  .col.col-resp-4-unit-7  { width: 58.333%; }
+  .col.col-resp-4-unit-6  { width: 50%; }
+  .col.col-resp-4-unit-5  { width: 41.667%; }
+  .col.col-resp-4-unit-4  { width: 33.333%; }
+  .col.col-resp-4-unit-3  { width: 25%; }
+  .col.col-resp-4-unit-2  { width: 16.667%; }
+  .col.col-resp-4-unit-1  { width:  8.333%; }
 
   /*--- padding ------------------------*/
 
-  .pad-resp-4-a-1  { padding: 1em; }
+  .pad-resp-4-a-1   { padding: 1em; }
+  .pad-resp-4-a-1-5 { padding: 1.5em; }
 
-  .pad-resp-4-tb-1 { padding-top: 1em; padding-bottom: 1em; }
+  .pad-resp-4-tb-0-3 { padding-top: .3em; padding-bottom: .3em; }
+  .pad-resp-4-tb-1   { padding-top: 1em; padding-bottom: 1em; }
+  .pad-resp-4-tb-4   { padding-top: 4em; padding-bottom: 4em; }
+  .pad-resp-4-tb-7   { padding-top: 7em; padding-bottom: 7em; }
 
-  .pad-resp-4-b-1  { padding-bottom: 1em; }
+  .pad-resp-4-b-1 { padding-bottom: 1em; }
+  .pad-resp-4-b-3 { padding-bottom: 3em; }
+  .pad-resp-4-b-4 { padding-bottom: 4em; }
+  .pad-resp-4-b-6 { padding-bottom: 6em; }
+  .pad-resp-4-b-35 { padding-bottom: 35em; }
 
-  .pad-resp-4-t-1  { padding-top: 1em; }
+  .pad-resp-4-t-1 { padding-top: 1em; }
+  .pad-resp-4-t-3 { padding-top: 3em; }
+  .pad-resp-4-t-4 { padding-top: 4em; }
+  .pad-resp-4-t-6 { padding-top: 6em; }
+  .pad-resp-4-t-7 { padding-top: 7em; }
+  .pad-resp-4-t-8 { padding-top: 8em; }
+  .pad-resp-4-t-10 { padding-top: 10em; }
 
-  .pad-resp-4-lr-1 { padding-left: 1em; padding-right: 1em; }
+  .pad-resp-4-lr-0   { padding-left: 0em; padding-right: 0em; }
+  .pad-resp-4-lr-0-5 { padding-left: .5em; padding-right: .5em; }
+  .pad-resp-4-lr-1   { padding-left: 1em; padding-right: 1em; }
+  .pad-resp-4-lr-2   { padding-left: 2em; padding-right: 2em; }
+  .pad-resp-4-lr-2-5 { padding-left: 2.5em; padding-right: 2.5em; }
 
   .pad-resp-4-l-1  { padding-left: 1em; }
 
   .pad-resp-4-r-1  { padding-right: 1em; }
+  .pad-resp-4-r-2  { padding-right: 2em; }
 
   /*--- margins ------------------------*/
 
-  .mar-resp-4-b-1  { margin-bottom: 1em; }
+  .mar-resp-4-b-0-5 { margin-bottom: .5em; }
+  .mar-resp-4-b-1   { margin-bottom: 1em; }
+  .mar-resp-4-b-2   { margin-bottom: 2em; }
+  .mar-resp-4-b-3   { margin-bottom: 3em; }
 
   .mar-resp-4-t-1  { margin-top: 1em; }
    
@@ -54,5 +108,43 @@
   .bor-resp-4-l-1 { border-left-width: 1px; border-style: solid }
 
   .bor-resp-4-r-1 { border-right-width: 1px; border-style: solid }
+
+  /*--- width --------------------------*/
+
+  .w-resp-4-per-33 { width: 33.333%; }
+
+
+
+
+
+  .resp-4-align-center {
+    text-align: center;
+  }
+
+
+  .footer-logo {
+    width: 85%;
+  }
+
+  .asset-picto {
+    width: 12.5em;
+  }
+
+  .pop-up {
+    top: 0 !important;
+    left: 0 !important;
+    transform: translate(0,0) !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+.cookieControl__ModalButtons {
+  flex-wrap: wrap;
+}
+
+.cookieControl__ModalButtons button {
+  width: 100%;
+  margin: 0 auto .5em auto !important;
+}
 
 }

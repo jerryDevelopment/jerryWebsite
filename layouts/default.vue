@@ -1,17 +1,29 @@
 <template>
   <div>
-  	<main-navigation></main-navigation>
+    <main-menu></main-menu>
+    <main-interface></main-interface>
+    <split-screen v-if="isIndexOrDigital"></split-screen>
+
     <nuxt/>
-    <CookieControl locale="de"/>
+    <CookieControl :locale="$i18n.locale"/>
+    <pop-up></pop-up>
   </div>
 </template>
 
 <script>
 
-import MainNavigation from '@/components/main-navigation'
+import MainMenu from '@/components/main-menu'
+import MainInterface from '@/components/main-interface'
+import SplitScreen from '@/components/split-screen'
+import PopUp from '@/components/pop-up'
 
 export default {
-  components: { MainNavigation }
+  components: { MainMenu, MainInterface, SplitScreen, PopUp },
+    computed: {
+      isIndexOrDigital: function() {
+        return this.$route.name == 'index___de' || this.$route.name == 'index___en' || this.$route.name == 'digital___de' || this.$route.name == 'digital___en'
+      }
+    }
 }
 
 </script>

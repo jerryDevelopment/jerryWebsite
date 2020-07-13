@@ -120,6 +120,12 @@
 .c-area.c-area-unit-4   { width: 33.333%;  }
 .c-area.c-area-unit-2   { width: 16.667%;  }
 
+
+.c-area-m {
+  width: 100%;
+  max-width: 65em;
+}
+
 /*--- columns ------------------------*/
 
 .col {
@@ -132,6 +138,7 @@
 
 .col.col-100 { width: 100%; }
 .col.col-85  { width: 85%;  }
+.col.col-80  { width: 80%;  }
 .col.col-75  { width: 75%;  }
 .col.col-66  { width: 66.666%;  }
 .col.col-60  { width: 60%;  }
@@ -144,6 +151,19 @@
 .col.col-25  { width: 25%;  }
 .col.col-24  { width: 24%;  }
 .col.col-20  { width: 20%;  }
+
+.col.col-unit-12 { width: 100%; }
+.col.col-unit-11 { width: 91.667%; }
+.col.col-unit-10 { width: 83.333%; }
+.col.col-unit-9  { width: 75%; }
+.col.col-unit-8  { width: 66.667%; }
+.col.col-unit-7  { width: 58.333%; }
+.col.col-unit-6  { width: 50%; }
+.col.col-unit-5  { width: 41.667%; }
+.col.col-unit-4  { width: 33.333%; }
+.col.col-unit-3  { width: 25%; }
+.col.col-unit-2  { width: 16.667%; }
+.col.col-unit-1  { width:  8.333%; }
 
 .col-50-text {
   width: 50%;
@@ -187,6 +207,15 @@ video.inline { width: 100%; height: auto;  }
   background-repeat: no-repeat;
 }
 
+.obj-fit-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*--- layout clearfix ----------------*/
 
 .c-frame:after,
@@ -198,6 +227,8 @@ video.inline { width: 100%; height: auto;  }
     visibility: hidden;
     height: 0;
     padding: 0;
+    line-height: 0;
+    font-size: 0;
 }
 
 /*--- modifications ------------------*/
@@ -218,9 +249,11 @@ video.inline { width: 100%; height: auto;  }
 
 .bor-box  { box-sizing: border-box; }
 .v-center { vertical-align: middle; }
+.v-top { vertical-align: top; }
 
 .vp-min-height { min-height: 100vh; }
 .auto-height   { height: auto; }
+.auto-width    { width: auto; }
 
 .v-trans-center {
   top: 50%;

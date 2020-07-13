@@ -13,13 +13,16 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.9",
-    "axios": "^0.19.2",
     "nuxt": "^2.13.0",
     "nuxt-cookie-control": "^1.8.6",
+    "nuxt-i18n": "^6.12.2",
     "vue-flickity": "^1.2.1",
+    "vue-in-viewport-directive": "^2.0.0",
     "vue-instagram": "^3.0.0",
-    "vue-packery-plugin": "^1.4.8"
+    "vue-packery-plugin": "^1.4.8",
+    "vue-parallax-js": "^0.2.3",
+    "vue-scrollto": "^2.18.1",
+    "vue-video-player": "^5.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -28,6 +31,7 @@
     "eslint-loader": "^3.0.4",
     "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.14.1",
+    "raw-loader": "^4.0.1",
     "sass-loader": "^7.3.1"
   }
 }
