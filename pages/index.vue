@@ -157,7 +157,7 @@
         </div>
       </div>
       <picture class="obj-fit-cover">
-        <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
+        <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
         <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_mobil_1440x1440px.jpg'">
         <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
       </picture>
