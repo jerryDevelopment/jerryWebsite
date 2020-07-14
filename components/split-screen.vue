@@ -1,5 +1,5 @@
 <template>
-  <div id="top" :class="'screen split-screen-container bg-black ' + ( !$store.state.splitScreenAnimationState ? hoverClass : '' ) + ( $store.state.splitScreenActiveState ? ' relative' : ' fixed')" :style="'height: ' + ( windowHeight == 0 ? '100vh' : windowHeight + 'px' ) + ';z-index: 2; overflow: hidden'">
+  <div id="top" :class="'screen split-screen-container bg-black relative ' + ( !$store.state.splitScreenAnimationState ? hoverClass : '' ) + ( $store.state.splitScreenActiveState ? ' ' : '')" :style="'height: ' + ( windowHeight == 0 ? '100vh' : windowHeight + 'px' ) + ';z-index: 2; overflow: hidden'">
     <div class="cor-tl" style="z-index: 2;">
       <transition name="fast-fade">
         <div class="col col-100 pad-lr-2 pad-tb-1-25 align-center" v-show="(leftIsActive || rightIsActive) && !$store.state.splitScreenAnimationState" @click="closeSplitScreen()">
@@ -585,7 +585,7 @@ export default {
   width: 100%;
   height: 100%;
   clip-path: polygon(70% 0, 100% 0, 100% 100%, 30.2% 100%);
-  left: -1em;
+  left: -.75em;
 }
 
 
@@ -620,7 +620,7 @@ export default {
   width: 100%;
   height: 100%;
   clip-path: polygon(0 0, 69.8% 0, 30% 100%, 0% 100%);
-  left: 1em;
+  left: .75em;
 }
 
 .split-screen-right.is-active .split-screen-right-inner   { clip-path: polygon(0% 0, 0% 0, 0% 100%, 0% 100%) !important; left: 0; }

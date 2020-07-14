@@ -2,19 +2,6 @@ module.exports = {
   // mode: 'spa',
   router: {
     base: '/',
-    scrollBehavior (to, from, savedPosition) {
-
-      if( (to.name == 'imprint___de' || to.name == 'imprint___en') || (to.name == 'privacy-policy___de' || to.name == 'privacy-policy___en') || (to.name == 'projekte_slug___de' || to.name == 'projects_slug___en') ) {
-        return savedPosition
-      } else {
-        if( (from.name == 'imprint___de' || from.name == 'imprint___en')  || (from.name == 'privacy-policy___de' || from.name == 'privacy-policy___en') || (from.name == 'projekte_slug___dee' || from.name == 'projects_slug___en') ) {
-          return savedPosition
-        } else {
-          return ({ x: 0, y: 0 })
-        }
-      }
-
-    },
   },
 
   env: {
@@ -32,14 +19,57 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'nuxt-js-test',
+    title: 'Jerry',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'NuxtJS Test' }
+      { hid: 'description', name: 'description', content: 'Jerry bildet, stärkt und pflegt Beziehungen auf Grundlage der emotionalen Strahlkraft des Sports.' },
+      { name: "application-name", content: "Jerry" },
+      { name: "mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-title", content: "Jerry" },
+      { name: "msapplication-TileColor", content: "#ffffff" },
+      { name: "theme-color", content: "#ffffff" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "#ffffff" },
+      { name: "msapplication-TileImage", content: "mstile-150x150.png?v=200714114610" },
+      { name: "msapplication-square70x70logo", content: "mstile-70x70.png?v=200714114610" },
+      { name: "msapplication-square150x150logo", content: "mstile-150x150.png?v=200714114610" },
+      { name: "msapplication-wide310x150logo", content: "mstile-310x150.png?v=200714114610" },
+      { name: "msapplication-square310x310logo", content: "mstile-310x310.png?v=200714114610" },
+      { name: "msapplication-config", content: "browserconfig.xml?v=200714114610" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: "apple-touch-icon", sizes:"57x57", href: "favicon/jerry/apple-touch-icon-57x57.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"60x60", href: "favicon/jerry/apple-touch-icon-60x60.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"72x72", href: "favicon/jerry/apple-touch-icon-72x72.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"76x76", href: "favicon/jerry/apple-touch-icon-76x76.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"114x114", href: "favicon/jerry/apple-touch-icon-114x114.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"120x120", href: "favicon/jerry/apple-touch-icon-120x120.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"144x144", href: "favicon/jerry/apple-touch-icon-144x144.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"152x152", href: "favicon/jerry/apple-touch-icon-152x152.png?v=200714114610" },
+      { rel: "apple-touch-icon", sizes:"180x180", href: "favicon/jerry/apple-touch-icon-180x180.png?v=200714114610" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/android-chrome-36x36.png?v=200714114610", sizes:"36x36" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/android-chrome-48x48.png?v=200714114610", sizes:"48x48" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/android-chrome-72x72.png?v=200714114610", sizes:"72x72" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/android-chrome-96x96.png?v=200714114610", sizes:"96x96" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/android-chrome-144x144.png?v=200714114610", sizes:"144x144" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/android-chrome-192x192.png?v=200714114610", sizes:"192x192" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/favicon-16x16.png?v=200714114610", sizes:"16x16" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/favicon-32x32.png?v=200714114610", sizes:"32x32" },
+      { rel: "icon", type: "image/png", href: "favicon/jerry/favicon-96x96.png?v=200714114610", sizes:"96x96" },
+      { rel: "shortcut icon", type: "image/x-icon", href: "favicon/jerry/favicon.ico?v=200714114610" },
+      { rel: "manifest", href: "favicon/jerry/manifest.json?v=200714114610" },
+      { href: "favicon/jerry/apple-touch-startup-image-320x460.png?v=200714114610", media: "(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-640x920.png?v=200714114610", media: "(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-640x1096.png?v=200714114610", media: "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-748x1024.png?v=200714114610", media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-750x1024.png?v=200714114610", media: "", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-750x1294.png?v=200714114610", media: "(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-768x1004.png?v=200714114610", media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-1182x2208.png?v=200714114610", media: "(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-1242x2148.png?v=200714114610", media: "(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-1496x2048.png?v=200714114610", media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)", rel: "apple-touch-startup-image" },
+      { href: "favicon/jerry/apple-touch-startup-image-1536x2008.png?v=200714114610", media: "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)", rel: "apple-touch-startup-image" }
     ]
   },
   /*
@@ -87,7 +117,7 @@ module.exports = {
     { src: '~/plugins/content', ssr: true },
     { src: '~/plugins/vue-flickity', ssr: false },
     { src: '~/plugins/vue-instagram', ssr: false },
-    { src: '~/plugins/vue-scrollto', ssr: false },
+    { src: '~/plugins/vue-scrollto', ssr: true },
     { src: '~/plugins/vue-video-player', ssr: false },
     { src: '~/plugins/window-size-and-scroll-position', ssr: true },
     { src: '~/plugins/vue-in-viewport-directive', ssr: false },

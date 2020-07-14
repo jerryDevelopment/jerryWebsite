@@ -1,10 +1,12 @@
 <template>
-  <section :class="'container page-digital' + ( !$store.state.splitScreenActiveState || $store.state.splitScreenAnimationState ? ' fixed' : '')">
+  <section class="container page-digital">
     <div class="c-frame bg-black" id="who">
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-12 pad-resp-4-t-10 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.headline"></h2>
-          <div class="media-container mar-t-2 mar-b-4"><img class="inline" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhoJerryDigital"></div>
+          <div class="media-container media-container-diagram media-container-diagram-1 w-per-100 mar-t-2 mar-b-4">
+            <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhoJerryDigital">
+          </div>
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.text"></p>
         </div>
       </div>
@@ -13,7 +15,9 @@
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.headline"></h2>
-          <div class="media-container mar-t-5 mar-b-3-5"><img class="w-per-75" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital"></div>
+          <div class="media-container media-container-diagram media-container-diagram-2 w-per-75 mar-t-5 mar-b-3-5">
+            <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital">
+          </div>
           <p class="text-s c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.subline"></p>
         </div>
       </div>
@@ -47,7 +51,9 @@
     <div class="c-frame bg-grey-1">
       <div class="c-area c-area-m">
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-t-3 pad-b-4 align-center">
-          <div class="media-container"><img class="inline" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramHowJerryDigital"></div>
+          <div class="media-container media-container-diagram media-container-diagram-3 w-per-100">
+            <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramHowJerryDigital">
+          </div>
         </div>
       </div>
     </div>
@@ -74,8 +80,10 @@
                   </svg>
                 </button>
               </div>
-              <div class="media-container"><img class="w-per-50" :src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img"></div>
-              <span class="text-xs c-grey-4" v-html="listEntry.title"></span>
+              <div class="media-container media-container-diagram media-container-diagram-4 w-per-50">
+                <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img">
+              </div>
+              <p class="text-xs c-grey-4" v-html="listEntry.title"></p>
             </div>
           </div>
         </div>
@@ -98,9 +106,6 @@
         <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultantsResp4">
         <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants">
       </picture>
-
-
-
     </div>
     <div class="c-frame bg-black" id="show-cases" ref="switchVisibleAreaEnd">
       <div class="c-area c-area-m">
@@ -110,7 +115,9 @@
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-2-75 pad-resp-4-lr-0 pad-b-5" v-for="(project, index) in projectsCurrentLanguage.list" :key="index">
           <div class="col col-unit-12" v-if="index == 0">
             <div class="col col-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-b-3">
-              <div class="media-container"><img class="inline" :src="staticMediaSrcBase + 'images/placeholders/' + project.indexImg"></div>
+              <div class="media-container media-container-show-cases w-per-100">
+                <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/placeholders/' + project.indexImg">
+              </div>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-r-1-5 float-left">
               <h4 class="text-l c-white" v-html="project.title"></h4>
@@ -123,7 +130,9 @@
           </div>
           <div class="col col-unit-12" v-else>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-r-1-5 pad-resp-4-b-3 float-left">
-              <div class="media-container"><img class="inline" :src="staticMediaSrcBase + 'images/' + project.indexImg"></div>
+              <div class="media-container media-container-show-cases w-per-100">
+                <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/' + project.indexImg">
+              </div>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-1-5 float-left">
               <h4 class="text-l c-white" v-html="project.title"></h4>
@@ -153,8 +162,57 @@ export default {
   head() {
     return {
       bodyAttrs: {
-        class: 'bg-black',
-      }
+        class: !this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState ? 'of-hidden bg-black' : 'bg-black',
+      },
+      title: 'Jerry Digital',
+      meta: [
+        { name: 'application-name', content: 'Jerry Digital' },
+        { name: 'mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-title', content: 'Jerry Digital' },
+        { name: 'msapplication-TileColor', content: '#ffffff' },
+        { name: 'theme-color', content: '#ffffff' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: '#ffffff' },
+        { name: 'msapplication-TileImage', content: 'mstile-150x150.png?v=200714114610' },
+        { name: 'msapplication-square70x70logo', content: 'mstile-70x70.png?v=200714114610' },
+        { name: 'msapplication-square150x150logo', content: 'mstile-150x150.png?v=200714114610' },
+        { name: 'msapplication-wide310x150logo', content: 'mstile-310x150.png?v=200714114610' },
+        { name: 'msapplication-square310x310logo', content: 'mstile-310x310.png?v=200714114610' },
+        { name: 'msapplication-config', content: 'browserconfig.xml?v=200714114610' },
+      ],
+      link: [
+        { rel: 'apple-touch-icon', sizes:'57x57', href: 'favicon/jerry-digital/apple-touch-icon-57x57.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'60x60', href: 'favicon/jerry-digital/apple-touch-icon-60x60.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'72x72', href: 'favicon/jerry-digital/apple-touch-icon-72x72.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'76x76', href: 'favicon/jerry-digital/apple-touch-icon-76x76.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'114x114', href: 'favicon/jerry-digital/apple-touch-icon-114x114.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'120x120', href: 'favicon/jerry-digital/apple-touch-icon-120x120.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'144x144', href: 'favicon/jerry-digital/apple-touch-icon-144x144.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'152x152', href: 'favicon/jerry-digital/apple-touch-icon-152x152.png?v=200714114610' },
+        { rel: 'apple-touch-icon', sizes:'180x180', href: 'favicon/jerry-digital/apple-touch-icon-180x180.png?v=200714114610' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/android-chrome-36x36.png?v=200714114610', sizes:'36x36' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/android-chrome-48x48.png?v=200714114610', sizes:'48x48' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/android-chrome-72x72.png?v=200714114610', sizes:'72x72' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/android-chrome-96x96.png?v=200714114610', sizes:'96x96' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/android-chrome-144x144.png?v=200714114610', sizes:'144x144' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/android-chrome-192x192.png?v=200714114610', sizes:'192x192' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/favicon-16x16.png?v=200714114610', sizes:'16x16' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/favicon-32x32.png?v=200714114610', sizes:'32x32' },
+        { rel: 'icon', type: 'image/png', href: 'favicon/jerry-digital/favicon-96x96.png?v=200714114610', sizes:'96x96' },
+        { rel: 'shortcut icon', type: 'image/x-icon', href: 'favicon/jerry-digital/favicon.ico?v=200714114610' },
+        { rel: 'manifest', href: 'favicon/jerry-digital/manifest.json?v=200714114610' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-320x460.png?v=200714114610', media: '(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-640x920.png?v=200714114610', media: '(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-640x1096.png?v=200714114610', media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-748x1024.png?v=200714114610', media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-750x1024.png?v=200714114610', media: '', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-750x1294.png?v=200714114610', media: '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-768x1004.png?v=200714114610', media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-1182x2208.png?v=200714114610', media: '(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-1242x2148.png?v=200714114610', media: '(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-1496x2048.png?v=200714114610', media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)', rel: 'apple-touch-startup-image' },
+        { href: 'favicon/jerry-digital/apple-touch-startup-image-1536x2008.png?v=200714114610', media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)', rel: 'apple-touch-startup-image' }
+      ]
     }
   },
   components: { Contact, MainFooter },
@@ -205,5 +263,27 @@ export default {
 </script>
 
 <style>
+
+.media-container-diagram,
+.media-container-show-cases {
+  position: relative;
+  display: inline-block;
+}
+
+.media-container-diagram:after,
+.media-container-show-cases:after {
+  content: ' ';
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.media-container-diagram-1:after  { padding-bottom: 33.333%; }
+.media-container-diagram-2:after  { padding-bottom: 93.745%; }
+.media-container-diagram-3:after  { padding-bottom: 50%; }
+.media-container-diagram-4:after  { padding-bottom: 100%; }
+.media-container-show-cases:after { padding-bottom: 56.25%; }
+
+
 
 </style>

@@ -28,6 +28,13 @@
 <script>
 
 export default {
+  head() {
+    return {
+      bodyAttrs: {
+        style: this.popUpIsActive ? 'overflow: hidden' : ''
+      }
+    }
+  },
   data() {
     return {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
