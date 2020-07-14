@@ -166,6 +166,7 @@ export default {
       },
       title: 'Jerry Digital',
       meta: [
+        { hid: 'description', name: 'description', content: 'Jerry bildet, stärkt und pflegt Beziehungen auf Grundlage der emotionalen Strahlkraft des Sports.' },
         { name: 'application-name', content: 'Jerry Digital' },
         { name: 'mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },

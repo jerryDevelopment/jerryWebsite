@@ -3,7 +3,6 @@ module.exports = {
   router: {
     base: '/',
   },
-
   env: {
       // staticImageSrcBase: 'http://192.168.178.48/.../static/images/',
       // restBaseEndpoint: 'http://192.168.178.48/.../rest-api/',

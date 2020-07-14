@@ -881,7 +881,7 @@ Vue.mixin({
                   controls: true
                 },
                 src: 'show-cases/05_sports_content/sports_content_am_hero.mp4',
-                posterSrc: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg'
+                posterSrc: 'show-cases/05_sports_content/sports_content_am_poster_2560x1440.jpg'
               },
               headline: 'Aston Martin - Mein Name ist Gandl - Stephan Gandl!',
               infoText: [
