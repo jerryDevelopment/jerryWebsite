@@ -91,7 +91,7 @@ export default {
         mode: 'out-in'
       }
     }
-    return {}
+    return ''
   },
   nuxtI18n: {
     paths: {
