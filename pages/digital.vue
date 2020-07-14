@@ -162,7 +162,7 @@ export default {
   head() {
     return {
       bodyAttrs: {
-        class: !this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState ? 'of-hidden bg-black' : 'bg-black',
+        class: (!this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState) && !this.isReload ? 'of-hidden bg-black' : 'bg-black',
       },
       title: 'Jerry Digital',
       meta: [
@@ -221,7 +221,8 @@ export default {
     return {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
       selectedResult: {},
-      popUpIsActive: false
+      popUpIsActive: false,
+      isReload: false
 
     }
   },
@@ -248,6 +249,12 @@ export default {
     }
   },
   mounted() {
+
+    if (performance.navigation.type == 1) {
+      this.isReload = true
+      $nuxt.$emit('changeSplitScreen', 'digital')
+    }
+    
     window.addEventListener('resize', ()=>{
       this.setSwitchState()
     })

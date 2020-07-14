@@ -17,10 +17,14 @@ Vue.mixin({
         de: {
           menuLinks: {
             about: 'Über uns',
-            who: 'Wer',
-            why: 'Warum',
-            how: 'Wie',
-            what: 'Was',
+            whoJerry: 'Wer ist Jerry',
+            whyJerry: 'Warum Jerry',
+            howJerry: 'Wie arbeitet Jerry',
+            whatJerry: 'Was macht Jerry',
+            whoJerryDigital: 'Wer ist Jerry Digital',
+            whyJerryDigital: 'Warum Jerry Digital',
+            howJerryDigital: 'Wie arbeitet Jerry Digital',
+            whatJerryDigital: 'Was macht  Jerry Digital',
             references: 'Referenzen',
             contact: 'Kontakt'
           },
@@ -31,10 +35,14 @@ Vue.mixin({
         en: {
           menuLinks: {
             about: 'About us',
-            who: 'Who',
-            why: 'Why',
-            how: 'How',
-            what: 'What',
+            whoJerry: 'Who is Jerry',
+            whyJerry: 'Why Jerry',
+            howJerry: 'How does Jerry work',
+            whatJerry: 'What dose Jerry do',
+            whoJerryDigital: 'Who is Jerry Digital',
+            whyJerryDigital: 'Why Jerry Digital',
+            howJerryDigital: 'How does Jerry Digital work',
+            whatJerryDigital: 'What dose Jerry Digital do',
             references: 'References',
             contact: 'Contact'
           },
@@ -45,7 +53,7 @@ Vue.mixin({
       },
       splitScreen: {
         de: {
-          welcomeMessage: 'Hallo, we are',
+          welcomeMessage: 'Hallo, wird sind',
           leftTagLine: 'sports business<br>consultants',
           leftText: 'Wir liefern <span class="c-yellow">Strategien</span><br>in Zeiten der Veränderung',
           leftTextScrollDownButton: 'sports business consultants',
@@ -135,10 +143,10 @@ Vue.mixin({
               { 
                 name: 'Karsten Streng',
                 list: [
-                  'verfügt über 20 Jahre Erfahrung im Sport Marketing',
+                  'verfügt über 20 Jahre Erfahrung im Sport Marketing',
                   'vereint Kommunikations- und Management-Know-how',
-                  'berät Unternehmen, Persönlichkeiten und Agenturen',
-                  'ist fokussiert auf vertrauensvolle und klare Markenführung',
+                  'berät Unternehmen, Persönlichkeiten und Agenturen',
+                  'ist fokussiert auf vertrauensvolle und klare Markenführung',
                   'entwickelt kommunikative Strategien und Konzepte',
                   'ist fest verankert in der Motorsport-, Ausdauersport- & Golfszene',
                 ]
@@ -147,7 +155,7 @@ Vue.mixin({
                 list: [
                   'arbeitet seit mehr als 15 Jahren im Sport Business',
                   'analysiert scharfsinnig mit Blick auf das Wesentliche',
-                  'legt höchsten Wert auf Effektivität und Effizienz',
+                  'legt höchsten Wert auf Effektivität und Effizienz',
                   'konzipiert, plant und setzt erfolgreich um',
                   'denkt und handelt mit dem Blick eines Unternehmers',
                   'kennt alle Perspektiven im Fußball-Umfeld',
@@ -156,9 +164,9 @@ Vue.mixin({
                 name: 'Dieter Thoma',
                 list: [
                   'war 15 Jahre erfolgreicher Hochleistungssportler',
-                  'ist seit dem Jahr 2000 TV-Experte für Wintersport',
-                  'ist seit über 30 Jahren Unternehmer im Sport- und Medien Business',
-                  'überzeugt als visionärer Berater und provokanter Querdenker',
+                  'ist seit dem Jahr 2000 TV-Experte für Wintersport',
+                  'ist seit über 30 Jahren Unternehmer im Sport- und Medien Business',
+                  'überzeugt als visionärer Berater und provokanter Querdenker',
                   'setzt die Werte des Sports immer an die erste Stelle',
                   'kaum jemand ist im Wintersport und Golf besser vernetzt als er',
                 ]
@@ -176,14 +184,14 @@ Vue.mixin({
             },
             sectionTrueStory: {
               headline: 'Eine wahre Geschichte, die uns inspiriert hat.',
-              text: '1996 kam der Blockbuster „Jerry Maguire – Spiel des Lebens“ in die Kinos. In diesem spielt Tom Cruise den Sportmanager Jerry Maguire. Dieser vermisst Ehrlichkeit und Menschlichkeit in seiner Branche. Als er dies offen anprangert, verliert er seinen Job in einer großen Sportmangement Agentur und Jerry startet in das Abenteuer der Selbständigkeit. Er steht zu seinen Überzeugungen und macht alles anders – freundschaftlich, menschlich und sehr persönlich. Daran glauben auch wir und nennen uns deswegen stolz Jerry.'
+              text: '1996 kam der Blockbuster „Jerry Maguire – Spiel des Lebens“ in die Kinos. In diesem spielt Tom Cruise den Sportmanager Jerry Maguire. Dieser vermisst Ehrlichkeit und Menschlichkeit in seiner Branche. Als er dies offen anprangert, verliert er seinen Job in einer großen Sportmangement Agentur und Jerry startet in das Abenteuer der Selbständigkeit. Er steht zu seinen Überzeugungen und macht alles anders – freundschaftlich, menschlich und sehr persönlich. Daran glauben auch wir und nennen uns deswegen stolz Jerry.'
             },
             sectionAssets: {
               headline: 'Genau wie Jerry sind wir der verlässliche Partner in Zeiten der Veränderung.',
               list: [
                 {
                   img: 'icon_jerry_why_01.svg',
-                  text: 'Wir haben den Sport in all seinen Facetten auf höchstem Niveau erlebt. Dabei mussten wir uns selbst permanent auf neue Herausforderungen einstellen.'
+                  text: 'Wir haben den Sport in all seinen Facetten auf höchstem Niveau erlebt. Dabei mussten wir uns selbst permanent auf neue Herausforderungen einstellen.'
                 }, {
                   img: 'icon_jerry_why_02.svg',
                   text: 'Wir treten nicht mit dem Team an, das wir haben, sondern mit dem, das gebraucht wird.'
@@ -200,22 +208,22 @@ Vue.mixin({
             list: [
               {
                 headline: 'Persönlich',
-                text: 'Wir sind zu jeder Zeit für Dich da und begleiten den gesamten Prozess ganzheitlich und persönlich.'
+                text: 'Wir sind zu jeder Zeit für Dich da und begleiten den gesamten Prozess ganzheitlich und persönlich.'
               }, {
                 headline: 'Lösungsorientiert',
-                text: 'Wir handeln agil und zielgerichtet. Deshalb stellen wir für jede Herausforderung ein Team mit erforderlichen Spezialisten zusammen.'
+                text: 'Wir handeln agil und zielgerichtet. Deshalb stellen wir für jede Herausforderung ein Team mit erforderlichen Spezialisten zusammen.'
               }, {
                 headline: 'Unternehmerisch',
                 text: 'Wir denken in skalierbaren Modellen und Produkten – aufgeladen durch die emotionale Strahlkraft des Sports.'
               }, {
                 headline: 'Verbindend',
-                text: 'Wir glauben an die Kraft der Beziehung. Wir schaffen und stärken Verbindungen zu Partnern, Kunden und Mitarbeitern.'
+                text: 'Wir glauben an die Kraft der Beziehung. Wir schaffen und stärken Verbindungen zu Partnern, Kunden und Mitarbeitern.'
               }, {
                 headline: 'Mutig',
                 text: 'Wir gehen neue Wege. Nur wer mutig ist, wird seine Kunden, Partner und Mitarbeiter nachhaltig ansprechen, begeistern und binden.'
               }, {
                 headline: 'Sportlich',
-                text: 'Die Werte des Sports ziehen sich durch unsere Haltung, Strategien und Lösungen.'
+                text: 'Die Werte des Sports ziehen sich durch unsere Haltung, Strategien und Lösungen.'
               }, {
                 headline: 'Strukturiert',
                 text: 'Wir folgen einem klaren „Trainingsplan“: Verständnis Erkundung Synthese Ideen Prototyp Test'
@@ -231,7 +239,7 @@ Vue.mixin({
               ],
               text2: [
                 'Auf dieser Basis schauen wir nach vorne und helfen Dir, Dein Sport-Business so auszurichten, die <span class="c-yellow">Herausforderungen der Zukunft</span> zu <span class="c-yellow">meistern.</span>',
-                'Vom Strategie-Papier über personelle Team-Erweiterung bis hin zu konkreten Kooperationen begleiten wir Dich durch die Zeit der Veränderung und darüber hinaus.',
+                'Vom Strategie-Papier über personelle Team-Erweiterung bis hin zu konkreten Kooperationen begleiten wir Dich durch die Zeit der Veränderung und darüber hinaus.',
               ]
             },
             sectionResults: {
@@ -271,15 +279,15 @@ Vue.mixin({
             sectionReport: {
               headline: 'Der Jerry Report',
               text: [
-                'Jerry versteht sich als Partner und Berater von Entscheidungsträgern. Unsere Ergebnisse sind maßgeschneidert und faktenbasiert. Sie sollen stets <span class="c-yellow">nachvollziehbar und transparent als Entscheidungshilfe</span> dienen.',
-                'Daher stellen wir allen unseren Partnern die Ergebnisse unserer Arbeit komprimiert, nachvollziehbar, aufbereitet und präsentierbar in Form unseres „Jerry Reports“ zusammen.',
+                'Jerry versteht sich als Partner und Berater von Entscheidungsträgern. Unsere Ergebnisse sind maßgeschneidert und faktenbasiert. Sie sollen stets <span class="c-yellow">nachvollziehbar und transparent als Entscheidungshilfe</span> dienen.',
+                'Daher stellen wir allen unseren Partnern die Ergebnisse unserer Arbeit komprimiert, nachvollziehbar, aufbereitet und präsentierbar in Form unseres „Jerry Reports“ zusammen.',
               ]
             },
             sectionDigital: {
-              headline: 'Der Partner für’s Digitale.',
+              headline: 'Der Partner für’s Digitale.',
               text: [
-                'Sämtlich Strategien und Lösungen müssen digital mitgedacht und umgesetzt werden Deshalb gibt es <span class="c-blue">Jerry Digital.</span>',
-                'Dabei bündeln wir das Know-how zahlreicher Experten, sind ganz nah dran an den neuesten digitalen Entwicklungen und Trends und verstehen es mit schlanken Projektaufstellungen begeisternde Erlebnisse zu schaffen.',
+                'Sämtlich Strategien und Lösungen müssen digital mitgedacht und umgesetzt werden Deshalb gibt es <span class="c-blue">Jerry Digital.</span>',
+                'Dabei bündeln wir das Know-how zahlreicher Experten, sind ganz nah dran an den neuesten digitalen Entwicklungen und Trends und verstehen es mit schlanken Projektaufstellungen begeisternde Erlebnisse zu schaffen.',
               ]
             },
           },
@@ -287,8 +295,8 @@ Vue.mixin({
             sectionIntro: {
               headline: 'Referenzen',
               text: [
-                'Jerry arbeitet für namhafte Unternehmen und Persönlichkeiten in unterschiedlichen Bereichen von Wirtschaft und Sport.',
-                'Wir bauen Brücken zwischen diesen beiden Welten und verstehen das Vertrauen, das unsere Partner in uns legen als unser höchstes Gut.',
+                'Jerry arbeitet für namhafte Unternehmen und Persönlichkeiten in unterschiedlichen Bereichen von Wirtschaft und Sport.',
+                'Wir bauen Brücken zwischen diesen beiden Welten und verstehen das Vertrauen, das unsere Partner in uns legen als unser höchstes Gut.',
               ]
             },
           }
@@ -465,11 +473,11 @@ Vue.mixin({
         de: {
           whoJerryDigital: {
             headline: 'Wer ist Jerry Digital?',
-            text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen Kompetenzen und Kapazitäten zu.'
+            text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen Kompetenzen und Kapazitäten zu.'
           },
           whyJerryDigital: {
             headline: 'Warum Jerry Digital?',
-            subline: 'Marketing Sports IT',
+            subline: 'Wir verbinden die relevanten Kompetenzfelder.',
           },
           howJerryDigital: {
             headline: 'Wie arbeitet Jerry Digital?',
@@ -477,22 +485,22 @@ Vue.mixin({
             list: [
               {
                 headline: 'Individuell',
-                text: 'Wir stellen Dir ein Kompetenzteam zur Seite und begleiten den Prozess ganzheitlich und persönlich.'
+                text: 'Wir stellen Dir ein Kompetenzteam zur Seite und begleiten den Prozess ganzheitlich und persönlich.'
               }, {
                 headline: 'Nutzerorientiert',
                 text: 'Wir denken als Kunden und Nutzer: Wie ist die User Experience, welchen Mehrwert bietet mir das Produkt?'
               }, {
                 headline: 'Modular',
-                text: 'Wir schauen voraus und schaffen Lösungen, die für Deine Kunden, Bereiche und Märkte adaptierbar sind.'
+                text: 'Wir schauen voraus und schaffen Lösungen, die für Deine Kunden, Bereiche und Märkte adaptierbar sind.'
               }, {
                 headline: 'Skalierbar',
-                text: 'Wir schaffen Lösungen, die sich in Umfang und Volumen performant anpassen lassen.'
+                text: 'Wir schaffen Lösungen, die sich in Umfang und Volumen performant anpassen lassen.'
               }, {
                 headline: 'Offen',
                 text: 'Wir entwickeln nichts, was es schon gibt! Wir denken in APIs und Open Source.'
               }, {
                 headline: 'Agil',
-                text: 'Wir nutzen SCRUM, planen in SPRINTS und handeln ITERATIV – die Basis für effiziente Produktentwicklung.'
+                text: 'Wir nutzen SCRUM, planen in SPRINTS und handeln ITERATIV – die Basis für effiziente Produktentwicklung.'
               }
             ]
           },
@@ -501,7 +509,7 @@ Vue.mixin({
               headline: 'Was macht Jerry Digital?',
             },
             sectionResults: {
-              headline: 'Wir liefern digitale Strategien und Lösungen für Dein Sport-Business.',
+              headline: 'Wir liefern digitale Strategien und Lösungen für Dein Sport-Business.',
               list: [
                 {
                   img: 'icon_jerrydigital_leistungen_01.svg',
@@ -539,14 +547,14 @@ Vue.mixin({
               ],
               text: [
                 'Jerry Digital verbindet <span class="c-blue">Sportbusiness mit medientechnologischem Know-how</span> und begleitet Kommunikationsprojekte vom Konzept bis hin zur finalen Umsetzung.',
-                'Dabei setzt Jerry Digital auf die Möglichkeiten des digitalen Zeitalters, um die Emotionen des Sports auf <span class="c-blue">neue und überraschende Weise</span> erlebbar zu machen.',
+                'Dabei setzt Jerry Digital auf die Möglichkeiten des digitalen Zeitalters, um die Emotionen des Sports auf <span class="c-blue">neue und überraschende Weise</span> erlebbar zu machen.',
               ]
             },
             sectionSportsBusinessConsultants: {
               headline: 'Sports Business Consultants',
               text: [
-                '<span class="c-blue">Jerry Digital</span> setzt beim Sportbusiness dort an, wo eine konkrete digitale Lösungen benötigt wird.',
-                'Doch damit ist bei Jerry nicht Schluss... für allgemeine Beratungsfragen im Bereich des Sportbusiness, die über einzelne digitale Lösungen weit hinaus gehen, haben wir mit <span class="c-yellow">Jerry – Sports Business Consultants</span> die passende Antwort.',
+                '<span class="c-blue">Jerry Digital</span> setzt beim Sportbusiness dort an, wo eine konkrete digitale Lösungen benötigt wird.',
+                'Doch damit ist bei Jerry nicht Schluss... für allgemeine Beratungsfragen im Bereich des Sportbusiness, die über einzelne digitale Lösungen weit hinaus gehen, haben wir mit <span class="c-yellow">Jerry – Sports Business Consultants</span> die passende Antwort.',
               ]
             }
           }
@@ -558,7 +566,7 @@ Vue.mixin({
           },
           whyJerryDigital: {
             headline: 'Why Jerry Digital?',
-            subline: 'Marketing Sports IT',
+            subline: 'We combine the relevant fields of competence.',
           },
           howJerryDigital: {
             headline: 'How does Jerry Digital work?',
@@ -797,9 +805,7 @@ Vue.mixin({
               clients: [
                 'Sportplan GmbH'
               ],
-              partners: [
-                ''
-              ],
+              partners: [],
               media: [
                 {
                   type: 'img',
@@ -849,9 +855,7 @@ Vue.mixin({
               clients: [
                 'cip marketing GmbH'
               ],
-              partners: [
-                ''
-              ],
+              partners: [],
               media: [
                 {
                   type: 'img',
@@ -908,18 +912,30 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_a.jpg',
+                  src: 'show-cases/05_sports_content/sports_content_am_a.png',
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_b.jpg',
+                  src: 'show-cases/05_sports_content/sports_content_am_b.png',
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_c.jpg',
+                  src: 'show-cases/05_sports_content/sports_content_am_c.png',
+                  subline: ''
+                },
+                {
+                  type: 'img',
+                  settings: {},
+                  src: 'show-cases/05_sports_content/sports_content_am_d.png',
+                  subline: ''
+                },
+                {
+                  type: 'img',
+                  settings: {},
+                  src: 'show-cases/05_sports_content/sports_content_am_e.png',
                   subline: ''
                 }
               ]
@@ -1067,9 +1083,7 @@ Vue.mixin({
               clients: [
                 'Sportplan GmbH'
               ],
-              partners: [
-                ''
-              ],
+              partners: [],
               media: [
                 {
                   type: 'img',
@@ -1119,9 +1133,7 @@ Vue.mixin({
               clients: [
                 'cip marketing GmbH'
               ],
-              partners: [
-                ''
-              ],
+              partners: [],
               media: [
                 {
                   type: 'img',
@@ -1178,18 +1190,30 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_a.jpg',
+                  src: 'show-cases/05_sports_content/sports_content_am_a.png',
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_b.jpg',
+                  src: 'show-cases/05_sports_content/sports_content_am_b.png',
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_c.jpg',
+                  src: 'show-cases/05_sports_content/sports_content_am_c.png',
+                  subline: ''
+                },
+                {
+                  type: 'img',
+                  settings: {},
+                  src: 'show-cases/05_sports_content/sports_content_am_d.png',
+                  subline: ''
+                },
+                {
+                  type: 'img',
+                  settings: {},
+                  src: 'show-cases/05_sports_content/sports_content_am_e.png',
                   subline: ''
                 }
               ]

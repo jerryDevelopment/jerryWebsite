@@ -33,6 +33,7 @@ Vue.mixin({
       this.getWindowHeightAndWidth()
     })
     this.getWindowHeightAndWidth()  
+    this.handleScroll()
   },
   destroyed () {
     if (process.browser) { 

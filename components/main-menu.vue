@@ -4,15 +4,19 @@
       <ul class="pad-lr-2 pad-tb-7 align-right">
         <li @click="closeMenu();" v-scroll-to="'#who'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.about"></li>
         <ul>
-          <li @click="closeMenu();" v-scroll-to="'#who'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.who"></li>
-          <li @click="closeMenu();" v-scroll-to="'#why'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.why"></li>
-          <li @click="closeMenu();" v-scroll-to="'#how'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.how"></li>
-          <li @click="closeMenu();" v-scroll-to="'#what'" class="menu-link text-m mar-b-0-5 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.what"></li>
+          <li @click="closeMenu();" v-scroll-to="'#who'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whoJerry : navigationCurrentLanguage.menuLinks.whoJerryDigital"></li>
+          <li @click="closeMenu();" v-scroll-to="'#why'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whyJerry : navigationCurrentLanguage.menuLinks.whyJerryDigital"></li>
+          <li @click="closeMenu();" v-scroll-to="'#how'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.howJerry : navigationCurrentLanguage.menuLinks.howJerryDigital"></li>
+          <li @click="closeMenu();" v-scroll-to="'#what'" class="menu-link text-m mar-b-0-5 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whatJerry : navigationCurrentLanguage.menuLinks.whatJerryDigital"></li>
         </ul>
-        <li @click="closeMenu();" v-scroll-to="'#jerry-digital'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigation.menuLinks.jerryDigital" v-if="isIndex"></li>
+        <li @click="closeMenu();" class="menu-link text-menu mar-b-0-25 c-white pointer" v-if="isIndex">
+          <nuxt-link :to="localePath('digital')" v-html="navigation.menuLinks.jerryDigital"></nuxt-link>
+        </li>
         <li @click="closeMenu();" v-scroll-to="'#references'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.references" v-if="isIndex"></li>
         <li @click="closeMenu();" v-scroll-to="'#show-cases'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigation.menuLinks.showCases" v-if="!isIndex"></li>
-        <li @click="closeMenu();" v-scroll-to="'#jerry-consulting'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigation.menuLinks.jerryConsulting" v-if="!isIndex"></li>
+        <li @click="closeMenu();" class="menu-link text-menu mar-b-0-25 c-white pointer" v-if="!isIndex">
+          <nuxt-link :to="localePath('index')" v-html="navigation.menuLinks.jerryConsulting"></nuxt-link>
+        </li>
         <li @click="closeMenu();" v-scroll-to="'#contact'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.contact"></li>
         <li class="mar-t-5">
           <a :href="navigation.socialLinks.facebook"><svg class="social-icon mar-l-0-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">

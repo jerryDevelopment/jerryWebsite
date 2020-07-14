@@ -201,7 +201,7 @@ export default {
   head() {
     return {
       bodyAttrs: {
-        class: !this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState ? 'of-hidden' : ''
+        class: (!this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState) && !this.isReload ? 'of-hidden' : ''
       },
       title: 'Jerry',
       meta: [
@@ -261,7 +261,8 @@ export default {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
       selectedResult: {},
       popUpIsActive: false,
-      backgroundImageChangePosition: 0
+      backgroundImageChangePosition: 0,
+      isReload: false
     }
   },
   methods: {
@@ -293,6 +294,12 @@ export default {
     }
   },
   mounted() {
+
+    if (performance.navigation.type == 1) {
+      this.isReload = true
+      $nuxt.$emit('changeSplitScreen', 'index')
+    }
+
     window.addEventListener('resize', ()=>{
       this.getbackgroundImageChangePosition()
       this.setSwitchState()

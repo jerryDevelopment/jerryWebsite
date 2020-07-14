@@ -1,6 +1,6 @@
 <template>
   <transition name="fast-fade">
-    <div v-if="popUpIsActive" class="screen fixed bg-white-trans" style="z-index: 20;">
+    <div v-if="popUpIsActive" :class="'screen fixed' + ( isIndex ? ' bg-white-trans' : ' bg-black-trans' )" style="z-index: 20;">
       <div :class="'pop-up fixed' + backgroundColorClass">
         <div class="cor-tr pad-a-2" style="z-index: 2;">
           <button type="button" @click="close()">
