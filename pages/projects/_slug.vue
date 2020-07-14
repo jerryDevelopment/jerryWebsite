@@ -78,24 +78,24 @@ export default {
       }
     }
   },
-  transition (to, from) {
-    if(from.name == 'digital___de' || from.name == 'digital___en'){
-      return {
-        name: 'fast-fade',
-        mode: 'out-in'
-      }
-    } else if(to.name == 'digital___de' || to.name == 'digital___en'){
-      return {
-        name: 'fast-fade',
-        mode: 'out-in'
-      }
-    } else {
-      return {
-        name: 'fast-fade',
-        mode: 'out-in'
-      }
-    }
-  },
+  // transition (to, from) {
+  //   if(from.name == 'digital___de' || from.name == 'digital___en'){
+  //     return {
+  //       name: 'fast-fade',
+  //       mode: 'out-in'
+  //     }
+  //   } else if(to.name == 'digital___de' || to.name == 'digital___en'){
+  //     return {
+  //       name: 'fast-fade',
+  //       mode: 'out-in'
+  //     }
+  //   } else {
+  //     return {
+  //       name: 'fast-fade',
+  //       mode: 'out-in'
+  //     }
+  //   }
+  // },
   nuxtI18n: {
     paths: {
       de: '/projekte/:slug',
