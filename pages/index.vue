@@ -86,9 +86,9 @@
         </div>   
       </div>
       <div v-if="(index + 1) % 2 == 0" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
-        <img v-if="index == 1" class="obj-fit-cover" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1" v-lazy-load>
-        <img v-if="index == 3" class="obj-fit-cover" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2" v-lazy-load>
-        <img v-if="index == 5" class="obj-fit-cover" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3" v-lazy-load>
+        <img v-if="index == 1" class="obj-fit-cover" style="height: 110%; top: -5%;" :src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1">
+        <img v-if="index == 3" class="obj-fit-cover" style="height: 110%; top: -5%;" :src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2">
+        <img v-if="index == 5" class="obj-fit-cover" style="height: 110%; top: -5%;" :src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3">
       </div>
     </div>
     <div class="c-frame bg-grey-5">
