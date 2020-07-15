@@ -55,19 +55,19 @@ Vue.mixin({
         de: {
           welcomeMessage: 'hallo, wir sind',
           leftTagLine: 'sports business<br>consultants',
-          leftText: 'Wir liefern <span class="c-yellow">Strategien</span><br>in Zeiten der Veränderung',
+          leftText: 'Wir liefern <span class="c-yellow">Strategien</span><br>in Zeiten der Veränderung.',
           leftTextScrollDownButton: 'sports business consultants',
           rightTagLine: 'sports business<br>solutions',
-          rightText: 'Wir liefern digitale <span class="c-blue">Lösungen</span><br>in Zeiten der Veränderung',
+          rightText: 'Wir liefern digitale <span class="c-blue">Lösungen</span><br>in Zeiten der Veränderung.',
           rightTextScrollDownButton: 'sports business solutions'
         },
         en: {
           welcomeMessage: 'hi, we are',
           leftTagLine: 'sports business<br>consultants',
-          leftText: 'We deliver <span class="c-yellow">strategies</span><br>in times of change',
+          leftText: 'We deliver <span class="c-yellow">strategies</span><br>in times of change.',
           leftTextScrollDownButton: 'sports business consultants',
           rightTagLine: 'sports business<br>solutions',
-          rightText: 'We deliver digital <span class="c-blue">solutions</span><br>in times of change',
+          rightText: 'We deliver digital <span class="c-blue">solutions</span><br>in times of change.',
           rightTextScrollDownButton: 'sports business solutions'
         }
       },
@@ -98,7 +98,7 @@ Vue.mixin({
           street: 'Tengstrasse 24',
           city: '80798 München',
           phone: '+49 89 443 806 00',
-          email: 'hallo@jerrydigital.de',
+          email: 'hallo@wirsindjerry.de',
           gmapLink: 'https://goo.gl/maps/EpxWU13cYdfdVeka7'
         },
         de: {
@@ -286,7 +286,7 @@ Vue.mixin({
             sectionDigital: {
               headline: 'Der Partner für’s Digitale.',
               text: [
-                'Sämtlich Strategien und Lösungen müssen digital mitgedacht und umgesetzt werden Deshalb gibt es <a href="/digital" class="c-blue">Jerry Digital.</a>',
+                'Sämtliche Strategien und Lösungen müssen digital mitgedacht und umgesetzt werden Deshalb gibt es <a href="/digital" class="c-blue">Jerry Digital.</a>',
                 'Dabei bündeln wir das Know-how zahlreicher Experten, sind ganz nah dran an den neuesten digitalen Entwicklungen und Trends und verstehen es mit schlanken Projektaufstellungen begeisternde Erlebnisse zu schaffen.',
               ]
             },
@@ -473,7 +473,7 @@ Vue.mixin({
         de: {
           whoJerryDigital: {
             headline: 'Wer ist Jerry Digital?',
-            text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen Kompetenzen und Kapazitäten zu.'
+            text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen IT-Kompetenzen und Entwickler-Kapazitäten zu.'
           },
           whyJerryDigital: {
             headline: 'Warum Jerry Digital?',
@@ -525,7 +525,7 @@ Vue.mixin({
                   text: 'Softwareentwicklung ist immer Mittel zum Zweck. Als Sport-Business Experten verfügen wir über das Verständnis für Prozesse, Zielgruppen sowie deren Nutzerverhalten und kombinieren dieses mit Entwickler-Kompetenz. Jerry Digital liefert komplexe Management-Systeme für die Planung, Steuerung und Verwaltung der jeweiligen Business- oder Kommunikationsanforderung.',
                 }, {
                   img: 'icon_jerrydigital_leistungen_04.svg',
-                  title: 'Showreels,Trailer und Clips',
+                  title: 'Showreels, Trailer und Clips',
                   text: 'Die Welt des Sports liefert einzigartige emotionale Geschichten und Möglichkeiten, die es gilt, zielgerichtet aufzubereiten und der Zielgruppe bereitzustellen. Jerry Digital konzipiert, produziert und distribuiert individuelle digitale Contentformate - wie immer, gemeinsam mit den adäquaten Spezialisten.',
                 }, {
                   img: 'icon_jerrydigital_leistungen_05.svg',
@@ -553,7 +553,7 @@ Vue.mixin({
             sectionSportsBusinessConsultants: {
               headline: 'Sports Business Consultants',
               text: [
-                '<span class="c-blue">Jerry Digital</span> setzt beim Sportbusiness dort an, wo eine konkrete digitale Lösungen benötigt wird.',
+                '<span class="c-blue">Jerry Digital</span> setzt beim Sportbusiness dort an, wo eine konkrete digitale Lösung benötigt wird.',
                 'Doch damit ist bei Jerry nicht Schluss... für allgemeine Beratungsfragen im Bereich des Sportbusiness, die über einzelne digitale Lösungen weit hinaus gehen, haben wir mit <a href="/" class="c-yellow">Jerry – Sports Business Consultants</a> die passende Antwort.',
               ]
             }
@@ -684,7 +684,7 @@ Vue.mixin({
                 'Wir selbst'
               ],
               partners: [
-                'RedaktionNetzwerk Deutschland und #GABFAF'
+                'RedaktionsNetzwerk Deutschland und #GABFAF'
               ],
               media: [
                 {
@@ -712,7 +712,7 @@ Vue.mixin({
                 src: 'show-cases/02_sports_tracking/sports_tracking_hero_loop.mp4',
                 posterSrc: ''
               },
-              headline: 'Wo ist Horst',
+              headline: 'Wo ist Horst?',
               infoText: [
                 {
                   headline: 'WHY - Was hat uns angetrieben?',
@@ -720,11 +720,11 @@ Vue.mixin({
                 },
                 {
                   headline: 'HOW - Wie sind wir mit den Herausforderungen umgegangen?',
-                  text: 'Unser Part war die Entwicklung einer responsiven Web-Plattform, welche sowohl für die Daheimgebliebenen als auch für die Fans an der Strecke funktioniert. Zudem sollte die Anwendung durch eine integrierte SOS Funktion der Sicherheit der Athleten dienen. Und natürlich musste die Plattform für weitere Events adaptierbar sein. Es gab also gleich mehrere Herausforderungen:<br><br><ul><li>Anlegen individueller Streckenführungen - auch durch Wald und Wiese</li><li>Ausgleich von GPS Schwankungen für eine laufruhige Darstellung</li><li>Anwendbarkeit für Einzelstarter und Staffeln</li><li>Kurzfristige Anpassungsfähigkeit von Strecken- oder Teilnehmerdaten im CMS</li><li>Der eigene Anspruch: Bestmögliches Infotainment für die Nutzer</li></ul><br>Da die verfügbaren Kartendienste die Projektanforderungen nicht ab deckten, entwickelten wir eine Methode zur Interpolation ortsbezogener Daten auf benutzerdefinierten Strecken (Track Matching), die es uns ermöglichte, notwendige Businesslogiken, wie Kontrollpunkte, Rundenerfassung, Signalverlustbereiche usw. zu integrieren. Da es sich um ein Prototypen-Projekt unter hohem Zeitdruck handelte, sind wir iterativ und in ständiger Abstimmung mit den Hardware-Entwicklern und der Deutschen Telekom vorgegangen.'
+                  text: 'Unser Part war die Entwicklung einer responsiven Web-Plattform, welche sowohl für die Daheimgebliebenen als auch für die Fans an der Strecke funktioniert. Zudem sollte die Anwendung durch eine integrierte SOS Funktion der Sicherheit der Athleten dienen. Und natürlich musste die Plattform für weitere Events adaptierbar sein. Es gab also gleich mehrere Herausforderungen:<br><br><ul><li>Anlegen individueller Streckenführungen - auch durch Wald und Wiese</li><li>Ausgleich von GPS Schwankungen für eine laufruhige Darstellung</li><li>Anwendbarkeit für Einzelstarter und Staffeln</li><li>Kurzfristige Anpassungsfähigkeit von Strecken- oder Teilnehmerdaten im CMS</li><li>Der eigene Anspruch: Bestmögliches Infotainment für die Nutzer</li></ul><br>Da die verfügbaren Kartendienste die Projektanforderungen nicht abdeckten, entwickelten wir eine Methode zur Interpolation ortsbezogener Daten auf benutzerdefinierten Strecken (Track Matching), die es uns ermöglichte, notwendige Businesslogiken, wie Kontrollpunkte, Rundenerfassung, Signalverlustbereiche usw. zu integrieren. Da es sich um ein Prototypen-Projekt unter hohem Zeitdruck handelte, sind wir iterativ und in ständiger Abstimmung mit den Hardware-Entwicklern und der Deutschen Telekom vorgegangen.'
                 },
                 {
                   headline: 'WHAT - Was war das Ergebnis?',
-                  text: 'Das Ergebnis war ein erfolgreicher Einsatz im Rahmen der Challenge Roth 2016 mit der Premiere einer responsiven Infotainment-Anwendung, die zusätzlich zu der Athletenvisualisierung renn-relevante Daten wie Geschwindigkeit, Position, Rundennummer, Entfernungen zum Ziel/Führenden/Vordermann, Netzwerk-/GPS-Signalstärke und SOS-Position live anzuzeigen konnte.'
+                  text: 'Das Ergebnis war ein erfolgreicher Einsatz im Rahmen der Challenge Roth 2016 mit der Premiere einer responsiven Infotainment-Anwendung, die zusätzlich zu der Athletenvisualisierung renn-relevante Daten wie Geschwindigkeit, Position, Rundennummer, Entfernungen zum Ziel/Führenden/Vordermann, Netzwerk-/GPS-Signalstärke und SOS-Position live anzeigen konnte.'
                 }
               ],
               clients: [
@@ -982,7 +982,7 @@ Vue.mixin({
                 src: 'show-cases/02_sports_tracking/sports_tracking_hero_loop.mp4',
                 posterSrc: ''
               },
-              headline: 'Where is Horst',
+              headline: 'Where is Horst?',
               infoText: [
                 {
                   headline: 'WHY—What has driven us?',
@@ -1211,9 +1211,6 @@ Vue.mixin({
           <p><strong>Vertreten durch:</strong><br>
           Thomas Wagner</p>
 
-          <p><strong>Vorsitzender des Aufsichtsrats:</strong><br>
-          Richard Amtmann</p>
-
           <h2>Kontakt</h2>
           <p>Telefon: +49 89 443 806 00<br>
           Telefax: +49 89 443 806 02<br>
@@ -1244,9 +1241,6 @@ Vue.mixin({
 
           <p><strong>Represented by:</strong><br>
           Thomas Wagner</p>
-
-          <p><strong>Chairman, supervisory board:</strong><br>
-          Richard Amtmann</p>
 
           <h2>Contact</h2>
           <p>Phone: +49 89 443 806 00<br>

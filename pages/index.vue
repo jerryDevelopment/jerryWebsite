@@ -68,7 +68,7 @@
     </div>
     <div class="c-frame" id="how">
       <div class="c-area bg-grey-5">
-        <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-3 align-center">
+        <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 align-center">
           <h2 class="text-xxl mar-b-0-33 mar-resp-4-b-1 c-grey-1" v-html="frontPageCurrentLanguage.howJerry.headline"></h2>
           <p class="text-l c-grey-1" v-html="frontPageCurrentLanguage.howJerry.subline"></p>
         </div>

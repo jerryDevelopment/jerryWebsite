@@ -27,7 +27,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-12 pad-resp-4-t-8 align-center">
           <h2 class="text-xl mar-b-0-66 mar-resp-4-b-1 c-white" v-html="digitalPageCurrentLanguage.howJerryDigital.headline"></h2>
         </div>
-        <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-b-9 pad-resp-4-b-1 align-center">
+        <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-b-3 align-center">
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.howJerryDigital.subline"></p>
         </div>
       </div>
