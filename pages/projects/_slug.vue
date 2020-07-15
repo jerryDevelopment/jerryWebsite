@@ -32,17 +32,17 @@
               <p class="text-s c-grey-4 mar-b-3" v-html="textFormated(text.text)"></p>
             </div>
             <div class="col col-unit-12 pad-t-2 pad-b-4 float-left" v-if="isResp2 || isResp3 || isResp4">
-              <div v-for="(image, index) in projectCurrentLanguage.images" :key="index">
+
+              <div v-for="(media, index) in projectCurrentLanguage.media" :key="index">
                 <div class="media-container">
                   <img v-if="media.type == 'img'" class="inline" :data-src="staticMediaSrcBase + 'images/' + media.src" v-lazy-load>
                   <video v-else :autoplay="media.settings.autoplay" :loop="media.settings.loop" :muted="media.settings.muted" :controls="media.settings.controls" playinline class="inline">
                     <source :src="staticMediaSrcBase + 'images/' + media.src"/>
                   </video>
                 </div>
-                <div class="col col-unit-12 pad-resp-4-lr-1">
-                  <p class="text-xs c-grey-4 mar-t-0-5 mar-b-1" v-html="image.subline ? image.subline : '&nbsp;'"></p>
-                </div>
+                <p class="text-xs c-grey-4 mar-t-0-5 mar-b-1" v-html="media.subline ? media.subline : '&nbsp;'"></p>
               </div>
+
             </div>
             <div class="col col-unit-12 pad-resp-4-lr-1 pad-t-2" v-if="projectCurrentLanguage.clients.length > 0">
               <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.clientsHeadline"></h4>
