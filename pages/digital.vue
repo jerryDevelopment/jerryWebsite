@@ -125,7 +125,7 @@
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-1-5 float-left">
               <p class="text-xs c-grey-4" v-html="project.teaser"></p>
-              <nuxt-link class="text-xs c-grey-4 float-right mar-t-1" :to="( $i18n.locale == 'de' ? '/projekte/' : 'projects/' ) + project.url" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
+              <nuxt-link class="text-xs c-grey-4 float-right mar-t-1" :to="( $i18n.locale == 'de' ? '/projekte/' : '/en/projects/' ) + project.url" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
             </div>
           </div>
           <div class="col col-unit-12" v-else>
@@ -138,7 +138,7 @@
               <h4 class="text-l c-white" v-html="project.title"></h4>
               <h5 class="text-xs c-grey-4 mar-b-2 mar-resp-4-b-2" v-html="project.subline"></h5>
               <p class="text-xs c-grey-4" v-html="project.teaser"></p>
-              <nuxt-link class="text-xs c-grey-4 float-right mar-t-1" :to="( $i18n.locale == 'de' ? '/projekte/' : 'projects/' ) + project.url" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
+              <nuxt-link class="text-xs c-grey-4 float-right mar-t-1" :to="( $i18n.locale == 'de' ? '/projekte/' : '/en/projects/' ) + project.url" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
             </div>
           </div>
         </div>
