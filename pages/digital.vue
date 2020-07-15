@@ -18,7 +18,7 @@
           <div class="media-container media-container-diagram media-container-diagram-2 w-per-75 mar-t-5 mar-b-3-5">
             <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital">
           </div>
-          <p class="text-s c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.subline"></p>
+          <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.subline"></p>
         </div>
       </div>
     </div>

@@ -683,9 +683,15 @@ Vue.mixin({
               teaser: 'Wie generieren wir hohe Aufmerksamkeit, große Interaktionsraten und bestmögliches Verbreitungspotenzial? Wir entwickeln Augmented Reality Filter und Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.',
               indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.png',
               introMedia: {
-                type: 'img',
-                settings: {},
-                src: 'show-cases/01_sports_social_ar/AR_game_hero.png'
+                type: 'video',
+                settings: {
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false
+                },
+                src: 'show-cases/01_sports_social_ar/AR_game_video.mp4',
+                posterSrc: ''
               },
               headline: '50 Jahre Elfmeterschießen für den guten Zweck',
               infoText: [
@@ -708,6 +714,11 @@ Vue.mixin({
               ],
               media: [
                 {
+                  type: 'img',
+                  settings: {},
+                  src: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+                  subline: ''
+                },{
                   type: 'img',
                   settings: {},
                   src: 'show-cases/01_sports_social_ar/AR_game_iphone.png',
@@ -972,9 +983,15 @@ Vue.mixin({
               teaser: 'How do we generate high attention, high interaction rates and the best possible dissemination potential? We develop augmented reality filters and games that work within social media platforms and via web links.',
               indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.png',
               introMedia: {
-                type: 'img',
-                settings: {},
-                src: 'show-cases/01_sports_social_ar/AR_game_hero.png'
+                type: 'video',
+                settings: {
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false
+                },
+                src: 'show-cases/01_sports_social_ar/AR_game_video.mp4',
+                posterSrc: ''
               },
               headline: '50 years of penalty shootout for good purpose',
               infoText: [
@@ -1000,8 +1017,13 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
+                  src: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+                  subline: ''
+                },{
+                  type: 'img',
+                  settings: {},
                   src: 'show-cases/01_sports_social_ar/AR_game_iphone.png',
-                  subline: 'Bildunterschrift'
+                  subline: ''
                 }
               ]
             },
