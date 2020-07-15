@@ -59,22 +59,12 @@ export default {
         name: (this.$route.name.split('___')[0] + '___de')
       }
 
-      if(this.$route.params && this.$route.params.slug) {
-        localeDeLinkOptions.params = {}
-        localeDeLinkOptions.params.slug = 'zweites-projekt'
-      }
-
       return localeDeLinkOptions
     },
     localeEnLinkOptions: function(){
 
       let localeEnLinkOptions = {
         name: (this.$route.name.split('___')[0] + '___en')
-      }
-
-      if(this.$route.params && this.$route.params.slug) {
-        localeEnLinkOptions.params = {}
-        localeEnLinkOptions.params.slug = 'second-project'
       }
 
       return localeEnLinkOptions
