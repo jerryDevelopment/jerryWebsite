@@ -203,9 +203,9 @@ export default {
       bodyAttrs: {
         class: (!this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState) && !this.isReload ? 'of-hidden' : ''
       },
-      title: 'Jerry',
+      title: this.frontPageCurrentLanguage.meta.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'Jerry bildet, stärkt und pflegt Beziehungen auf Grundlage der emotionalen Strahlkraft des Sports.' },
+        { name: 'description', content: this.frontPageCurrentLanguage.meta.description },
         { name: "application-name", content: "Jerry" },
         { name: "mobile-web-app-capable", content: "yes" },
         { name: "apple-mobile-web-app-capable", content: "yes" },

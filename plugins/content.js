@@ -138,6 +138,10 @@ Vue.mixin({
         ],
         referencesLogoEsb: 'logo_esb.svg',
         de: {
+          meta: {
+            title: 'Jerry | Deine persönlichen Sports Business Berater',
+            description: 'Jerry ist Dein Change Begleiter im Sport-Business - von der Strategie über personelle Erweiterung bis hin zur Kooperationsakquise.'
+          },
           partners: {
             list: [
               { 
@@ -302,6 +306,10 @@ Vue.mixin({
           }
         },
         en: {
+          meta: {
+            title: 'Jerry | Your personal Sports Business Consultants',
+            description: 'Jerry is your change consultant in sports business - from strategy and personnel expansion to cooperation acquisition.'
+          },
           partners: {
             list: [
               { 
@@ -471,6 +479,10 @@ Vue.mixin({
         imgWhatSportsBusinessConsultants: 'jerrydigital_jerry_teaser_2880x1250px.jpg',
         imgWhatSportsBusinessConsultantsResp4: 'jerrydigital_jerry_teaser_mobil_1440x1440px.jpg',
         de: {
+          meta: {
+            title: 'Jerry | Deine persönlichen Sports Technology Berater',
+            description: 'Jerry Digital verbindet Sportbusiness mit medien-technologischem Know-How und begleitet Kommunikationsprojekte vom Konzept bis hin zur finalen Umsetzung.'
+          },
           whoJerryDigital: {
             headline: 'Wer ist Jerry Digital?',
             text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen IT-Kompetenzen und Entwickler-Kapazitäten zu.'
@@ -560,6 +572,10 @@ Vue.mixin({
           }
         },
         en: {
+          meta: {
+            title: 'Jerry | Your personal Sports Technology Consultants',
+            description: 'Jerry Digital combines sports business with media technology know-how and supports communication projects from concept to final implementation.'
+          },
           whoJerryDigital: {
             headline: 'Who is Jerry Digital?',
             text: 'We are affiliated under company law with Medientools Solutions GmbH and thus have access to the necessary expertise and capacities at all times.'
@@ -657,6 +673,10 @@ Vue.mixin({
           partnersHeadline: 'In Kooperation mit',
           list: [
             {
+              meta: {
+                title: 'Jerry | Social Media AR Sports Game und Filter',
+                description: 'Jerry Digital entwickelt Augmented Reality Filter und Sport Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.'
+              },
               url: 'sports-extended-reality',
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
@@ -696,6 +716,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Sport Tracking Software und Anwendungen',
+                description: 'Jerry Digital entwickelt responsive, web-basierten Sports-Tracking Live Anwendungen mit integrierter SOS Funktion für die Athleten.'
+              },
               url: 'sports-technology',
               title: 'Sport Technologie',
               subline: 'Triathlon Live-Tracking',
@@ -754,6 +778,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Digitale interaktive 3D Präsentation für Visionen im Sport',
+                description: 'Innovative Showcase einer Sportanlage  als Web-Präsentation und 3D Facility-Walkthrough'
+              },
               url: 'sport-visions',
               title: 'Sport Visionen',
               subline: 'Digitale interaktive Präsentations-Plattform',
@@ -810,6 +838,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Sport Business Management Software und Anwendungen',
+                description: 'Jerry Digital entwickelt modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen für Prozess-Optimierung im Sport Business.'
+              },
               url: 'sport-management-applications',
               title: 'Sport Management Anwendungen',
               subline: 'IT-Systementwicklung',
@@ -854,6 +886,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Digitale Bewegtbild Konzepte im Sport',
+                description: 'Jerry Digital bündelt Markenkompetenz, Plattform-Know-how, Zugriff auf Protagonisten sowie effiziente Produktion und kreiert multifunktionale digitale Produkte.'
+              },
               url: 'sports-content',
               title: 'Sport Content',
               subline: 'Digitaler Image Clip',
@@ -926,6 +962,10 @@ Vue.mixin({
           partnersHeadline: 'In Cooperation with',
           list: [
             {
+              meta: {
+                title: 'Jerry | Social media AR sports game and filter',
+                description: 'Jerry Digital develops augmented reality filters and sports games that work within social media platforms and via web links.'
+              },
               url: 'sports-extended-reality',
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
@@ -966,6 +1006,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Sports Tracking Software and Applications',
+                description: 'Jerry Digital develops responsive, web-based sports tracking live applications with integrated SOS functionality for the athletes.'
+              },
               url: 'sports-technology',
               title: 'Sports Technology',
               subline: 'Triathlon Live-Tracking',
@@ -1024,6 +1068,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Digital interactive 3D presentation for visions in sports',
+                description: 'Innovative showcase of a sports facility as a web presentation and 3D facility walkthrough'
+              },
               url: 'sport-visions',
               title: 'Sport Visions',
               subline: 'Digital interactive presentation platform',
@@ -1080,6 +1128,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Sports Business Management Software and Applications',
+                description: 'Jerry Digital develops modular, scalable and solution-oriented IT systems and applications for process optimization in the sports business.'
+              },
               url: 'sport-management-applications',
               title: 'Sport Management Applications',
               subline: 'IT system development',
@@ -1124,6 +1176,10 @@ Vue.mixin({
               ]
             },
             {
+              meta: {
+                title: 'Jerry | Digital video concepts in sports',
+                description: 'Jerry Digital combines brand expertise, platform know-how, access to protagonists and efficient production to create multifunctional digital products.'
+              },
               url: 'sports-content',
               title: 'Sports Content',
               subline: 'Digital Image Clip',

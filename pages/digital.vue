@@ -164,9 +164,9 @@ export default {
       bodyAttrs: {
         class: (!this.$store.state.splitScreenActiveState || this.$store.state.splitScreenAnimationState) && !this.isReload ? 'of-hidden bg-black' : 'bg-black',
       },
-      title: 'Jerry Digital',
+      title: this.digitalPageCurrentLanguage.meta.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'Jerry bildet, stärkt und pflegt Beziehungen auf Grundlage der emotionalen Strahlkraft des Sports.' },
+        { name: 'description', content: this.digitalPageCurrentLanguage.meta.description },
         { name: 'application-name', content: 'Jerry Digital' },
         { name: 'mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
