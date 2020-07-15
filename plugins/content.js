@@ -1036,7 +1036,7 @@ Vue.mixin({
               title: 'Sports Technology',
               subline: 'Triathlon Live-Tracking',
               teaser: 'To make endurance sports events experienceable from a distance and at the same time optimise the safety of the athletes - is that possible? Yes, by developing a responsive, web-based sports tracking application with integrated SOS function for the athletes.',
-              indexImg: 'placeholder-2-1.jpg',
+              indexImg: 'show-cases/02_sports_tracking/sports_tracking_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1098,7 +1098,7 @@ Vue.mixin({
               title: 'Sport Visions',
               subline: 'Digital interactive presentation platform',
               teaser: 'How do we present something that does not yet exist? We collect facts, create the story, visualize it in a contemporary way and bundle the content digitally, interactively and web-based.',
-              indexImg: 'placeholder-2-1.jpg',
+              indexImg: 'show-cases/03_sports_visions/sports_visions_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1158,7 +1158,7 @@ Vue.mixin({
               title: 'Sport Management Applications',
               subline: 'IT system development',
               teaser: 'Even essential in sports business - how can processes be optimized sustainably? We develop modular, scalable and solution-oriented IT systems and applications.',
-              indexImg: 'placeholder-2-1.jpg',
+              indexImg: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png',
               introMedia: {
                 type: 'img',
                 settings: {},
@@ -1206,7 +1206,7 @@ Vue.mixin({
               title: 'Sports Content',
               subline: 'Digital Image Clip',
               teaser: 'Creating an emotional means of communication with maximum efficiency in the shortest possible time - how is that possible? We bundle brand competence, platform know-how, direct access to protagonists as well as targeted hands-on production and create multifunctional digital products out of it.',
-              indexImg: 'placeholder-2-1.jpg',
+              indexImg: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
                 settings: {

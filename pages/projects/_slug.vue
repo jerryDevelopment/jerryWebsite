@@ -175,7 +175,7 @@ export default {
         loop: media.settings.loop,
         autoplay: media.settings.autoplay,
         controls: media.settings.controls,
-        playinline: true,
+        playsinline: true,
         fluid: true,
         sources: [{
           type: "video/mp4",
