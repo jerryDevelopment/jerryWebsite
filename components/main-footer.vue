@@ -1,7 +1,7 @@
 <template>
   <div :class="'c-frame' + ( isIndex ? ' bg-yellow footer-index' : ' bg-grey-1 footer-digital')">
     <div class="c-area">
-      <div v-if="scrollPositionY > 0" class="col col-unit-12 pad-lr-0-75 align-center pad-resp-4-t-4 pad-b-6">
+      <div class="col col-unit-12 pad-lr-0-75 align-center pad-resp-4-t-4 pad-b-6">
         <svg v-if="isIndex" class="footer-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 342.81 235.16">
           <g>
             <path class="fill-white" d="M194.4,74.1V66.4H178.2v58.4h17V101.3c0-5.3.6-10.7,4.3-14.4,3.9-4.1,9.5-4.9,16.4-4.1V66.2c-8.1-1.3-16.1,1.2-21.5,7.9" transform="translate(-28.59 17.58)"/>

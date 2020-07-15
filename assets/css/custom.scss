@@ -167,6 +167,20 @@
 
 }
 
+
+/*--- video js -----------------------*/
+/*--- lazy load ----------------------*/
+
+
+.lazyLoad {
+  opacity: 0;
+  transition: opacity .2
+}
+
+.lazyLoad.isLoaded {
+ opacity: 1
+}
+
 /*--- video js -----------------------*/
 
 .vjs-big-play-button {

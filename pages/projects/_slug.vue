@@ -3,7 +3,7 @@
     <div class="c-frame bg-black">
       <div class="c-area pad-t-4 pad-b-6 pad-resp-2-b-1">
         <div class="media-container">
-          <img v-if="projectCurrentLanguage.introMedia.type == 'img'" class="inline" :src="staticMediaSrcBase + 'images/' + projectCurrentLanguage.introMedia.src">
+          <img v-if="projectCurrentLanguage.introMedia.type == 'img'" class="inline" :data-src="staticMediaSrcBase + 'images/' + projectCurrentLanguage.introMedia.src" v-lazy-load>
           <video-player v-else class="vjs-custom-skin vjs-big-play-centered inline" ref="videoPlayer" :options="videoOptions(projectCurrentLanguage.introMedia)"></video-player>
         </div>
       </div>
@@ -34,7 +34,7 @@
             <div class="col col-unit-12 pad-t-2 pad-b-4 float-left" v-if="isResp2 || isResp3 || isResp4">
               <div v-for="(image, index) in projectCurrentLanguage.images" :key="index">
                 <div class="media-container">
-                  <img v-if="media.type == 'img'" class="inline" :src="staticMediaSrcBase + 'images/' + media.src">
+                  <img v-if="media.type == 'img'" class="inline" :data-src="staticMediaSrcBase + 'images/' + media.src" v-lazy-load>
                   <video v-else :autoplay="media.settings.autoplay" :loop="media.settings.loop" :muted="media.settings.muted" :controls="media.settings.controls" playinline class="inline">
                     <source :src="staticMediaSrcBase + 'images/' + media.src"/>
                   </video>
@@ -57,7 +57,7 @@
         <div class="col col-notch float-left" v-if="!isResp2 && !isResp3 && !isResp4">
           <div v-for="(media, index) in projectCurrentLanguage.media" :key="index">
             <div class="media-container">
-              <img v-if="media.type == 'img'" class="inline" :src="staticMediaSrcBase + 'images/' + media.src">
+              <img v-if="media.type == 'img'" class="inline" :data-src="staticMediaSrcBase + 'images/' + media.src" v-lazy-load>
               <video v-else :autoplay="media.settings.autoplay" :loop="media.settings.loop" :muted="media.settings.muted" :controls="media.settings.controls" playinline class="inline">
                 <source :src="staticMediaSrcBase + 'images/' + media.src"/>
               </video>
