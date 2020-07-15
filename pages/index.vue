@@ -5,9 +5,9 @@
         <div class="col col-100">
           <div class="media-container">
             <picture class="inline">
-              <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
-              <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartnerResp4">
-              <img class="inline" :src="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
+              <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
+              <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartnerResp4">
+              <img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
             </picture>
           </div>
         </div>
@@ -43,7 +43,7 @@
           <p class="text-l c-white mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whyJerry.sectionIntro.text" :key="index" v-html="paragraph"></p>
         </div>
       </div>
-      <div class="media-container" v-if="isResp4"><img class="inline" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry" v-lazy-load></div>
+      <div class="media-container" v-if="isResp4"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry"></div>
     </div>
     <div class="c-frame bg-black" ref="bachgroundImageChangePoint">
       <div class="c-area c-area-m">
@@ -59,7 +59,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-b-11 align-center">
           <ul>
             <li class="pad-b-4 pad-resp-4-b-6" v-for="(listEntry, index) in frontPageCurrentLanguage.whyJerry.sectionAssets.list" :key="index">
-              <div class="media-container mar-b-3"><img class="asset-picto" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img" v-lazy-load></div>
+              <div class="media-container mar-b-3"><img class="asset-picto lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img"></div>
               <p class="text-l c-white" v-interpolation v-html="listEntry.text"></p>
             </li>
           </ul>
@@ -87,16 +87,16 @@
       </div>
       <div v-if="(index + 1) % 2 == 0" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
         <div class="bg-white" style="position: absolute; width: 100%; height: 110%; top: -5%; left: 0;">
-          <img v-if="index == 1" class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1" v-lazy-load>
-          <img v-if="index == 3" class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2" v-lazy-load>
-          <img v-if="index == 5" class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3" v-lazy-load>
+          <img v-if="index == 1" class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1">
+          <img v-if="index == 3" class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2">
+          <img v-if="index == 5" class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3">
         </div>
       </div>
     </div>
     <div class="c-frame bg-grey-5">
       <div class="c-area c-area-m">
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-13 pad-resp-4-b-6 align-center">
-          <div class="media-container"><img class="inline" :data-src="staticMediaSrcBase + 'images/pictograms/' + frontPage.pictogramHowJerry" v-lazy-load></div>
+          <div class="media-container"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + frontPage.pictogramHowJerry"></div>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
           <p class="text-l c-grey-1 mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whatJerry.sectionIntro.text1" :key="index" v-html="paragraph"></p>
         </div>
       </div>
-      <div class="media-container" v-if="isResp4"><img class="inline" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry" v-lazy-load></div>
+      <div class="media-container" v-if="isResp4"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry"></div>
     </div>
     <div class="c-frame bg-white">
       <div class="c-area c-area-m">
@@ -130,7 +130,7 @@
                 </svg>
               </button>
             </div>
-            <div class="media-container"><img class="w-per-50" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img" v-lazy-load></div>
+            <div class="media-container"><img class="w-per-50 lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img"></div>
             <span class="text-xs c-grey-3" v-html="listEntry.title"></span>
           </div>
         </div>
@@ -140,7 +140,7 @@
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-10 pad-resp-4-b-6 pad-b-12-5">
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-resp-4-b-4 float-left">
-            <div class="media-container"><img class="inline" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatReport" v-lazy-load></div>
+            <div class="media-container"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatReport"></div>
           </div>
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-2 float-left resp-4-align-center">
             <h3 class="text-m text-resp-4-m c-grey-1 mar-b-0-66" v-html="frontPageCurrentLanguage.whatJerry.sectionReport.headline"></h3>
@@ -159,9 +159,9 @@
         </div>
       </div>
       <picture class="obj-fit-cover">
-        <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
-        <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_mobil_1440x1440px.jpg'">
-        <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
+        <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
+        <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_mobil_1440x1440px.jpg'">
+        <img class="obj-fit-cover lazyload" :src="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
       </picture>
     </div>
     <div class="c-frame bg-black" id="references" ref="switchVisibleAreaEnd">
@@ -173,14 +173,14 @@
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-4 align-center">
           <div class="col col-20 col-resp-4-unit-6 pad-lr-1 pad-b-4 inline-block v-center" v-for="(logo, index) in frontPage.referencesLogos" :key="index">
             <div class="media-container">
-              <img class="inline" :data-src="staticMediaSrcBase + 'images/references/' + logo" v-lazy-load>
+              <img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/references/' + logo">
             </div>
           </div>
         </div>
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-4 align-center">
           <div class="col col-20 col-resp-4-unit-6 pad-lr-1 pad-b-4 inline-block v-center">
             <div class="media-container">
-              <img class="inline" :data-src="staticMediaSrcBase + 'images/references/' + frontPage.referencesLogoEsb" v-lazy-load>
+              <img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/references/' + frontPage.referencesLogoEsb">
             </div>
           </div>
         </div>
@@ -188,8 +188,8 @@
     </div>
     <contact></contact>
     <main-footer></main-footer>
-    <img v-if="scrollPositionY < backgroundImageChangePosition && !Resp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
-    <img v-if="scrollPositionY >= backgroundImageChangePosition && !Resp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
+    <img v-if="scrollPositionY < backgroundImageChangePosition && !isResp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
+    <img v-if="scrollPositionY >= backgroundImageChangePosition && !isResp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
   </section>
 </template>
 

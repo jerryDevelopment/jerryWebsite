@@ -168,18 +168,17 @@
 }
 
 
-/*--- video js -----------------------*/
 /*--- lazy load ----------------------*/
 
 
-// .lazyLoad {
-//   opacity: 0;
-//   transition: opacity .5
-// }
-
-// .lazyLoad.isLoaded {
-//  opacity: 1
-// }
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
 
 /*--- video js -----------------------*/
 

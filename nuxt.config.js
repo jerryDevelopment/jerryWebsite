@@ -100,7 +100,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend (config, { isDev, isClient, loaders: { vue } }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -109,10 +109,15 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
     }
   },
   plugins: [
     { src: '~/plugins/content', ssr: true },
+    { src: '~/plugins/lazysizes.client.js', ssr: false },
     { src: '~/plugins/vue-flickity', ssr: false },
     { src: '~/plugins/vue-instagram', ssr: false },
     { src: '~/plugins/vue-scrollto', ssr: true },
@@ -167,8 +172,7 @@ module.exports = {
       locales: ['de', 'en'],
       defaultLocale: 'de',
     }],
-    ['nuxt-interpolation'],
-    ['nuxt-lazy-load']
+    ['nuxt-interpolation']
   ],
   cookies: {
     necessary: [

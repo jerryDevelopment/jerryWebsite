@@ -5,7 +5,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-12 pad-resp-4-t-10 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.headline"></h2>
           <div class="media-container media-container-diagram media-container-diagram-1 w-per-100 mar-t-2 mar-b-4">
-            <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhoJerryDigital" v-lazy-load>
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhoJerryDigital">
           </div>
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.text"></p>
         </div>
@@ -16,7 +16,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.headline"></h2>
           <div class="media-container media-container-diagram media-container-diagram-2 w-per-75 mar-t-5 mar-b-3-5">
-            <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital" v-lazy-load>
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital">
           </div>
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.subline"></p>
         </div>
@@ -44,15 +44,15 @@
         </div>
       </div>
       <div v-if="(index + 1) % 2 == 0 && index != 5" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
-        <img v-if="index == 1" class="obj-fit-cover" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgHowJerryDigital1" v-lazy-load>
-        <img v-if="index == 3" class="obj-fit-cover" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgHowJerryDigital2" v-lazy-load>
+        <img v-if="index == 1" class="obj-fit-cover lazyload" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgHowJerryDigital1">
+        <img v-if="index == 3" class="obj-fit-cover lazyload" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgHowJerryDigital2">
       </div>
     </div>
     <div class="c-frame bg-grey-1">
       <div class="c-area c-area-m">
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-t-3 pad-b-4 align-center">
           <div class="media-container media-container-diagram media-container-diagram-3 w-per-100">
-            <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramHowJerryDigital" v-lazy-load>
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramHowJerryDigital">
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
                 </button>
               </div>
               <div class="media-container media-container-diagram media-container-diagram-4 w-per-50">
-                <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img" v-lazy-load>
+                <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img">
               </div>
               <p class="text-xs c-grey-4" v-html="listEntry.title"></p>
             </div>
@@ -102,9 +102,9 @@
         </div>
       </div>
       <picture class="obj-fit-cover">
-        <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants">
-        <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultantsResp4">
-        <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants" v-lazy-load>
+        <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants">
+        <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultantsResp4">
+        <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants">
       </picture>
     </div>
     <div class="c-frame bg-black" id="show-cases" ref="switchVisibleAreaEnd">
@@ -116,7 +116,7 @@
           <div class="col col-unit-12" v-if="index == 0">
             <div class="col col-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-b-3">
               <div class="media-container media-container-show-cases w-per-100">
-                <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + project.indexImg" v-lazy-load>
+                <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + project.indexImg">
               </div>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-r-1-5 float-left">
@@ -132,7 +132,7 @@
           <div class="col col-unit-12" v-else>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-r-1-5 pad-resp-4-b-3 float-left">
               <div class="media-container media-container-show-cases w-per-100">
-                <img class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + project.indexImg" v-lazy-load>
+                <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + project.indexImg">
               </div>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-1-5 float-left">
