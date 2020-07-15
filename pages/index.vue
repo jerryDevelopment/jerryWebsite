@@ -186,8 +186,8 @@
     </div>
     <contact></contact>
     <main-footer></main-footer>
-    <img v-if="scrollPositionY < backgroundImageChangePosition" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
-    <img v-else class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
+    <img v-if="scrollPositionY < backgroundImageChangePosition && !Resp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
+    <img v-if="scrollPositionY >= backgroundImageChangePosition && !Resp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
   </section>
 </template>
 
