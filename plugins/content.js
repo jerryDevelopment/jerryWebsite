@@ -887,7 +887,7 @@ Vue.mixin({
                   type: 'img',
                   settings: {},
                   src: 'show-cases/04_sports_management_tools/sports_management_tools_a.png',
-                  subline: 'Bildunterschrift'
+                  subline: ''
                 }, {
                   type: 'img',
                   settings: {},
@@ -1188,7 +1188,7 @@ Vue.mixin({
                   type: 'img',
                   settings: {},
                   src: 'show-cases/04_sports_management_tools/sports_management_tools_a.png',
-                  subline: 'Bildunterschrift'
+                  subline: ''
                 }, {
                   type: 'img',
                   settings: {},

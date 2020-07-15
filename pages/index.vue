@@ -7,7 +7,7 @@
             <picture class="inline">
               <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
               <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartnerResp4">
-              <img class="inline" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgPartner" v-lazy-load>
+              <img class="inline" :src="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
             </picture>
           </div>
         </div>
@@ -86,9 +86,11 @@
         </div>   
       </div>
       <div v-if="(index + 1) % 2 == 0" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
-        <img v-if="index == 1" class="obj-fit-cover" style="height: 110%; top: -5%;" :src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1">
-        <img v-if="index == 3" class="obj-fit-cover" style="height: 110%; top: -5%;" :src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2">
-        <img v-if="index == 5" class="obj-fit-cover" style="height: 110%; top: -5%;" :src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3">
+        <div class="bg-white" style="position: absolute; width: 100%; height: 110%; top: -5%; left: 0;">
+          <img v-if="index == 1" class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1" v-lazy-load>
+          <img v-if="index == 3" class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2" v-lazy-load>
+          <img v-if="index == 5" class="obj-fit-cover" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3" v-lazy-load>
+        </div>
       </div>
     </div>
     <div class="c-frame bg-grey-5">
@@ -159,7 +161,7 @@
       <picture class="obj-fit-cover">
         <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
         <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_mobil_1440x1440px.jpg'">
-        <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
+        <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
       </picture>
     </div>
     <div class="c-frame bg-black" id="references" ref="switchVisibleAreaEnd">
