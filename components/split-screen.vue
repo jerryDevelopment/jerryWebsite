@@ -564,6 +564,7 @@ export default {
   clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
 }
 
+.split-screen-container > .edge-t,
 .split-screen-left > .screen,
 .split-screen-right > .screen {
   pointer-events: none;
