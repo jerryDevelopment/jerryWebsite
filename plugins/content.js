@@ -681,7 +681,7 @@ Vue.mixin({
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
               teaser: 'Wie generieren wir hohe Aufmerksamkeit, große Interaktionsraten und bestmögliches Verbreitungspotenzial? Wir entwickeln Augmented Reality Filter und Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.',
-              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -716,12 +716,12 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+                  src: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.png',
+                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.jpg',
                   subline: ''
                 }
               ]
@@ -981,7 +981,7 @@ Vue.mixin({
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
               teaser: 'How do we generate high attention, high interaction rates and the best possible dissemination potential? We develop augmented reality filters and games that work within social media platforms and via web links.',
-              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1017,12 +1017,12 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+                  src: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.png',
+                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.jpg',
                   subline: ''
                 }
               ]
