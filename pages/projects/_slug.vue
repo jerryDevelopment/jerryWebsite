@@ -24,7 +24,7 @@
           <h2 class="text-s c-grey-4">{{ projectCurrentLanguage.subline }}</h2>
         </div>
       </div>
-<!--       <div class="c-area pad-b-14">
+      <div class="c-area pad-b-14">
         <div class="c-area c-area-m">
           <div class="col col-unit-6 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-0 float-left">
             <div class="col col-unit-12 pad-resp-4-lr-1" v-for="(text, index) in projectCurrentLanguage.infoText" :key="index">
@@ -65,7 +65,7 @@
             <p class="text-xs c-grey-4 mar-t-0-5 mar-b-1" v-html="media.subline ? media.subline : '&nbsp;'"></p>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
     <main-footer></main-footer>
   </section>
