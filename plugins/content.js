@@ -53,7 +53,7 @@ Vue.mixin({
       },
       splitScreen: {
         de: {
-          welcomeMessage: 'Hallo, wird sind',
+          welcomeMessage: 'Hallo, wir sind',
           leftTagLine: 'sports business<br>consultants',
           leftText: 'Wir liefern <span class="c-yellow">Strategien</span><br>in Zeiten der Veränderung',
           leftTextScrollDownButton: 'sports business consultants',
@@ -197,7 +197,7 @@ Vue.mixin({
                   text: 'Wir treten nicht mit dem Team an, das wir haben, sondern mit dem, das gebraucht wird.'
                 }, {
                   img: 'icon_jerry_why_03.svg',
-                  text: 'Wir leben die Digitale Transformation im Sport und sind mit <span class="c-blue">Jerry Digital</span> entsprechend aufgestellt.'
+                  text: 'Wir leben die Digitale Transformation im Sport und sind mit <a href="/digital" class="c-blue">Jerry Digital</a> entsprechend aufgestellt.'
                 }
               ]
             }
@@ -286,7 +286,7 @@ Vue.mixin({
             sectionDigital: {
               headline: 'Der Partner für’s Digitale.',
               text: [
-                'Sämtlich Strategien und Lösungen müssen digital mitgedacht und umgesetzt werden Deshalb gibt es <span class="c-blue">Jerry Digital.</span>',
+                'Sämtlich Strategien und Lösungen müssen digital mitgedacht und umgesetzt werden Deshalb gibt es <a href="/digital" class="c-blue">Jerry Digital.</a>',
                 'Dabei bündeln wir das Know-how zahlreicher Experten, sind ganz nah dran an den neuesten digitalen Entwicklungen und Trends und verstehen es mit schlanken Projektaufstellungen begeisternde Erlebnisse zu schaffen.',
               ]
             },
@@ -361,7 +361,7 @@ Vue.mixin({
                   text: 'We do not compete with the team we have, but with the team that is needed.'
                 }, {
                   img: 'icon_jerry_why_03.svg',
-                  text: 'We live the digital transformation in sports and with Jerry Digital we are positioned accordingly.'
+                  text: 'We live the digital transformation in sports and with <a href="/en/digital" class="c-blue">Jerry Digital</a> we are positioned accordingly.'
                 }
               ]
             }
@@ -446,7 +446,7 @@ Vue.mixin({
             sectionDigital: {
               headline: 'The partner for the digital. ',
               text: [
-                'All strategies and solutions must be digitally thought out and implemented. That’s why there is <span class="c-blue">Jerry Digital.</span>',
+                'All strategies and solutions must be digitally thought out and implemented. That’s why there is <a href="/en/digital" class="c-blue">Jerry Digital.</a>',
                 'We bundle the know-how of numerous experts, are very close to the latest digital developments and trends and know how to create inspiring experiences with lean project setups.',
               ]
             },
@@ -554,7 +554,7 @@ Vue.mixin({
               headline: 'Sports Business Consultants',
               text: [
                 '<span class="c-blue">Jerry Digital</span> setzt beim Sportbusiness dort an, wo eine konkrete digitale Lösungen benötigt wird.',
-                'Doch damit ist bei Jerry nicht Schluss... für allgemeine Beratungsfragen im Bereich des Sportbusiness, die über einzelne digitale Lösungen weit hinaus gehen, haben wir mit <span class="c-yellow">Jerry – Sports Business Consultants</span> die passende Antwort.',
+                'Doch damit ist bei Jerry nicht Schluss... für allgemeine Beratungsfragen im Bereich des Sportbusiness, die über einzelne digitale Lösungen weit hinaus gehen, haben wir mit <a href="/" class="c-yellow">Jerry – Sports Business Consultants</a> die passende Antwort.',
               ]
             }
           }
@@ -643,7 +643,7 @@ Vue.mixin({
               headline: 'Sports Business Consultants',
               text: [
                 '<span class="c-blue">Jerry Digital</span> starts with the sports business where a concrete digital solution is needed.',
-                'But Jerry doesn’t stop there... for general consulting questions in the field of sports business, which go far beyond individual digital solutions, we have the right answer with <span class="c-yellow">Jerry – Sports Business Consultants.</span>',
+                'But Jerry doesn’t stop there... for general consulting questions in the field of sports business, which go far beyond individual digital solutions, we have the right answer with <a href="/en" class="c-yellow">Jerry – Sports Business Consultants.</a>',
               ]
             }
           }
@@ -659,8 +659,8 @@ Vue.mixin({
             {
               url: 'sports-extended-reality',
               title: 'Sports Extended Reality',
-              subline: '50 Jahre Elfmeterschießen für den guten Zweck',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              subline: 'Social Media AR Game',
+              teaser: 'Wie generieren wir hohe Aufmerksamkeit, große Interaktionsraten und bestmögliches Verbreitungspotenzial? Wir entwickeln Augmented Reality Filter und Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
                 type: 'img',
@@ -680,10 +680,7 @@ Vue.mixin({
                   text: 'Um dem Spiel bestmögliches Verbreitungspotenzial zukommen zu lassen, haben wir es als „Social AR Game“ für die Plattformen Instagram und Facebook konzipiert und umgesetzt. Die entsprechende AR Entwicklungsplattform (Spark AR) verfügt über eine Face Detection-Technologie, die es den Usern ermöglicht, das Elfmeterschießen über Gesichtssteuerung zu spielen. Aus gegebenem Anlass haben wir das gesamte Spiel selbstverständlich im Style der 70er Jahre gestaltet.'
                 }, {
                   headline: 'WHAT – Welches Produkt ist daraus entstanden?',
-                  text: 'Entstanden ist eines der innovativsten Social AR Games. Über Face-Tracking bzw. Kopfbewegung richten die User ihre Schüsse aus, über das Öffnen des Mundes lösen sie den Schuß aus. Nach fünf Schüssen, stellt sich heraus, ob sie „Hero“ oder „Looser“ sind. Das Ergebnis findet sich auf einem digitalen Spieler-Sticker wieder, der über die Facebook oder Instagram Story geteilt werden kann und somit für die Verbreitung sorgt. Sowohl das Spiel als solches, aber auch die Facefilter bei der Stickergestaltung greifen den 70er-Jahre-Style auf und unterstreichen den Jubiläums-Ansatz - sorgen aber vor allem für „likeable“ und „shareable“ Content.<br>Nach dem Motto „Spende 1 Euro pro Treffer“ wird über Hinweise und Verlinkungen auf die „Gute Sache“ und den PayPal Spendenkanal hingewiesen.<br>Unterstützt wird die Aktion durch das RND (RedaktionsNetzwerk Deutschland) und zahlreichen prominenten Persönlichkeiten und Influencern.'
-                }, {
-                  headline: 'Potenzial:',
-                  text: 'Dieser Pro-Bono-Case zeigt, was im Rahmen der großen Social Media Plattformen technisch möglich ist. Selbstverständlich lassen sich derartige Anwendungen auch im Rahmen von nativen Apps oder Web AR lancieren – Möglichkeiten, die sich alle Player im Sport mit überschaubaren Budgets und höchster Effizienz zu Nutzen machen können.'
+                  text: 'Entstanden ist eines der innovativsten Social AR Games. Über Face-Tracking bzw. Kopfbewegung richten die User ihre Schüsse aus, über das Öffnen des Mundes lösen sie den Schuß aus. Nach fünf Schüssen, stellt sich heraus, ob sie „Hero“ oder „Looser“ sind. Das Ergebnis findet sich auf einem digitalen Spieler-Sticker wieder, der über die Facebook oder Instagram Story geteilt werden kann und somit für die Verbreitung sorgt. Sowohl das Spiel als solches, aber auch die Facefilter bei der Stickergestaltung greifen den 70er-Jahre-Style auf und unterstreichen den Jubiläums-Ansatz - sorgen aber vor allem für „likeable“ und „shareable“ Content.<br>Es freut uns sehr, dass das RND (RedaktionsNetzwerk Deutschland) sowie erste prominente Persönlichkeiten und Influencern die Aktion unterstützen wollen.<br>Wie das konkret aussieht, erfahrt ihr über die relevanten Social Media Kanäle.'
                 }
               ],
               clients: [
@@ -716,7 +713,7 @@ Vue.mixin({
               url: 'sports-technology',
               title: 'Sports Technology',
               subline: 'Triathlon Live-Tracking',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              teaser: 'Wie machen wir Ausdauersport-Events erlebbar und optimieren gleichzeitig die Sicherheit der Athleten? Wir entwickeln responsive web-basierte Sports-Tracking Anwendungen mit integrierter SOS Funktion. ',
               indexImg: 'show-cases/02_sports_tracking/sports_tracking_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
@@ -774,7 +771,7 @@ Vue.mixin({
               url: 'sport-visions',
               title: 'Sport Visions',
               subline: 'Fuse - Die Turnhalle der Zukunft',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              teaser: 'Wie präsentieren wir etwas, dass es noch nicht gibt? Wir sammeln Fakten, kreieren die Story, visualisieren zeitgemäß und bündeln die Inhalte digital, interaktiv und web-basiert.',
               indexImg: 'show-cases/03_sports_visions/sports_visions_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
@@ -829,8 +826,8 @@ Vue.mixin({
             {
               url: 'sport-management-tools',
               title: 'Sport Management Tools',
-              subline: 'Back to the roots',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              subline: 'IT-Systementwicklung',
+              teaser: 'Wie optimieren wir nachhaltig Prozesse im Sport-Business? Wir entwickeln modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen.',
               indexImg: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png',
               introMedia: {
                 type: 'img',
@@ -873,8 +870,8 @@ Vue.mixin({
             {
               url: 'sports-content',
               title: 'Sports Content',
-              subline: 'Image Clip',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              subline: 'Digital Image Clip',
+              teaser: 'Wie schaffen wir emotionale Kommunikationsmittel mit höchster Effizienz? Wir bündeln Markenkompetenz, Plattform-Know-how, direkten Zugriff auf Protagonisten sowie zielgerichtete Hands-on-Produktion und kreieren daraus multifunktionale digitale Produkte.',
               indexImg: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
@@ -951,32 +948,30 @@ Vue.mixin({
             {
               url: 'sports-extended-reality',
               title: 'Sports Extended Reality',
-              subline: '50 Jahre Elfmeterschießen für den guten Zweck',
+              subline: 'Social Media AR Game',
               teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
               indexImg: 'placeholder-2-1.jpg',
               introImg: 'placeholder-2-1.jpg',
-              headline: '50 Jahre Elfmeterschießen für den guten Zweck',
+              headline: '50 years of penalty shootout for good purpose',
               infoText: [
                 {
-                  headline: 'WHY – Was war der Trigger?',
-                  text: 'In Zeiten von Corona sind Budgets knapp. Das trifft nicht nur uns Agenturen, sondern auch die zahlreichen Sportverbände, Vereine und Organisationen. Inspiriert von der CSR Aktion des Fußball-Bundesliga Spielers Simon Zoller, der über die Social Media Kampagne „Spende Deine Trikotnummer“ zu Gunsten von #GABFAF (Gemeinsames Aktionsbündnis zur Förderung des Amateurfußballs) ein Corona-Soforthilfeprogramm für Amateurvereine ins Leben gerufen hat, wollten wir ebenfalls einen Beitrag leisten und den Amateurfußball unterstützen.<br>Aber was könnte die inhaltliche Geschichte liefern? Im Jahr 2020 feiert das Elfmeterschießen 50jähriges Jubiläum. Was damals aus dem Amateurfußball heraus entstand, ist heute aus der größten Sportart der Welt nicht mehr wegzudenken. Dies haben wir zum Anlass genommen und ein Augmented Reality (AR) Elfmeterschießen-Spiel entwickelt, welches durch seine Verbreitung nicht nur Aufmerksamkeit für #GABFAF sondern zugleich Spenden generieren soll.'
+                  headline: 'WHY—What was the trigger?',
+                  text: 'In times of Corona budgets are tight. This affects not only us agencies, but also the numerous sports associations, clubs and organisations. Inspired by the CSR action of the German Bundesliga player Simon Zoller, who launched a Corona emergency aid programme for amateur clubs via the social media campaign "Donate your jersey number" in favour of #GABFAF (Joint Action Alliance for the Promotion of Amateur Football), we also wanted to make a contribution and support amateur football.  But what could be the story behind this?  In 2020 the penalty shootout will celebrate its 50th anniversary. What emerged from amateur football at that time is now an integral part of the world’s greatest sport. We have taken this as an occasion and developed an Augmented Reality (AR) penalty shootout game, which should not only attract attention for #GABFAF but also generate donations.'
                 }, {
-                  headline: 'HOW – Wie sind wir vorgegangen?',
-                  text: 'Um dem Spiel bestmögliches Verbreitungspotenzial zukommen zu lassen, haben wir es als „Social AR Game“ für die Plattformen Instagram und Facebook konzipiert und umgesetzt. Die entsprechende AR Entwicklungsplattform (Spark AR) verfügt über eine Face Detection-Technologie, die es den Usern ermöglicht, das Elfmeterschießen über Gesichtssteuerung zu spielen. Aus gegebenem Anlass haben wir das gesamte Spiel selbstverständlich im Style der 70er Jahre gestaltet.'
+                  headline: 'HOW—How did we proceed?',
+                  text: 'To give the game the best possible distribution potential, we designed and implemented it as a "Social AR Game" for the platforms Instagram and Facebook. The corresponding AR development platform (Spark AR) has face detection technology that allows users to play the penalty shootout via face control. To mark the occasion, we naturally designed the entire game in the style of the 70s.'
                 }, {
-                  headline: 'WHAT – Welches Produkt ist daraus entstanden?',
-                  text: 'Entstanden ist eines der innovativsten Social AR Games. Über Face-Tracking bzw. Kopfbewegung richten die User ihre Schüsse aus, über das Öffnen des Mundes lösen sie den Schuß aus. Nach fünf Schüssen, stellt sich heraus, ob sie „Hero“ oder „Looser“ sind. Das Ergebnis findet sich auf einem digitalen Spieler-Sticker wieder, der über die Facebook oder Instagram Story geteilt werden kann und somit für die Verbreitung sorgt. Sowohl das Spiel als solches, aber auch die Facefilter bei der Stickergestaltung greifen den 70er-Jahre-Style auf und unterstreichen den Jubiläums-Ansatz - sorgen aber vor allem für „likeable“ und „shareable“ Content.<br>Nach dem Motto „Spende 1 Euro pro Treffer“ wird über Hinweise und Verlinkungen auf die „Gute Sache“ und den PayPal Spendenkanal hingewiesen.<br>Unterstützt wird die Aktion durch das RND (RedaktionsNetzwerk Deutschland) und zahlreichen prominenten Persönlichkeiten und Influencern.'
+                  headline: 'WHAT—Which product has been developed from this?',
+                  text: 'The result is one of the most innovative Social AR Games. The users align their shots via face tracking or head movement, by opening their mouth they trigger the shot. After five shots, it turns out whether they are "hero" or "loser". The result can be found on a digital player sticker, which can be shared via Facebook or Instagram Story and thus ensures its distribution.<br>Both the game as such, but also the face filters in the sticker design, pick up on the 70s style and underline the anniversary approach - but above all ensure "likeable" and "shareable" content.<br>We are very pleased that the RND (RedaktionsNetzwerk Deutschland) as well as first prominent personalities and influencers want to support the campaign.<br>You can find out what this actually looks like via the relevant social media channels.'
                 }, {
-                  headline: 'Potenzial:',
-                  text: 'Dieser Pro-Bono-Case zeigt, was im Rahmen der großen Social Media Plattformen technisch möglich ist. Selbstverständlich lassen sich derartige Anwendungen auch im Rahmen von nativen Apps oder Web AR lancieren – Möglichkeiten, die sich alle Player im Sport mit überschaubaren Budgets und höchster Effizienz zu Nutzen machen können.'
+                  headline: 'Potential:',
+                  text: 'This pro bono case shows what is technically possible within the framework of the major social media platforms. Of course, such applications can also be launched as part of native apps or Web AR - opportunities that all players in sports can take advantage of with manageable budgets and maximum efficiency.'
                 }
               ],
               clients: [
-                'Wir selbst'
+                'We ourselves'
               ],
-              partners: [
-                'RedaktionNetzwerk Deutschland und #GABFAF'
-              ],
+              partners: [],
               images: [
                 {
                   img: 'placeholder-2-1.jpg',
@@ -1051,7 +1046,7 @@ Vue.mixin({
             {
               url: 'sport-visions',
               title: 'Sport Visions',
-              subline: 'Fuse—The gym of the future',
+              subline: 'Digital interactive presentation platform',
               teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
@@ -1107,7 +1102,7 @@ Vue.mixin({
             {
               url: 'sport-management-tools',
               title: 'Sport Management Tools',
-              subline: 'Back to the roots',
+              subline: 'IT system development',
               teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
@@ -1151,7 +1146,7 @@ Vue.mixin({
             {
               url: 'sports-content',
               title: 'Sports Content',
-              subline: 'Image Clip',
+              subline: 'Digital Image Clip',
               teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {

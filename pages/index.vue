@@ -60,7 +60,7 @@
           <ul>
             <li class="pad-b-4 pad-resp-4-b-6" v-for="(listEntry, index) in frontPageCurrentLanguage.whyJerry.sectionAssets.list" :key="index">
               <div class="media-container mar-b-3"><img class="asset-picto" :src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img"></div>
-              <p class="text-l c-white" v-html="listEntry.text"></p>
+              <p class="text-l c-white" v-interpolation v-html="listEntry.text"></p>
             </li>
           </ul>
         </div>
@@ -152,7 +152,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-10 pad-resp-4-t-7 pad-b-12-5 pad-resp-4-b-35">
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 float-left resp-4-align-center">
             <h3 class="text-m text-resp-4-m c-grey-1 mar-b-0-66" v-html="frontPageCurrentLanguage.whatJerry.sectionDigital.headline"></h3>
-            <p class="text-s c-grey-3 mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whatJerry.sectionDigital.text" :key="index" v-html="paragraph"></p>
+            <p class="text-s c-grey-3 mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whatJerry.sectionDigital.text" :key="index" v-interpolation v-html="paragraph"></p>
           </div>
         </div>
       </div>
@@ -295,7 +295,7 @@ export default {
   },
   mounted() {
 
-    if (performance.navigation.type == 1) {
+    if (performance.navigation.type == 1 && this.scrollPositionY != 0) {
       this.isReload = true
       $nuxt.$emit('changeSplitScreen', 'index')
     }

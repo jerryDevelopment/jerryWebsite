@@ -167,7 +167,8 @@ module.exports = {
     ['nuxt-i18n', {
       locales: ['de', 'en'],
       defaultLocale: 'de',
-    }]
+    }],
+    ['nuxt-interpolation']
   ],
   cookies: {
     necessary: [

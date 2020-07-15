@@ -97,7 +97,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-10 pad-resp-4-t-7 pad-b-12-5 pad-resp-4-b-35">
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 float-left resp-4-align-center">
             <h3 class="text-m text-resp-4-m c-white mar-b-0-66 mar-resp-4-b-1" v-html="digitalPageCurrentLanguage.whatJerryDigital.sectionSportsBusinessConsultants.headline"></h3>
-            <p class="text-s c-white mar-b-0-66" v-for="(paragraph, index) in digitalPageCurrentLanguage.whatJerryDigital.sectionSportsBusinessConsultants.text" :key="index" v-html="paragraph"></p>
+            <p class="text-s c-white mar-b-0-66" v-for="(paragraph, index) in digitalPageCurrentLanguage.whatJerryDigital.sectionSportsBusinessConsultants.text" :key="index" v-interpolation v-html="paragraph"></p>
           </div>
         </div>
       </div>
@@ -250,11 +250,11 @@ export default {
   },
   mounted() {
 
-    if (performance.navigation.type == 1) {
+    if (performance.navigation.type == 1 && this.scrollPositionY != 0) {
       this.isReload = true
       $nuxt.$emit('changeSplitScreen', 'digital')
     }
-    
+
     window.addEventListener('resize', ()=>{
       this.setSwitchState()
     })
