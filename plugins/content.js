@@ -1254,6 +1254,9 @@ Vue.mixin({
       },
       imprint: {
         de: {
+          meta: {
+            title: 'Jerry | Impressum',
+          },
           text: `
           <h1>Impressum</h1>
           <h2>Angaben gemäß § 5 TMG</h2>
@@ -1285,6 +1288,9 @@ Vue.mixin({
           `
         },
         en: {
+          meta: {
+            title: 'Jerry | Site Notice',
+          },
           text: `
           <h1>Site Notice</h1>
           <h2>Information pursuant to Sect. 5 German Telemedia Act (TMG)</h2>
@@ -1318,6 +1324,9 @@ Vue.mixin({
       },
       privacyPolicy: {
         de: {
+          meta: {
+            title: 'Jerry | Datenschutzerklärung',
+          },
           text: `
             <h1>Datenschutz­erklärung</h1>
             <h2>1. Datenschutz auf einen Blick</h2>
@@ -1374,6 +1383,9 @@ Vue.mixin({
           `
         },
         en: {
+          meta: {
+            title: 'Jerry | Privacy Policy',
+          },
           text: `
             <h1>Privacy Policy</h1>
             <h2>1. An overview of data protection</h2>
@@ -1450,6 +1462,9 @@ Vue.mixin({
       text = text.split('<p>').join('<p class="c-white text-xs">');
       return text
     },
+    imprintCurrentLanguage: function () {
+      return this.imprint[this.$i18n.locale]
+    },
     privacyPolicyCurrentLanguageText: function () {
       let text = this.privacyPolicy[this.$i18n.locale].text
       text = text.split('<h1>').join('<h1 class="c-white text-l mar-b-3">');
@@ -1460,6 +1475,9 @@ Vue.mixin({
       text = text.split('<ul>').join('<ul class="mar-tb-1 pad-l-1" style="list-style:disc;">');
       text = text.split('<li>').join('<li class="c-white text-xs">');
       return text
+    },
+    privacyPolicyCurrentLanguage: function () {
+      return this.privacyPolicy[this.$i18n.locale]
     },
     splitScreenCurrentLanguage: function () {
       return this.splitScreen[this.$i18n.locale]
