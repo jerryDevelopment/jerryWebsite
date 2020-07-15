@@ -116,7 +116,7 @@
           <div class="col col-unit-12" v-if="index == 0">
             <div class="col col-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-b-3">
               <div class="media-container media-container-show-cases w-per-100">
-                <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/placeholders/' + project.indexImg">
+                <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/' + project.indexImg">
               </div>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-r-1-5 float-left">

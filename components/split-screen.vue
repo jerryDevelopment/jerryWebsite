@@ -576,8 +576,8 @@ export default {
 .split-screen-left.is-active   { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important; }
 .split-screen-left.is-inactive { clip-path: polygon(0 0, 0 0, 0 100%, 0 100%) !important; }
 
-.split-screen-container.hover-left .split-screen-left  { clip-path: polygon(0 0, 72.5% 0, 32.5% 100%, 0% 100%); }
-.split-screen-container.hover-right .split-screen-left { clip-path: polygon(0 0, 67.5% 0, 27.5% 100%, 0% 100%); }
+.split-screen-container.hover-left .split-screen-left  { clip-path: polygon(0 0, 73% 0, 33% 100%, 0% 100%); }
+.split-screen-container.hover-right .split-screen-left { clip-path: polygon(0 0, 67% 0, 27% 100%, 0% 100%); }
 
 .split-screen-left-inner {
   position: absolute;
@@ -592,8 +592,8 @@ export default {
 .split-screen-left.is-active .split-screen-left-inner   { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%) !important; left: 0em; }
 .split-screen-left.is-inactive .split-screen-left-inner { clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%) !important; }
 
-.split-screen-container.hover-left .split-screen-left .split-screen-left-inner  { clip-path: polygon(72.5% 0, 100% 0, 100% 100%, 32.7% 100%); }
-.split-screen-container.hover-right .split-screen-left .split-screen-left-inner { clip-path: polygon(67.5% 0, 100% 0, 100% 100%, 27.7% 100%); }
+.split-screen-container.hover-left .split-screen-left .split-screen-left-inner  { clip-path: polygon(73% 0, 100% 0, 100% 100%, 33.2% 100%); }
+.split-screen-container.hover-right .split-screen-left .split-screen-left-inner { clip-path: polygon(67% 0, 100% 0, 100% 100%, 27.2% 100%); }
 
 .split-screen-right {
   position: absolute;
@@ -610,8 +610,8 @@ export default {
 .split-screen-right.is-active   { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important; }
 .split-screen-right.is-inactive { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%) !important; }
 
-.split-screen-container.hover-left .split-screen-right  { clip-path: polygon(72.5% 0, 100% 0, 100% 100%, 32.5% 100%); }
-.split-screen-container.hover-right .split-screen-right { clip-path: polygon(67.5% 0, 100% 0, 100% 100%, 27.5% 100%); }
+.split-screen-container.hover-left .split-screen-right  { clip-path: polygon(73% 0, 100% 0, 100% 100%, 33% 100%); }
+.split-screen-container.hover-right .split-screen-right { clip-path: polygon(67% 0, 100% 0, 100% 100%, 27% 100%); }
 
 
 .split-screen-right-inner {
@@ -626,8 +626,8 @@ export default {
 .split-screen-right.is-active .split-screen-right-inner   { clip-path: polygon(0% 0, 0% 0, 0% 100%, 0% 100%) !important; left: 0; }
 .split-screen-right.is-inactive .split-screen-right-inner { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important; }
 
-.split-screen-container.hover-left .split-screen-right .split-screen-right-inner  { clip-path: polygon(0 0, 72.3% 0, 32.5% 100%, 0% 100%); }
-.split-screen-container.hover-right .split-screen-right .split-screen-right-inner { clip-path: polygon(0 0, 67.3% 0, 27.5% 100%, 0% 100%); }
+.split-screen-container.hover-left .split-screen-right .split-screen-right-inner  { clip-path: polygon(0 0, 72.8% 0, 33% 100%, 0% 100%); }
+.split-screen-container.hover-right .split-screen-right .split-screen-right-inner { clip-path: polygon(0 0, 66.8% 0, 27% 100%, 0% 100%); }
 
 
 

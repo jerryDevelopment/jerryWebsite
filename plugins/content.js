@@ -17,14 +17,14 @@ Vue.mixin({
         de: {
           menuLinks: {
             about: 'Über uns',
-            whoJerry: 'Wer ist Jerry',
-            whyJerry: 'Warum Jerry',
-            howJerry: 'Wie arbeitet Jerry',
-            whatJerry: 'Was macht Jerry',
-            whoJerryDigital: 'Wer ist Jerry Digital',
-            whyJerryDigital: 'Warum Jerry Digital',
-            howJerryDigital: 'Wie arbeitet Jerry Digital',
-            whatJerryDigital: 'Was macht  Jerry Digital',
+            whoJerry: 'Wer',
+            whyJerry: 'Warum',
+            howJerry: 'Wie',
+            whatJerry: 'Was',
+            whoJerryDigital: 'Wer',
+            whyJerryDigital: 'Warum',
+            howJerryDigital: 'Wie',
+            whatJerryDigital: 'Was',
             references: 'Referenzen',
             contact: 'Kontakt'
           },
@@ -35,14 +35,14 @@ Vue.mixin({
         en: {
           menuLinks: {
             about: 'About us',
-            whoJerry: 'Who is Jerry',
-            whyJerry: 'Why Jerry',
-            howJerry: 'How does Jerry work',
-            whatJerry: 'What dose Jerry do',
-            whoJerryDigital: 'Who is Jerry Digital',
-            whyJerryDigital: 'Why Jerry Digital',
-            howJerryDigital: 'How does Jerry Digital work',
-            whatJerryDigital: 'What dose Jerry Digital do',
+            whoJerry: 'Who',
+            whyJerry: 'Why',
+            howJerry: 'How',
+            whatJerry: 'What',
+            whoJerryDigital: 'Who',
+            whyJerryDigital: 'Why',
+            howJerryDigital: 'How',
+            whatJerryDigital: 'What',
             references: 'References',
             contact: 'Contact'
           },
@@ -53,7 +53,7 @@ Vue.mixin({
       },
       splitScreen: {
         de: {
-          welcomeMessage: 'Hallo, wir sind',
+          welcomeMessage: 'hallo, wir sind',
           leftTagLine: 'sports business<br>consultants',
           leftText: 'Wir liefern <span class="c-yellow">Strategien</span><br>in Zeiten der Veränderung',
           leftTextScrollDownButton: 'sports business consultants',
@@ -62,7 +62,7 @@ Vue.mixin({
           rightTextScrollDownButton: 'sports business solutions'
         },
         en: {
-          welcomeMessage: 'Hi, we are',
+          welcomeMessage: 'hi, we are',
           leftTagLine: 'sports business<br>consultants',
           leftText: 'We deliver <span class="c-yellow">strategies</span><br>in times of change',
           leftTextScrollDownButton: 'sports business consultants',
@@ -187,7 +187,7 @@ Vue.mixin({
               text: '1996 kam der Blockbuster „Jerry Maguire – Spiel des Lebens“ in die Kinos. In diesem spielt Tom Cruise den Sportmanager Jerry Maguire. Dieser vermisst Ehrlichkeit und Menschlichkeit in seiner Branche. Als er dies offen anprangert, verliert er seinen Job in einer großen Sportmangement Agentur und Jerry startet in das Abenteuer der Selbständigkeit. Er steht zu seinen Überzeugungen und macht alles anders – freundschaftlich, menschlich und sehr persönlich. Daran glauben auch wir und nennen uns deswegen stolz Jerry.'
             },
             sectionAssets: {
-              headline: 'Genau wie Jerry sind wir der verlässliche Partner in Zeiten der Veränderung.',
+              headline: 'Genau wie Jerry, sind wir der verlässliche Partner in Zeiten der Veränderung.',
               list: [
                 {
                   img: 'icon_jerry_why_01.svg',
@@ -226,7 +226,7 @@ Vue.mixin({
                 text: 'Die Werte des Sports ziehen sich durch unsere Haltung, Strategien und Lösungen.'
               }, {
                 headline: 'Strukturiert',
-                text: 'Wir folgen einem klaren „Trainingsplan“: Verständnis Erkundung Synthese Ideen Prototyp Test'
+                text: 'Wir folgen einem klaren „Trainingsplan“.'
               },
             ]
           },
@@ -390,7 +390,7 @@ Vue.mixin({
                 text: 'The values of sport permeate our attitude, strategies and solutions.'
               }, {
                 headline: 'Structured',
-                text: 'We follow a clear "training plan": Understanding Exploration Synthesis Ideas Prototype Test'
+                text: 'We follow a clear "training plan"'
               },
             ]
           },
@@ -661,14 +661,11 @@ Vue.mixin({
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
               teaser: 'Wie generieren wir hohe Aufmerksamkeit, große Interaktionsraten und bestmögliches Verbreitungspotenzial? Wir entwickeln Augmented Reality Filter und Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.',
-              indexImg: 'placeholder-2-1.jpg',
+              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.png',
               introMedia: {
                 type: 'img',
-                settings: {
-                  autoplay: true,
-                  loop: true
-                },
-                src: 'placeholder-2-1.jpg'
+                settings: {},
+                src: 'show-cases/01_sports_social_ar/AR_game_hero.png'
               },
               headline: '50 Jahre Elfmeterschießen für den guten Zweck',
               infoText: [
@@ -691,29 +688,18 @@ Vue.mixin({
               ],
               media: [
                 {
-                  type: 'image',
+                  type: 'img',
                   settings: {},
-                  src: 'placeholder-2-1.jpg',
-                  subline: 'Bildunterschrift'
-                }, {
-                  type: 'image',
-                  settings: {},
-                  src: 'placeholder-2-1.jpg',
+                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.png',
                   subline: ''
-                },
-                {
-                  type: 'image',
-                  settings: {},
-                  src: 'placeholder-2-1.jpg',
-                  subline: 'Bildunterschrift'
                 }
               ]
             },
             {
               url: 'sports-technology',
-              title: 'Sports Technology',
+              title: 'Sport Technologie',
               subline: 'Triathlon Live-Tracking',
-              teaser: 'Wie machen wir Ausdauersport-Events erlebbar und optimieren gleichzeitig die Sicherheit der Athleten? Wir entwickeln responsive web-basierte Sports-Tracking Anwendungen mit integrierter SOS Funktion. ',
+              teaser: 'Ausdauersport-Events aus der Ferne erlebbar machen und gleichzeitig auch noch die Sicherheit der Athleten optimieren - geht das? Ja, durch die Entwicklung einer responsiven, web-basierten Sports-Tracking Anwendung mit integrierter SOS Funktion für die Athleten.',
               indexImg: 'show-cases/02_sports_tracking/sports_tracking_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
@@ -769,8 +755,8 @@ Vue.mixin({
             },
             {
               url: 'sport-visions',
-              title: 'Sport Visions',
-              subline: 'Fuse - Die Turnhalle der Zukunft',
+              title: 'Sport Visionen',
+              subline: 'Digitale interaktive Präsentations-Plattform',
               teaser: 'Wie präsentieren wir etwas, dass es noch nicht gibt? Wir sammeln Fakten, kreieren die Story, visualisieren zeitgemäß und bündeln die Inhalte digital, interaktiv und web-basiert.',
               indexImg: 'show-cases/03_sports_visions/sports_visions_hero_startseite.jpg',
               introMedia: {
@@ -788,7 +774,7 @@ Vue.mixin({
               infoText: [
                 {
                   headline: 'WHY – Was hat uns inspiriert?',
-                  text: 'Offensichtlich hatte unsere Partner-Gesellschaft, die Medientools Solutions GmbH, keinen so schlechten Job gemacht. Ihre Referenzen im Bereich der interaktiven 3D Gebäudevisualisierung weckte das Interesse der Sportplan GmbH, die sich auf die Beratung, Entwicklung und Betreibung innovativer Sportstätten spezialisiert hat und mit ihrem FUSE Konzept die „Turnhalle der Zukunft“ installieren wollte. Wir waren sofort inspiriert von der Mission, junge Menschen rund um den Extremsport nahtlos auf einem Gelände zu vereinen. Es galt, eine adäquate Pitch-Präsentation zuentwickeln, um Investoren und Sponsoren für die Realisierung zu gewinnen.'
+                  text: 'Offensichtlich hatte unsere Partner-Gesellschaft, die Medientools Solutions GmbH, keinen so schlechten Job gemacht. Ihre Referenzen im Bereich der interaktiven 3D Gebäudevisualisierung weckte das Interesse der Sportplan GmbH, die sich auf die Beratung, Entwicklung und Betreibung innovativer Sportstätten spezialisiert hat und mit ihrem FUSE Konzept die „Turnhalle der Zukunft“ installieren wollte. Wir waren sofort inspiriert von der Mission, junge Menschen rund um den Extremsport nahtlos auf einem Gelände zu vereinen. Es galt, eine adäquate Pitch-Präsentation zu entwickeln, um Investoren und Sponsoren für die Realisierung zu gewinnen.'
                 },
                 {
                   headline: 'HOW – Wie sind wir vorgegangen?',
@@ -824,10 +810,10 @@ Vue.mixin({
               ]
             },
             {
-              url: 'sport-management-tools',
-              title: 'Sport Management Tools',
+              url: 'sport-management-applications',
+              title: 'Sport Management Anwendungen',
               subline: 'IT-Systementwicklung',
-              teaser: 'Wie optimieren wir nachhaltig Prozesse im Sport-Business? Wir entwickeln modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen.',
+              teaser: 'Auch im Sportbusiness gilt - wie können Prozesse nachhaltig optimiert werden? Wir entwickeln modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen.',
               indexImg: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png',
               introMedia: {
                 type: 'img',
@@ -869,9 +855,9 @@ Vue.mixin({
             },
             {
               url: 'sports-content',
-              title: 'Sports Content',
-              subline: 'Digital Image Clip',
-              teaser: 'Wie schaffen wir emotionale Kommunikationsmittel mit höchster Effizienz? Wir bündeln Markenkompetenz, Plattform-Know-how, direkten Zugriff auf Protagonisten sowie zielgerichtete Hands-on-Produktion und kreieren daraus multifunktionale digitale Produkte.',
+              title: 'Sport Content',
+              subline: 'Digitaler Image Clip',
+              teaser: 'In kürzester Zeit ein emotionales Kommunikationsmittel mit höchster Effizienz schaffen - wie ist das möglich? Wir bündeln Markenkompetenz, Plattform-Know-how, direkten Zugriff auf Protagonisten sowie zielgerichtete Hands-on-Produktion und kreieren daraus multifunktionale digitale Produkte.',
               indexImg: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg',
               introMedia: {
                 type: 'video',
@@ -884,7 +870,7 @@ Vue.mixin({
                 src: 'show-cases/05_sports_content/sports_content_am_hero.mp4',
                 posterSrc: 'show-cases/05_sports_content/sports_content_am_poster_2560x1440.jpg'
               },
-              headline: 'Aston Martin - Mein Name ist Gandl - Stephan Gandl!',
+              headline: 'Mein Name ist Gandl - Stephan Gandl!',
               infoText: [
                 {
                   headline: 'WHY – Warum wurden wir kontaktiert?',
@@ -920,12 +906,6 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_c.png',
-                  subline: ''
-                },
-                {
-                  type: 'img',
-                  settings: {},
                   src: 'show-cases/05_sports_content/sports_content_am_d.png',
                   subline: ''
                 },
@@ -949,9 +929,13 @@ Vue.mixin({
               url: 'sports-extended-reality',
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
-              indexImg: 'placeholder-2-1.jpg',
-              introImg: 'placeholder-2-1.jpg',
+              teaser: 'How do we generate high attention, high interaction rates and the best possible dissemination potential? We develop augmented reality filters and games that work within social media platforms and via web links.',
+              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.png',
+              introMedia: {
+                type: 'img',
+                settings: {},
+                src: 'show-cases/01_sports_social_ar/AR_game_hero.png'
+              },
               headline: '50 years of penalty shootout for good purpose',
               infoText: [
                 {
@@ -972,15 +956,11 @@ Vue.mixin({
                 'We ourselves'
               ],
               partners: [],
-              images: [
+              media: [
                 {
-                  img: 'placeholder-2-1.jpg',
-                  subline: 'Bildunterschrift'
-                }, {
-                  img: 'placeholder-2-1.jpg',
-                  subline: ''
-                }, {
-                  img: 'placeholder-2-1.jpg',
+                  type: 'img',
+                  settings: {},
+                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.png',
                   subline: 'Bildunterschrift'
                 }
               ]
@@ -989,7 +969,7 @@ Vue.mixin({
               url: 'sports-technology',
               title: 'Sports Technology',
               subline: 'Triathlon Live-Tracking',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              teaser: 'To make endurance sports events experienceable from a distance and at the same time optimise the safety of the athletes - is that possible? Yes, by developing a responsive, web-based sports tracking application with integrated SOS function for the athletes.',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
                 type: 'video',
@@ -1047,7 +1027,7 @@ Vue.mixin({
               url: 'sport-visions',
               title: 'Sport Visions',
               subline: 'Digital interactive presentation platform',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              teaser: 'How do we present something that does not yet exist? We collect facts, create the story, visualize it in a contemporary way and bundle the content digitally, interactively and web-based.',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
                 type: 'video',
@@ -1100,10 +1080,10 @@ Vue.mixin({
               ]
             },
             {
-              url: 'sport-management-tools',
-              title: 'Sport Management Tools',
+              url: 'sport-management-applications',
+              title: 'Sport Management Applications',
               subline: 'IT system development',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              teaser: 'Even essential in sports business - how can processes be optimized sustainably? We develop modular, scalable and solution-oriented IT systems and applications.',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
                 type: 'img',
@@ -1147,7 +1127,7 @@ Vue.mixin({
               url: 'sports-content',
               title: 'Sports Content',
               subline: 'Digital Image Clip',
-              teaser: 'Hier folgt eine Kurzbeschreibung in 2–3 Sätzen. Arum voluptis aperepe llignis et optur, impor alit dolupta spiendae resti utatium qui dus eaquia dunto odis erum accum lati',
+              teaser: 'Creating an emotional means of communication with maximum efficiency in the shortest possible time - how is that possible? We bundle brand competence, platform know-how, direct access to protagonists as well as targeted hands-on production and create multifunctional digital products out of it.',
               indexImg: 'placeholder-2-1.jpg',
               introMedia: {
                 type: 'video',
@@ -1160,7 +1140,7 @@ Vue.mixin({
                 src: 'show-cases/05_sports_content/sports_content_am_hero.mp4',
                 posterSrc: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg'
               },
-              headline: 'Aston Martin - My name is Gandl - Stephan Gandl!',
+              headline: 'My name is Gandl - Stephan Gandl!',
               infoText: [
                 {
                   headline: 'WHY—Why were we contacted?',
