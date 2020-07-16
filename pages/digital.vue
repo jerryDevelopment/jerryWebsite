@@ -4,7 +4,7 @@
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-12 pad-resp-4-t-10 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.headline"></h2>
-          <div class="media-container media-container-diagram media-container-diagram-1 w-per-100 mar-t-2 mar-b-4">
+          <div class="media-container media-container-css-height media-container-css-height-digital-1 w-per-100 mar-t-2 mar-b-4">
             <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhoJerryDigital">
           </div>
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.text"></p>
@@ -15,7 +15,7 @@
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.headline"></h2>
-          <div class="media-container media-container-diagram media-container-diagram-2 w-per-75 mar-t-5 mar-b-3-5">
+          <div class="media-container media-container-css-height media-container-css-height-digital-2 w-per-75 mar-t-5 mar-b-3-5">
             <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital">
           </div>
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.subline"></p>
@@ -51,13 +51,13 @@
     <div class="c-frame bg-grey-1">
       <div class="c-area c-area-m">
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-t-3 pad-b-4 align-center">
-          <div class="media-container media-container-diagram media-container-diagram-3 w-per-100">
+          <div class="media-container media-container-css-height media-container-css-height-digital-3 w-per-100">
             <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramHowJerryDigital">
           </div>
         </div>
       </div>
     </div>
-    <div class="c-frame bg-black">
+    <div class="c-frame bg-black" id="what">
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-12 pad-b-5 pad-resp-4-t-10 align-center">
           <h2 class="text-xl mar-b-0-66 mar-resp-4-b-1 c-white" v-html="digitalPageCurrentLanguage.whatJerryDigital.sectionIntro.headline"></h2>
@@ -65,7 +65,7 @@
         </div>
       </div>
     </div>
-    <div class="c-frame bg-black" id="what">
+    <div class="c-frame bg-black">
       <div class="c-area c-area-m">
         <div class="col col-unit-12 pad-lr-0-75 align-center pad-b-8">
           <h3 class="" v-html="digitalPageCurrentLanguage.whatJerryDigital.sectionResults.headline"></h3>
@@ -80,7 +80,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="media-container media-container-diagram media-container-diagram-4 w-per-50">
+              <div class="media-container media-container-css-height media-container-css-height-digital-4 w-per-50">
                 <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img">
               </div>
               <p class="text-xs c-grey-4" v-html="listEntry.title"></p>
@@ -115,7 +115,7 @@
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-2-75 pad-resp-4-lr-0 pad-b-5" v-for="(project, index) in projectsCurrentLanguage.list" :key="index">
           <div class="col col-unit-12" v-if="index == 0">
             <div class="col col-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-b-3">
-              <div class="media-container media-container-show-cases w-per-100">
+              <div class="media-container media-container-css-height media-container-css-height-show-cases w-per-100">
                 <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + project.indexImg">
               </div>
             </div>
@@ -131,7 +131,7 @@
           </div>
           <div class="col col-unit-12" v-else>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-r-1-5 pad-resp-4-b-3 float-left">
-              <div class="media-container media-container-show-cases w-per-100">
+              <div class="media-container media-container-css-height media-container-css-height-show-cases w-per-100">
                 <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + project.indexImg">
               </div>
             </div>
@@ -272,27 +272,5 @@ export default {
 </script>
 
 <style>
-
-.media-container-diagram,
-.media-container-show-cases {
-  position: relative;
-  display: inline-block;
-}
-
-.media-container-diagram:after,
-.media-container-show-cases:after {
-  content: ' ';
-  position: relative;
-  width: 100%;
-  display: block;
-}
-
-.media-container-diagram-1:after  { padding-bottom: 33.333%; }
-.media-container-diagram-2:after  { padding-bottom: 93.745%; }
-.media-container-diagram-3:after  { padding-bottom: 50%; }
-.media-container-diagram-4:after  { padding-bottom: 100%; }
-.media-container-show-cases:after { padding-bottom: 56.25%; }
-
-
 
 </style>

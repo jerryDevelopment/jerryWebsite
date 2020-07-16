@@ -26,9 +26,9 @@
       <div class="screen split-screen-left-inner bg-yellow" style="z-index: 1"></div>
       <div class="screen absolute" style="z-index: 0">
         <picture class="obj-fit-cover">
-          <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/jerry_aufmacher_2400x1350px.jpg'">
-          <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/jerry_aufmacher_mobil_1200x1800px.jpg'">
-          <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/jerry_aufmacher_2400x1350px.jpg'">
+          <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/jerry_aufmacher_2400x1350px.jpg'">
+          <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerry_aufmacher_mobil_1200x1800px.jpg'">
+          <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/jerry_aufmacher_2400x1350px.jpg'">
         </picture>
         <div class="split-screen-logo-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
@@ -75,9 +75,9 @@
       <div class="screen split-screen-right-inner bg-blue" style="z-index: 1"></div>
       <div class="screen absolute" style="z-index: 0">
         <picture class="obj-fit-cover">
-          <source media="(min-width: 1025px)" :srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
-          <source media="(min-width: 0px)" :srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_mobil_1200x1800px.jpg'">
-          <img class="obj-fit-cover" :src="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
+          <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
+          <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_mobil_1200x1800px.jpg'">
+          <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
         </picture>
         <div class="split-screen-logo-container">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 360">

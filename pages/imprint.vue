@@ -23,7 +23,7 @@
             </g>
           </svg>
         </div>
-        <div class="col-unit-12 pad-b-10" v-html="imprintCurrentLanguageText"></div>
+        <div class="col-unit-12 pad-lr-1 pad-b-10" v-html="imprintCurrentLanguageText"></div>
       </div>
     </div>
   </section>

@@ -3,11 +3,11 @@
     <div class="c-frame bg-white" id="who">
       <div class="c-area">
         <div class="col col-100">
-          <div class="media-container">
-            <picture class="inline">
+          <div class="media-container media-container-css-height media-container-css-height-index-partner w-per-100">
+            <picture class="obj-fit-cover">
               <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
               <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartnerResp4">
-              <img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
+              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
             </picture>
           </div>
         </div>
@@ -43,7 +43,9 @@
           <p class="text-l c-white mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whyJerry.sectionIntro.text" :key="index" v-html="paragraph"></p>
         </div>
       </div>
-      <div class="media-container" v-if="isResp4"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry"></div>
+      <div class="media-container media-container-css-height media-container-css-height-index-why-jerry w-per-100" v-if="isResp4">
+        <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
+      </div>
     </div>
     <div class="c-frame bg-black" ref="bachgroundImageChangePoint">
       <div class="c-area c-area-m">
@@ -59,7 +61,9 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-b-11 align-center">
           <ul>
             <li class="pad-b-4 pad-resp-4-b-6" v-for="(listEntry, index) in frontPageCurrentLanguage.whyJerry.sectionAssets.list" :key="index">
-              <div class="media-container mar-b-3"><img class="asset-picto lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img"></div>
+              <div class="media-container mar-b-3">
+                <img class="asset-picto lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img">
+              </div>
               <p class="text-l c-white" v-interpolation v-html="listEntry.text"></p>
             </li>
           </ul>
@@ -96,7 +100,9 @@
     <div class="c-frame bg-grey-5">
       <div class="c-area c-area-m">
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-13 pad-resp-4-b-6 align-center">
-          <div class="media-container"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + frontPage.pictogramHowJerry"></div>
+          <div class="media-container media-container-css-height media-container-css-height-index-how w-per-100">
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + frontPage.pictogramHowJerry">
+          </div>
         </div>
       </div>
     </div>
@@ -107,7 +113,9 @@
           <p class="text-l c-grey-1 mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whatJerry.sectionIntro.text1" :key="index" v-html="paragraph"></p>
         </div>
       </div>
-      <div class="media-container" v-if="isResp4"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry"></div>
+      <div class="media-container media-container-css-height media-container-css-height-index-what-jerry w-per-100" v-if="isResp4">
+        <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
+      </div>
     </div>
     <div class="c-frame bg-white">
       <div class="c-area c-area-m">
@@ -130,8 +138,10 @@
                 </svg>
               </button>
             </div>
-            <div class="media-container"><img class="w-per-50 lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img"></div>
-            <span class="text-xs c-grey-3" v-html="listEntry.title"></span>
+            <div class="media-container media-container-css-height media-container-css-height-index-4 w-per-50">
+              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + listEntry.img">
+            </div>
+            <p class="text-xs c-grey-3" v-html="listEntry.title"></p>
           </div>
         </div>
       </div>
@@ -140,7 +150,9 @@
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-10 pad-resp-4-b-6 pad-b-12-5">
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-resp-4-b-4 float-left">
-            <div class="media-container"><img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatReport"></div>
+            <div class="media-container media-container-css-height media-container-css-height-index-report w-per-100">
+              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatReport">
+            </div>
           </div>
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-2 float-left resp-4-align-center">
             <h3 class="text-m text-resp-4-m c-grey-1 mar-b-0-66" v-html="frontPageCurrentLanguage.whatJerry.sectionReport.headline"></h3>
@@ -159,7 +171,7 @@
         </div>
       </div>
       <picture class="obj-fit-cover">
-        <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
+        <source media="(min-width: 426px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
         <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_mobil_1440x1440px.jpg'">
         <img class="obj-fit-cover lazyload" :src="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
       </picture>
@@ -172,15 +184,15 @@
         </div>
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-4 align-center">
           <div class="col col-20 col-resp-4-unit-6 pad-lr-1 pad-b-4 inline-block v-center" v-for="(logo, index) in frontPage.referencesLogos" :key="index">
-            <div class="media-container">
-              <img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/references/' + logo">
+            <div class="media-container media-container-css-height media-container-css-height-index-ref-logos w-per-100">
+              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/references/' + logo">
             </div>
           </div>
         </div>
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-4 align-center">
           <div class="col col-20 col-resp-4-unit-6 pad-lr-1 pad-b-4 inline-block v-center">
-            <div class="media-container">
-              <img class="inline lazyload" :data-src="staticMediaSrcBase + 'images/references/' + frontPage.referencesLogoEsb">
+            <div class="media-container media-container-css-height media-container-css-height-index-ref-logos w-per-100">
+              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/references/' + frontPage.referencesLogoEsb">
             </div>
           </div>
         </div>

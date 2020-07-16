@@ -90,8 +90,13 @@
 
 .asset-picto {
   width: 15em;
+  height: 6.6em;
 }
 
+.contact-portrait {
+  width: 15em;
+  height: 15em;
+}
 
 .download-icon {
   height: 1.1em;
@@ -167,6 +172,37 @@
 
 }
 
+/*--- image containers ---------------*/
+
+.media-container-css-height {
+  position: relative;
+  display: inline-block;
+}
+
+.media-container-css-height:after {
+  content: ' ';
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.media-container-css-height-index-partner:after,
+.media-container-css-height-index-what-jerry:after,
+.media-container-css-height-index-why-jerry:after { padding-bottom: 58.333%; }
+
+.media-container-css-height-index-report:after { padding-bottom: 133.805%; }
+.media-container-css-height-index-ref-logos:after { padding-bottom: 52.12%; }
+
+.media-container-css-height-index-how:after  { padding-bottom: 50%; }
+
+.media-container-css-height-digital-1:after  { padding-bottom: 33.333%; }
+.media-container-css-height-digital-2:after  { padding-bottom: 93.745%; }
+.media-container-css-height-digital-3:after  { padding-bottom: 50%; }
+.media-container-css-height-index-4:after,
+.media-container-css-height-digital-4:after  { padding-bottom: 100%; }
+.media-container-css-height-show-cases:after { padding-bottom: 56.25%; }
+
+.media-container-css-height-project-single-col:after { padding-bottom: 56.25%; }
 
 /*--- lazy load ----------------------*/
 
