@@ -404,7 +404,9 @@ export default {
       showWelcomeMessage: false,
       showTextLayer: false,
       initTimer1: {},
-      initTimer2: {}
+      initTimer2: {},
+      switchTimer1: {},
+      closeTimer1: {}
     }
   },
   computed: {
@@ -468,6 +470,9 @@ export default {
       if( !this.$store.state.splitScreenActiveState ){
         clearTimeout(this.initTimer1)
         clearTimeout(this.initTimer2)
+        clearTimeout(this.switchTimer1)
+        clearTimeout(this.closeTimer1)
+
         this.showWelcomeMessage = true
 
 
@@ -476,7 +481,7 @@ export default {
         this.$store.commit('activateSplitscreen')
         this.$store.commit('activateSplitscreenAnimation')
         this.showTextLayer = false
-        setTimeout(()=>{
+        this.switchTimer1 = setTimeout(()=>{
           this.$store.commit('fromDigitalToIndex')
           setTimeout(()=>{
             this.$store.commit('deactivateSplitscreenAnimation')
@@ -494,6 +499,9 @@ export default {
       if( !this.$store.state.splitScreenActiveState  ){
         clearTimeout(this.initTimer1)
         clearTimeout(this.initTimer2)
+        clearTimeout(this.switchTimer1)
+        clearTimeout(this.closeTimer1)
+
         this.showWelcomeMessage = true
 
 
@@ -502,7 +510,7 @@ export default {
         this.$store.commit('activateSplitscreen')
         this.$store.commit('activateSplitscreenAnimation')
         this.showTextLayer = false
-        setTimeout(()=>{
+        this.switchTimer1 = setTimeout(()=>{
           this.$store.commit('fromIndexToDigital')
           setTimeout(()=>{
             this.$store.commit('deactivateSplitscreenAnimation')
@@ -520,6 +528,9 @@ export default {
 
         clearTimeout(this.initTimer1)
         clearTimeout(this.initTimer2)
+        clearTimeout(this.switchTimer1)
+        clearTimeout(this.closeTimer1)
+
         this.showWelcomeMessage = true
         this.$store.commit('activateSplitscreenAnimation')
 
@@ -528,7 +539,7 @@ export default {
         this.$store.commit('deactivateSplitscreen')
         this.showTextLayer = true
 
-        setTimeout(()=>{
+        this.closeTimer1 = setTimeout(()=>{
           this.$store.commit('deactivateSplitscreenAnimation')
         },2001)
       }
@@ -701,16 +712,16 @@ export default {
 
                             
 
-  .split-screen-left-inner  { clip-path: polygon(100% 20.5%, 100% 100%, 0 100%, 0 80%); left: 0; top: -1em; }
-  .split-screen-right-inner { clip-path: polygon(0 0, 100% 0, 100% 20%, 0 79.5%); left: 0; top: 1em; }
+  .split-screen-left-inner  { clip-path: polygon(100% 20.5%, 100% 100%, 0 100%, 0 80%); left: 0; top: 0; transform: translateY(-1em); }
+  .split-screen-right-inner { clip-path: polygon(0 0, 100% 0, 100% 20%, 0 79.5%); left: 0; top: 0; transform: translateY(1em); }
 
 
-  .split-screen-left.is-active .split-screen-left-inner     { clip-path: polygon(100% 100%, 100% 100%, 0 100%, 0 100%) !important; top: 0; }
+  .split-screen-left.is-active .split-screen-left-inner     { clip-path: polygon(100% 100%, 100% 100%, 0 100%, 0 100%) !important; top: 0; transform: translateY(0); }
   .split-screen-right.is-inactive .split-screen-right-inner { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important; }
 
 
   .split-screen-left.is-inactive .split-screen-left-inner { clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 0%) !important; }
-  .split-screen-right.is-active .split-screen-right-inner { clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%) !important; top: 0; }
+  .split-screen-right.is-active .split-screen-right-inner { clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%) !important; top: 0; transform: translateY(0); }
 
 
 /*  .split-screen-container.hover-left .split-screen-left .split-screen-left-inner   { clip-path: polygon(0 calc(82.5% - 1.1em), 100% calc(22.5% - .6em), 100% calc(22.5% + .25em), 0 82.5%); }

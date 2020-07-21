@@ -11,7 +11,7 @@
               <path :class="logoFillColorClass" d="M56.84,21.19V17.57H49.19v27.5h8V34c0-2.49.31-5,2-6.8,1.82-1.95,4.49-2.31,7.71-1.95V17.49a10.47,10.47,0,0,0-10.08,3.7"/>
               <path :class="logoFillColorClass" d="M77.49,21.19V17.57H69.84v27.5h8V34c0-2.49.31-5,2-6.8,1.82-1.95,4.49-2.31,7.71-1.95V17.49a10.48,10.48,0,0,0-10.08,3.7"/>
             </svg>
-            <svg v-if="!isIndex && isNoIndexPage" @click="gotoPageDigitalTop()" class="header-logo pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.13 63.59">
+            <svg v-else-if="!isIndex && isNoIndexPage" @click="gotoPageDigitalTop()" class="header-logo pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.13 63.59">
               <path :class="logoFillColorClass" d="M118.4,40.77l-.08-23.07h-8.16l.12,14.11a5.92,5.92,0,0,1-6.07,6.13c-5.23,0-5.83-4.37-5.83-6.13L98.26,17.7h-8l.12,14.11c0,8.2,4.92,13.72,12.33,13.72a10.22,10.22,0,0,0,7.7-3.3l0,7.82a5.74,5.74,0,0,1-11.48,0V49.5h-8v.3c0,7.84,5.35,13.79,13.73,13.79s13.78-6,13.78-13.79Z"/>
               <path :class="logoFillColorClass" d="M11.65,0a6.67,6.67,0,1,0,6.67,6.67A6.66,6.66,0,0,0,11.65,0"/>
               <path :class="logoFillColorClass" d="M7.56,49.92a5.41,5.41,0,0,1-5.71,5.7H0v7.84H2c8.26-.1,13.58-6,13.58-13.78V17.57h-8Z"/>

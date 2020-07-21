@@ -124,7 +124,7 @@ module.exports = {
     { src: '~/plugins/vue-video-player', ssr: false },
     { src: '~/plugins/window-size-and-scroll-position', ssr: true },
     { src: '~/plugins/vue-in-viewport-directive', ssr: false },
-    { src: '~/plugins/vue-parallax', ssr: false }
+    { src: '~/plugins/vue-parallax', ssr: true }
   ],
   modules: [
     ['nuxt-cookie-control', {
