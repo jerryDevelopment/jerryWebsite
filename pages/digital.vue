@@ -16,7 +16,7 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-9 align-center">
           <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.headline"></h2>
           <div class="media-container media-container-css-height media-container-css-height-digital-2 w-per-75 mar-t-5 mar-b-3-5">
-            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhyJerryDigital">
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPageCurrentLanguage.pictogramWhyJerryDigital">
           </div>
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whyJerryDigital.subline"></p>
         </div>
@@ -43,9 +43,23 @@
           </div>
         </div>
       </div>
-      <div v-if="(index + 1) % 2 == 0 && index != 5" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
-        <img v-if="index == 1" class="obj-fit-cover lazyload" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgHowJerryDigital1">
-        <img v-if="index == 3" class="obj-fit-cover lazyload" style="height: 110%; top: -5%;" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgHowJerryDigital2">
+      <div v-if="(index + 1) % 2 == 0 && index != 5" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">      
+          <picture v-if="index == 1" class="obj-fit-cover">
+            <source media="(min-width: 1441px)" :data-srcset="digitalPage.imgHowJerryDigital1.mw1441">
+            <source media="(min-width: 1025px)" :data-srcset="digitalPage.imgHowJerryDigital1.mw1025">
+            <source media="(min-width: 769px)" :data-srcset="digitalPage.imgHowJerryDigital1.mw769">
+            <source media="(min-width: 426px)" :data-srcset="digitalPage.imgHowJerryDigital1.mw426">
+            <source media="(min-width: 0px)" :data-srcset="digitalPage.imgHowJerryDigital1.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="digitalPage.imgHowJerryDigital1.default">
+          </picture>
+          <picture v-if="index == 3" class="obj-fit-cover">
+            <source media="(min-width: 1441px)" :data-srcset="digitalPage.imgHowJerryDigital2.mw1441">
+            <source media="(min-width: 1025px)" :data-srcset="digitalPage.imgHowJerryDigital2.mw1025">
+            <source media="(min-width: 769px)" :data-srcset="digitalPage.imgHowJerryDigital2.mw769">
+            <source media="(min-width: 426px)" :data-srcset="digitalPage.imgHowJerryDigital2.mw426">
+            <source media="(min-width: 0px)" :data-srcset="digitalPage.imgHowJerryDigital2.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="digitalPage.imgHowJerryDigital2.default">
+          </picture>
       </div>
     </div>
     <div class="c-frame bg-grey-1">
@@ -102,9 +116,12 @@
         </div>
       </div>
       <picture class="obj-fit-cover">
-        <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants">
-        <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultantsResp4">
-        <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + digitalPage.imgWhatSportsBusinessConsultants">
+        <source media="(min-width: 1441px)" :data-srcset="digitalPage.imgWhatSportsBusinessConsultants.mw1441">
+        <source media="(min-width: 1025px)" :data-srcset="digitalPage.imgWhatSportsBusinessConsultants.mw1025">
+        <source media="(min-width: 769px)" :data-srcset="digitalPage.imgWhatSportsBusinessConsultants.mw769">
+        <source media="(min-width: 426px)" :data-srcset="digitalPage.imgWhatSportsBusinessConsultants.mw426">
+        <source media="(min-width: 0px)" :data-srcset="digitalPage.imgWhatSportsBusinessConsultants.mw0">
+        <img class="obj-fit-cover lazyload" :data-src="digitalPage.imgWhatSportsBusinessConsultants.default">
       </picture>
     </div>
     <div class="c-frame bg-black" id="show-cases" ref="switchVisibleAreaEnd">
@@ -115,31 +132,34 @@
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-2-75 pad-resp-4-lr-0 pad-b-5" v-for="(project, index) in projectsCurrentLanguage.list" :key="index">
           <div class="col col-unit-12" v-if="index == 0">
             <div class="col col-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-b-3">
-              <div class="media-container media-container-css-height media-container-css-height-show-cases w-per-100">
-                <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + project.indexImg">
-              </div>
+              <nuxt-link :to="localePath({ name: 'projects-slug', params: { slug: project.url } })">
+                <div class="media-container media-container-css-height media-container-css-height-show-cases w-per-100">
+                  <img class="obj-fit-cover lazyload" :data-src="project.indexImg">
+                </div>
+              </nuxt-link>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-r-1-5 float-left">
               <h4 class="text-l c-white" v-html="project.title"></h4>
-              <h5 class="text-xs c-grey-4 mar-resp-4-b-2" v-html="project.subline"></h5>
+              <h5 class="text-s c-grey-4 mar-resp-4-b-2" v-html="project.subline"></h5>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-1-5 float-left">
-              <p class="text-xs c-grey-4" v-html="project.teaser"></p>
-              <nuxt-link class="text-xs c-grey-4 float-right mar-t-1" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
-              
+              <p class="text-s c-grey-4" v-html="project.teaser"></p>
+              <nuxt-link class="text-s c-grey-4 float-right mar-t-1" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
             </div>
           </div>
           <div class="col col-unit-12" v-else>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-0 pad-r-1-5 pad-resp-4-b-3 float-left">
-              <div class="media-container media-container-css-height media-container-css-height-show-cases w-per-100">
-                <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + project.indexImg">
-              </div>
+              <nuxt-link :to="localePath({ name: 'projects-slug', params: { slug: project.url } })">
+                <div class="media-container media-container-css-height media-container-css-height-show-cases w-per-100">
+                  <img class="obj-fit-cover lazyload" :data-src="project.indexImg">
+                </div>
+              </nuxt-link>
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-1-5 float-left">
               <h4 class="text-l c-white" v-html="project.title"></h4>
-              <h5 class="text-xs c-grey-4 mar-b-2 mar-resp-4-b-2" v-html="project.subline"></h5>
-              <p class="text-xs c-grey-4" v-html="project.teaser"></p>
-              <nuxt-link class="text-xs c-grey-4 float-right mar-t-1" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
+              <h5 class="text-s c-grey-4 mar-b-2 mar-resp-4-b-2" v-html="project.subline"></h5>
+              <p class="text-s c-grey-4" v-html="project.teaser"></p>
+              <nuxt-link class="text-s c-grey-4 float-right mar-t-1" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
             </div>
           </div>
         </div>
@@ -147,10 +167,6 @@
     </div>
     <contact></contact>
     <main-footer></main-footer>
-
-    
-
-
   </section>
 </template>
 

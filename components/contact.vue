@@ -7,7 +7,7 @@
       <div class="col col-unit-12 col-resp-2-unit-7 col-resp-4-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-t-2 pad-b-9 align-center">
         <div :class="'col col-unit-4 col-resp-2-unit-12 pad-resp-2-b-4 pad-resp-4-b-6 float-left' + ( index == 1 ? ' align-center' : ( index == 0 ? ' align-left' : ' align-right' ) )" v-for="(partner, index) in contact.partners" :key="index">
           <div class="col auto-width col-resp-2-unit-12 inline-block align-center">
-            <div class="media-container mar-b-2"><img :class="(!isResp2 && !isResp3 && !isResp4 ? 'contact-portrait' : 'inline') + ' lazyload'" :data-src="staticMediaSrcBase + 'images/' + partner.img"></div>
+            <div class="media-container mar-b-2"><img :class="(!isResp2 && !isResp3 && !isResp4 ? 'contact-portrait' : 'inline') + ' lazyload'" :data-src="partner.img"></div>
             <p :class="'text-m text-resp-4-m mar-b-1 ' + textColorClass" v-html="partner.name"></p>
             <p :class="'text-s ' + textColorClass3" v-html="'T ' + partner.phone"></p>
             <p :class="'text-s mar-b-2 ' + textColorClass3" v-html="partner.email"></p>

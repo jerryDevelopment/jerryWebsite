@@ -5,9 +5,12 @@
         <div class="col col-100">
           <div class="media-container media-container-css-height media-container-css-height-index-partner w-per-100">
             <picture class="obj-fit-cover">
-              <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
-              <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/' + frontPage.imgPartnerResp4">
-              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgPartner">
+              <source media="(min-width: 1441px)" :data-srcset="frontPage.imgPartner.mw1441">
+              <source media="(min-width: 1025px)" :data-srcset="frontPage.imgPartner.mw1025">
+              <source media="(min-width: 769px)" :data-srcset="frontPage.imgPartner.mw769">
+              <source media="(min-width: 426px)" :data-srcset="frontPage.imgPartner.mw426">
+              <source media="(min-width: 0px)" :data-srcset="frontPage.imgPartner.mw0">
+              <img class="obj-fit-cover lazyload" :data-src="frontPage.imgPartner.default">
             </picture>
           </div>
         </div>
@@ -36,15 +39,21 @@
         </div>
       </div>
     </div>
-    <div class="c-frame bg-black" id="why" :style="!isResp4 ? 'margin-bottom: 37.5em;' : ''">
-      <div class="c-area c-area-m">
+    <div class="c-frame bg-black" id="why" :style="!isResp4 && !isResp3 ? 'margin-bottom: 37.5em;' : ''">
+      <div class="c-area c-area-m bg-black" style="z-index: 1;">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-3 align-center">
           <h2 class="text-xxl mar-b-0-33 mar-resp-4-b-1 c-white" v-html="frontPageCurrentLanguage.whyJerry.sectionIntro.headline"></h2>
           <p class="text-l c-white mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whyJerry.sectionIntro.text" :key="index" v-html="paragraph"></p>
         </div>
       </div>
-      <div class="media-container media-container-css-height media-container-css-height-index-why-jerry w-per-100" v-if="isResp4">
-        <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
+      <div v-if="isResp4 || isResp3" v-parallax="0.1" class="c-area" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
+        <div class="bg-white" style="position: absolute; width: 100%; height: 110%; top: -5%; left: 0;">
+          <picture class="obj-fit-cover">
+            <source media="(min-width: 426px)" :data-srcset="frontPage.imgWhyJerry.mw426">
+            <source media="(min-width: 0px)" :data-srcset="frontPage.imgWhyJerry.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry.default">
+          </picture>
+        </div>
       </div>
     </div>
     <div class="c-frame bg-black" ref="bachgroundImageChangePoint">
@@ -91,9 +100,30 @@
       </div>
       <div v-if="(index + 1) % 2 == 0" v-parallax="0.1" class="c-frame" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
         <div class="bg-white" style="position: absolute; width: 100%; height: 110%; top: -5%; left: 0;">
-          <img v-if="index == 1" class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry1">
-          <img v-if="index == 3" class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry2">
-          <img v-if="index == 5" class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgHowJerry3">
+          <picture v-if="index == 1" class="obj-fit-cover">
+            <source media="(min-width: 1441px)" :data-srcset="frontPage.imgHowJerry1.mw1441">
+            <source media="(min-width: 1025px)" :data-srcset="frontPage.imgHowJerry1.mw1025">
+            <source media="(min-width: 769px)" :data-srcset="frontPage.imgHowJerry1.mw769">
+            <source media="(min-width: 426px)" :data-srcset="frontPage.imgHowJerry1.mw426">
+            <source media="(min-width: 0px)" :data-srcset="frontPage.imgHowJerry1.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="frontPage.imgHowJerry1.default">
+          </picture>
+          <picture v-if="index == 3" class="obj-fit-cover">
+            <source media="(min-width: 1441px)" :data-srcset="frontPage.imgHowJerry2.mw1441">
+            <source media="(min-width: 1025px)" :data-srcset="frontPage.imgHowJerry2.mw1025">
+            <source media="(min-width: 769px)" :data-srcset="frontPage.imgHowJerry2.mw769">
+            <source media="(min-width: 426px)" :data-srcset="frontPage.imgHowJerry2.mw426">
+            <source media="(min-width: 0px)" :data-srcset="frontPage.imgHowJerry2.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="frontPage.imgHowJerry2.default">
+          </picture>
+          <picture v-if="index == 5" class="obj-fit-cover">
+            <source media="(min-width: 1441px)" :data-srcset="frontPage.imgHowJerry3.mw1441">
+            <source media="(min-width: 1025px)" :data-srcset="frontPage.imgHowJerry3.mw1025">
+            <source media="(min-width: 769px)" :data-srcset="frontPage.imgHowJerry3.mw769">
+            <source media="(min-width: 426px)" :data-srcset="frontPage.imgHowJerry3.mw426">
+            <source media="(min-width: 0px)" :data-srcset="frontPage.imgHowJerry3.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="frontPage.imgHowJerry3.default">
+          </picture>
         </div>
       </div>
     </div>
@@ -106,15 +136,21 @@
         </div>
       </div>
     </div>
-    <div class="c-frame bg-white" id="what" :style="!isResp4 ? 'margin-bottom: 37.5em;' : ''">
-      <div class="c-area c-area-m">
+    <div class="c-frame bg-white" id="what" :style="!isResp4 && !isResp3 ? 'margin-bottom: 37.5em;' : ''">
+      <div class="c-area c-area-m bg-white" style="z-index: 1;">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-3 align-center">
           <h2 class="text-xxl mar-b-0-33 mar-resp-4-b-1 c-grey-1" v-html="frontPageCurrentLanguage.whatJerry.sectionIntro.headline"></h2>
           <p class="text-l c-grey-1 mar-b-0-66" v-for="(paragraph, index) in frontPageCurrentLanguage.whatJerry.sectionIntro.text1" :key="index" v-html="paragraph"></p>
         </div>
       </div>
-      <div class="media-container media-container-css-height media-container-css-height-index-what-jerry w-per-100" v-if="isResp4">
-        <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
+      <div v-if="isResp4 || isResp3" v-parallax="0.1" class="c-area" :style="'z-index: 0;' + ( isResp4 ? 'height: 20em;' : 'height: 30em;' )">
+        <div class="bg-white" style="position: absolute; width: 100%; height: 110%; top: -5%; left: 0;">
+          <picture class="obj-fit-cover">
+            <source media="(min-width: 426px)" :data-srcset="frontPage.imgWhatJerry.mw426">
+            <source media="(min-width: 0px)" :data-srcset="frontPage.imgWhatJerry.mw0">
+            <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry.default">
+          </picture>
+        </div>
       </div>
     </div>
     <div class="c-frame bg-white">
@@ -151,7 +187,14 @@
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-10 pad-resp-4-b-6 pad-b-12-5">
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-resp-4-b-4 float-left">
             <div class="media-container media-container-css-height media-container-css-height-index-report w-per-100">
-              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/' + frontPage.imgWhatReport">
+              <picture class="obj-fit-cover">
+                <source media="(min-width: 1441px)" :data-srcset="frontPage.imgWhatReport.mw1441">
+                <source media="(min-width: 1025px)" :data-srcset="frontPage.imgWhatReport.mw1025">
+                <source media="(min-width: 769px)" :data-srcset="frontPage.imgWhatReport.mw1025">
+                <source media="(min-width: 426px)" :data-srcset="frontPage.imgWhatReport.mw426">
+                <source media="(min-width: 0px)" :data-srcset="frontPage.imgWhatReport.mw0">
+                <img class="obj-fit-cover lazyload" :data-src="frontPage.imgWhatReport.default">
+              </picture>
             </div>
           </div>
           <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-2 float-left resp-4-align-center">
@@ -171,9 +214,12 @@
         </div>
       </div>
       <picture class="obj-fit-cover">
-        <source media="(min-width: 426px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
-        <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_mobil_1440x1440px.jpg'">
-        <img class="obj-fit-cover lazyload" :src="staticMediaSrcBase + 'images/jerry_jerrydigital_teaser_2880x1250px.jpg'">
+        <source media="(min-width: 1441px)" :data-srcset="frontPage.imgWhatDigital.mw1441">
+        <source media="(min-width: 1025px)" :data-srcset="frontPage.imgWhatDigital.mw1025">
+        <source media="(min-width: 769px)" :data-srcset="frontPage.imgWhatDigital.mw769">
+        <source media="(min-width: 426px)" :data-srcset="frontPage.imgWhatDigital.mw426">
+        <source media="(min-width: 0px)" :data-srcset="frontPage.imgWhatDigital.mw0">
+        <img class="obj-fit-cover lazyload" :data-src="frontPage.imgWhatDigital.default">
       </picture>
     </div>
     <div class="c-frame bg-black" id="references" ref="switchVisibleAreaEnd">
@@ -192,7 +238,7 @@
         <div class="col col-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-1 pad-b-4 align-center">
           <div class="col col-20 col-resp-4-unit-6 pad-lr-1 pad-b-4 inline-block v-center">
             <div class="media-container media-container-css-height media-container-css-height-index-ref-logos w-per-100">
-              <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/references/' + frontPage.referencesLogoEsb">
+              <a href="https://www.esb-online.com/"><img class="obj-fit-cover lazyload" style="z-index: 1;" :data-src="staticMediaSrcBase + 'images/references/' + frontPage.referencesLogoEsb"></a>
             </div>
           </div>
         </div>
@@ -200,8 +246,24 @@
     </div>
     <contact></contact>
     <main-footer></main-footer>
-    <img v-if="scrollPositionY < backgroundImageChangePosition && !isResp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhyJerry">
-    <img v-if="scrollPositionY >= backgroundImageChangePosition && !isResp4" class="obj-fit-cover fixed" style="z-index: -1;" :src="staticMediaSrcBase + 'images/' + frontPage.imgWhatJerry">
+
+    <picture v-if="scrollPositionY < backgroundImageChangePosition && !isResp4" class="para-pic-1 obj-fit-cover fixed" style="z-index: -1;">
+      <source media="(min-width: 1441px)" :data-srcset="frontPage.imgWhyJerry.mw1441">
+      <source media="(min-width: 1025px)" :data-srcset="frontPage.imgWhyJerry.mw1025">
+      <source media="(min-width: 769px)" :data-srcset="frontPage.imgWhyJerry.mw769">
+      <source media="(min-width: 426px)" :data-srcset="frontPage.imgWhyJerry.mw426">
+      <source media="(min-width: 0px)" :data-srcset="frontPage.imgWhyJerry.mw0">
+      <img v-if="scrollPositionY < backgroundImageChangePosition && !isResp4" class="para-pic-1 obj-fit-cover fixed lazyload" style="z-index: -1;  " :data-src="frontPage.imgWhyJerry.default">
+    </picture>
+    <picture v-if="scrollPositionY >= backgroundImageChangePosition && !isResp4" class="para-pic-2 obj-fit-cover fixed" style="z-index: -1;">
+      <source media="(min-width: 1441px)" :data-srcset="frontPage.imgWhatJerry.mw1441">
+      <source media="(min-width: 1025px)" :data-srcset="frontPage.imgWhatJerry.mw1025">
+      <source media="(min-width: 769px)" :data-srcset="frontPage.imgWhatJerry.mw769">
+      <source media="(min-width: 426px)" :data-srcset="frontPage.imgWhatJerry.mw426">
+      <source media="(min-width: 0px)" :data-srcset="frontPage.imgWhatJerry.mw0">
+      <img v-if="scrollPositionY >= backgroundImageChangePosition && !isResp4" class="para-pic-2 obj-fit-cover fixed lazyload" style="z-index: -1;  " :data-src="frontPage.imgWhatJerry.default">
+    </picture>
+
   </section>
 </template>
 

@@ -31,7 +31,7 @@
             <path class="fill-blue" d="M90.4,135.1c0,6-3.7,12.1-12.1,12.1H74.4v16.6h4.3c17.5-.2,28.8-12.8,28.8-29.3V66.3h-17Z" transform="translate(-28.59 17.58)"/>
           </g>
           <g>
-            <image class="splitscreen-logo-glow" width="1433" height="983" transform="scale(0.24)" :xlink:href="staticMediaSrcBase + 'images/jerry-digital-split-screen-glow.png'"/>
+            <image class="splitscreen-logo-glow" width="1433" height="983" transform="scale(0.24)" :xlink:href="glowSrc"/>
           </g>
           <g>
             <path class="fill-raw-blue" d="M194.4,74.1a5.24,5.24,0,0,1,1-1.1h-1Z" transform="translate(-28.59 17.58)"/>
@@ -285,12 +285,25 @@
 export default {
   data() {
     return {
-      staticMediaSrcBase: process.env.staticMediaSrcBase,
+      staticMediaSrcBase: process.env.staticMediaSrcBase
     }
   },
   computed: {
     isIndex: function(){
       return this.$route.name == 'index___de' || this.$route.name == 'index___en'
+    },
+    glowSrc: function(){
+      if(this.isResp4){
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-425.png'
+      } else if(this.isResp3){
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-425.png'
+      } else if(this.isResp2) {
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-768.png'
+      } else if(this.isResp1) {
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-1024.png'
+      } else {
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-1024.png'
+      }
     }
   }
 }

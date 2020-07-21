@@ -26,9 +26,17 @@
       <div class="screen split-screen-left-inner bg-yellow" style="z-index: 1"></div>
       <div class="screen absolute" style="z-index: 0">
         <picture class="obj-fit-cover">
-          <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/jerry_aufmacher_2400x1350px.jpg'">
-          <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerry_aufmacher_mobil_1200x1800px.jpg'">
-          <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/jerry_aufmacher_2400x1350px.jpg'">
+          <source media="(min-width: 1441px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerry_aufmacher_2400x1350px_vvxpxo.jpg">
+          <source media="(min-width: 1025px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900002/jerry-website-assets/jerry_aufmacher_2400x1350px_vvxpxo.jpg">
+          <source media="(min-width: 769px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900002/jerry-website-assets/jerry_aufmacher_2400x1350px_vvxpxo.jpg">
+          <source media="(min-width: 426px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900002/jerry-website-assets/jerry_aufmacher_2400x1350px_vvxpxo.jpg">
+          <source media="(min-width: 0px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900002/jerry-website-assets/jerry_aufmacher_2400x1350px_vvxpxo.jpg">
+          <source media="(min-width: 1441px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerry_aufmacher_mobil_1200x1800px_awx1ud.jpg">
+          <source media="(min-width: 1025px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900002/jerry-website-assets/jerry_aufmacher_mobil_1200x1800px_awx1ud.jpg">
+          <source media="(min-width: 769px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900002/jerry-website-assets/jerry_aufmacher_mobil_1200x1800px_awx1ud.jpg">
+          <source media="(min-width: 426px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900002/jerry-website-assets/jerry_aufmacher_mobil_1200x1800px_awx1ud.jpg">
+          <source media="(min-width: 0px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900002/jerry-website-assets/jerry_aufmacher_mobil_1200x1800px_awx1ud.jpg">
+          <img class="obj-fit-cover lazyload" data-src="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerry_aufmacher_2400x1350px_vvxpxo.jpg">
         </picture>
         <div class="split-screen-logo-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
@@ -75,9 +83,17 @@
       <div class="screen split-screen-right-inner bg-blue" style="z-index: 1"></div>
       <div class="screen absolute" style="z-index: 0">
         <picture class="obj-fit-cover">
-          <source media="(min-width: 1025px)" :data-srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
-          <source media="(min-width: 0px)" :data-srcset="staticMediaSrcBase + 'images/jerrydigital_aufmacher_mobil_1200x1800px.jpg'">
-          <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/jerrydigital_aufmacher_2400x1350px.jpg'">
+          <source media="(min-width: 1441px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerrydigital_aufmacher_2400x1350px_segi23.jpg">
+          <source media="(min-width: 1025px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900002/jerry-website-assets/jerrydigital_aufmacher_2400x1350px_segi23.jpg">
+          <source media="(min-width: 769px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900002/jerry-website-assets/jerrydigital_aufmacher_2400x1350px_segi23.jpg">
+          <source media="(min-width: 426px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900002/jerry-website-assets/jerrydigital_aufmacher_2400x1350px_segi23.jpg">
+          <source media="(min-width: 0px) and (orientation: landscape)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900002/jerry-website-assets/jerrydigital_aufmacher_2400x1350px_segi23.jpg">
+          <source media="(min-width: 1441px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerrydigital_aufmacher_mobil_1200x1800px_bvuzpu">
+          <source media="(min-width: 1025px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900002/jerry-website-assets/jerrydigital_aufmacher_mobil_1200x1800px_bvuzpu">
+          <source media="(min-width: 769px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900002/jerry-website-assets/jerrydigital_aufmacher_mobil_1200x1800px_bvuzpu">
+          <source media="(min-width: 426px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900002/jerry-website-assets/jerrydigital_aufmacher_mobil_1200x1800px_bvuzpu">
+          <source media="(min-width: 0px) and (orientation: portrait)" data-srcset="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900002/jerry-website-assets/jerrydigital_aufmacher_mobil_1200x1800px_bvuzpu">
+          <img class="obj-fit-cover lazyload" data-src="https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerrydigital_aufmacher_2400x1350px_segi23.jpg">
         </picture>
         <div class="split-screen-logo-container">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 360">
@@ -103,7 +119,7 @@
               </g>
             </transition>
             <transition name="fade-glow">
-              <image v-show="rightIsActive" class="splitscreen-logo-glow" width="1431" height="976" transform="translate(143.64 59.54) scale(0.24)" :xlink:href="staticMediaSrcBase + 'images/jerry-digital-split-screen-glow.png'"/>
+              <image v-show="rightIsActive" class="splitscreen-logo-glow" width="1431" height="976" transform="translate(143.64 59.54) scale(0.24)" :xlink:href="glowSrc"/>
             </transition>
             <transition name="fade">
               <g v-show="rightIsActive">
@@ -430,6 +446,19 @@ export default {
         return 'fill-blue'
       } else {
         return 'fill-white'
+      }
+    },
+    glowSrc: function(){
+      if(this.isResp4){
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-425.png'
+      } else if(this.isResp3){
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-425.png'
+      } else if(this.isResp2) {
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-768.png'
+      } else if(this.isResp1) {
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-1024.png'
+      } else {
+        return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-1280.png'
       }
     }
   },

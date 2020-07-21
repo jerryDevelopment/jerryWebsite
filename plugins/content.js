@@ -77,19 +77,19 @@ Vue.mixin({
             name: 'Thomas Wagner',
             phone: '+49 171 99 101 01',
             email: 'thomas@wirsindjerry.de',
-            img: 'portrait_thomas_600x600.png',
+            img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900006/jerry-website-assets/portrait_thomas_600x600_muy7gl.png',
             vcf: 'thomas-wagner.vcf',
           }, {
             name: 'Karsten Streng',
             phone: '+49 172 89 888 44',
             email: 'karsten@wirsindjerry.de',
-            img: 'portrait_karsten_600x600.png',
+            img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900006/jerry-website-assets/portrait_karsten_600x600_v5yusf.png',
             vcf: 'karsten-streng.vcf',
           }, {
             name: 'Dieter Thoma',
             phone: '+49 89 443 806 00',
             email: 'dieter@wirsindjerry.de',
-            img: 'portrait_dieter_600x600.png',
+            img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900007/jerry-website-assets/portrait_dieter_600x600_weq8kp.png',
             vcf: 'dieter-thoma.vcf',
           }
         ],
@@ -113,17 +113,71 @@ Vue.mixin({
         }
       },
       frontPage: {
-        imgPartner: 'jerry_gruppenbild_2400x1400px.jpg',
-        imgPartnerResp4: 'jerry_gruppenbild_mobil_1950x1400px.jpg',
-        imgWhyJerry: 'jerry_fernseher_2400x1400px.jpg',
-        imgHowJerry1: 'jerry_how_01_2400x1350px.jpg',
-        imgHowJerry2: 'jerry_how_02_2400x1350px.jpg',
-        imgHowJerry3: 'jerry_how_03_2400x1350px.jpg',
+        imgPartner: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900003/jerry-website-assets/jerry_gruppenbild_2400x1400px_otjxpj.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900003/jerry-website-assets/jerry_gruppenbild_2400x1400px_otjxpj.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900003/jerry-website-assets/jerry_gruppenbild_2400x1400px_otjxpj.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900003/jerry-website-assets/jerry_gruppenbild_2400x1400px_otjxpj.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900003/jerry-website-assets/jerry_gruppenbild_mobil_1950x1400px_myqsai.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900003/jerry-website-assets/jerry_gruppenbild_mobil_1950x1400px_myqsai.jpg',
+        },
+        imgWhyJerry: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerry_fernseher_2400x1400px_a3jxoo.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900002/jerry-website-assets/jerry_fernseher_2400x1400px_a3jxoo.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900002/jerry-website-assets/jerry_fernseher_2400x1400px_a3jxoo.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900002/jerry-website-assets/jerry_fernseher_2400x1400px_a3jxoo.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900002/jerry-website-assets/jerry_fernseher_2400x1400px_a3jxoo.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900002/jerry-website-assets/jerry_fernseher_2400x1400px_a3jxoo.jpg',
+        },
+        imgHowJerry1: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900004/jerry-website-assets/jerry_how_01_2400x1350px_hhsgda.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900004/jerry-website-assets/jerry_how_01_2400x1350px_hhsgda.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900004/jerry-website-assets/jerry_how_01_2400x1350px_hhsgda.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900004/jerry-website-assets/jerry_how_01_2400x1350px_hhsgda.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900004/jerry-website-assets/jerry_how_01_2400x1350px_hhsgda.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900004/jerry-website-assets/jerry_how_01_2400x1350px_hhsgda.jpg',
+        },
+        imgHowJerry2: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900003/jerry-website-assets/jerry_how_02_2400x1350px_xykvjt.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900003/jerry-website-assets/jerry_how_02_2400x1350px_xykvjt.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900003/jerry-website-assets/jerry_how_02_2400x1350px_xykvjt.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900003/jerry-website-assets/jerry_how_02_2400x1350px_xykvjt.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900003/jerry-website-assets/jerry_how_02_2400x1350px_xykvjt.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900003/jerry-website-assets/jerry_how_02_2400x1350px_xykvjt.jpg',
+        },
+        imgHowJerry3: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900004/jerry-website-assets/jerry_how_03_2400x1350px_lhbda6.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900004/jerry-website-assets/jerry_how_03_2400x1350px_lhbda6.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900004/jerry-website-assets/jerry_how_03_2400x1350px_lhbda6.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900004/jerry-website-assets/jerry_how_03_2400x1350px_lhbda6.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900004/jerry-website-assets/jerry_how_03_2400x1350px_lhbda6.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900004/jerry-website-assets/jerry_how_03_2400x1350px_lhbda6.jpg',
+        },
         pictogramHowJerry: 'infografik_jerry_prozess.svg',
-        imgWhatJerry: 'jerry_fussball_2400x1400px.jpg',
-        imgWhatReport: 'jerry_jerryreport.png',
-        imgWhatDigital: 'jerry_jerrydigital_teaser_2880x1250px.jpg',
-        imgWhatDigitalResp4: 'jerry_jerrydigital_teaser_mobil_1440x1440px.jpg',
+        imgWhatJerry: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900003/jerry-website-assets/jerry_fussball_2400x1400px_hoh3pb.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900003/jerry-website-assets/jerry_fussball_2400x1400px_hoh3pb.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900003/jerry-website-assets/jerry_fussball_2400x1400px_hoh3pb.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900003/jerry-website-assets/jerry_fussball_2400x1400px_hoh3pb.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900003/jerry-website-assets/jerry_fussball_2400x1400px_hoh3pb.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900003/jerry-website-assets/jerry_fussball_2400x1400px_hoh3pb.jpg',
+        },
+        imgWhatReport: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900005/jerry-website-assets/jerry_jerryreport_g6fob9.png',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900005/jerry-website-assets/jerry_jerryreport_g6fob9.png',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900005/jerry-website-assets/jerry_jerryreport_g6fob9.png',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900005/jerry-website-assets/jerry_jerryreport_g6fob9.png',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900005/jerry-website-assets/jerry_jerryreport_g6fob9.png',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900005/jerry-website-assets/jerry_jerryreport_g6fob9.png',
+        },
+        imgWhatDigital: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900005/jerry-website-assets/jerry_jerrydigital_teaser_2880x1250px_dogvh5.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900005/jerry-website-assets/jerry_jerrydigital_teaser_2880x1250px_dogvh5.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900005/jerry-website-assets/jerry_jerrydigital_teaser_2880x1250px_dogvh5.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595342494/jerry-website-assets/jerry_jerrydigital_teaser_1960px_mfglnj.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595342494/jerry-website-assets/jerry_jerrydigital_teaser_1960px_mfglnj.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900004/jerry-website-assets/jerry_jerrydigital_teaser_mobil_1440x1440px_ohhyci.jpg',
+        },
         referencesLogos: [
           'logo_mercedesbenz.svg',
           'logo_goretex.svg',
@@ -471,21 +525,41 @@ Vue.mixin({
         }
       },
       digitalPage: {
-        imgHowJerryDigital1: 'jerrydigital_how_01_2400x1350px.jpg',
-        imgHowJerryDigital2: 'jerrydigital_how_02_2400x1350px.jpg',
+        imgHowJerryDigital1: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900006/jerry-website-assets/jerrydigital_how_01_2400x1350px_ivkwdp.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900006/jerry-website-assets/jerrydigital_how_01_2400x1350px_ivkwdp.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900006/jerry-website-assets/jerrydigital_how_01_2400x1350px_ivkwdp.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900006/jerry-website-assets/jerrydigital_how_01_2400x1350px_ivkwdp.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900006/jerry-website-assets/jerrydigital_how_01_2400x1350px_ivkwdp.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900006/jerry-website-assets/jerrydigital_how_01_2400x1350px_ivkwdp.jpg',
+        },
+        imgHowJerryDigital2: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900005/jerry-website-assets/jerrydigital_how_02_2400x1350px_vcggie.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900005/jerry-website-assets/jerrydigital_how_02_2400x1350px_vcggie.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900005/jerry-website-assets/jerrydigital_how_02_2400x1350px_vcggie.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900005/jerry-website-assets/jerrydigital_how_02_2400x1350px_vcggie.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900005/jerry-website-assets/jerrydigital_how_02_2400x1350px_vcggie.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900005/jerry-website-assets/jerrydigital_how_02_2400x1350px_vcggie.jpg',
+        },
         pictogramWhoJerryDigital: 'infografik_jerrydigital_who.svg',
-        pictogramWhyJerryDigital: 'infografik_jerrydigital_venn.svg',
         pictogramHowJerryDigital: 'infografik_jerrydigital_scrum.svg',
-        imgWhatSportsBusinessConsultants: 'jerrydigital_jerry_teaser_2880x1250px.jpg',
-        imgWhatSportsBusinessConsultantsResp4: 'jerrydigital_jerry_teaser_mobil_1440x1440px.jpg',
+        imgWhatSportsBusinessConsultants: {
+          default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900006/jerry-website-assets/jerrydigital_jerry_teaser_2880x1250px_uvolew.jpg',
+          mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900006/jerry-website-assets/jerrydigital_jerry_teaser_2880x1250px_uvolew.jpg',
+          mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900006/jerry-website-assets/jerrydigital_jerry_teaser_2880x1250px_uvolew.jpg',
+          mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595342722/jerry-website-assets/jerrydigital_jerry_teaser_1960px_s5tmzy.jpg',
+          mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595342722/jerry-website-assets/jerrydigital_jerry_teaser_1960px_s5tmzy.jpg',
+          mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900006/jerry-website-assets/jerrydigital_jerry_teaser_mobil_1440x1440px_oplkmv.jpg',
+        },
         de: {
+          pictogramWhyJerryDigital: 'infografik_jerrydigital_venn_de.svg',
           meta: {
             title: 'Jerry | Deine persönlichen Sports Technology Berater',
             description: 'Jerry Digital verbindet Sportbusiness mit medien-technologischem Know-How und begleitet Kommunikationsprojekte vom Konzept bis hin zur finalen Umsetzung.'
           },
           whoJerryDigital: {
             headline: 'Wer ist Jerry Digital?',
-            text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen IT-Kompetenzen und Entwickler-Kapazitäten zu.'
+            text: 'Wir sind gesellschaftsrechtlich mit der Medientools Solutions GmbH verbunden und greifen damit jederzeit auf die erforderlichen <span class="c-blue">IT-Kompetenzen</span> und <span class="c-blue">Entwickler-Kapazitäten</span> zu.'
           },
           whyJerryDigital: {
             headline: 'Warum Jerry Digital?',
@@ -572,13 +646,14 @@ Vue.mixin({
           }
         },
         en: {
+          pictogramWhyJerryDigital: 'infografik_jerrydigital_venn_en.svg',
           meta: {
             title: 'Jerry | Your personal Sports Technology Consultants',
             description: 'Jerry Digital combines sports business with media technology know-how and supports communication projects from concept to final implementation.'
           },
           whoJerryDigital: {
             headline: 'Who is Jerry Digital?',
-            text: 'We are affiliated under company law with Medientools Solutions GmbH and thus have access to the necessary expertise and capacities at all times.'
+            text: 'We are affiliated under company law with Medientools Solutions GmbH and thus have access to the necessary <span class="c-blue">expertise</span> and <span class="c-blue">capacities</span> at all times.'
           },
           whyJerryDigital: {
             headline: 'Why Jerry Digital?',
@@ -681,7 +756,7 @@ Vue.mixin({
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
               teaser: 'Wie generieren wir hohe Aufmerksamkeit, große Interaktionsraten und bestmögliches Verbreitungspotenzial? Wir entwickeln Augmented Reality Filter und Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.',
-              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -690,7 +765,7 @@ Vue.mixin({
                   muted: true,
                   controls: false
                 },
-                src: 'show-cases/01_sports_social_ar/AR_game_video.mp4',
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900018/jerry-website-assets/AR_game_video_bll3do.mp4',
                 posterSrc: ''
               },
               headline: '50 Jahre Elfmeterschießen für den guten Zweck',
@@ -716,12 +791,26 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                  },
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.jpg',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330129/jerry-website-assets/iphone_AR_vwfmc4.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330129/jerry-website-assets/iphone_AR_vwfmc4.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330129/jerry-website-assets/iphone_AR_vwfmc4.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330129/jerry-website-assets/iphone_AR_vwfmc4.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330129/jerry-website-assets/iphone_AR_vwfmc4.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330129/jerry-website-assets/iphone_AR_vwfmc4.png',
+                  },
                   subline: ''
                 }
               ]
@@ -735,7 +824,7 @@ Vue.mixin({
               title: 'Sport Technologie',
               subline: 'Triathlon Live-Tracking',
               teaser: 'Ausdauersport-Events aus der Ferne erlebbar machen und gleichzeitig auch noch die Sicherheit der Athleten optimieren - geht das? Ja, durch die Entwicklung einer responsiven, web-basierten Sports-Tracking Anwendung mit integrierter SOS Funktion für die Athleten.',
-              indexImg: 'show-cases/02_sports_tracking/sports_tracking_hero_startseite.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900023/jerry-website-assets/sports_tracking_hero_startseite_iu2f3i.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -744,7 +833,7 @@ Vue.mixin({
                   muted: true,
                   controls: false
                 },
-                src: 'show-cases/02_sports_tracking/sports_tracking_hero_loop.mp4',
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900025/jerry-website-assets/sports_tracking_hero_loop_dnawx1.mp4',
                 posterSrc: ''
               },
               headline: 'Wo ist Horst?',
@@ -772,18 +861,39 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/02_sports_tracking/sports_tracking_tk_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330357/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/02_sports_tracking/sports_tracking_tk_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/02_sports_tracking/sports_tracking_tk_c.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                  },
                   subline: ''
                 }
               ]
@@ -797,7 +907,7 @@ Vue.mixin({
               title: 'Sport Visionen',
               subline: 'Digitale interaktive Präsentations-Plattform',
               teaser: 'Wie präsentieren wir etwas, dass es noch nicht gibt? Wir sammeln Fakten, kreieren die Story, visualisieren zeitgemäß und bündeln die Inhalte digital, interaktiv und web-basiert.',
-              indexImg: 'show-cases/03_sports_visions/sports_visions_hero_startseite.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900030/jerry-website-assets/sports_visions_hero_startseite_jcmupx.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -806,7 +916,7 @@ Vue.mixin({
                   muted: true,
                   controls: false
                 },
-                src: 'show-cases/03_sports_visions/sports_visions_fuse_hero.mp4',
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900032/jerry-website-assets/sports_visions_fuse_hero_ipdl6s.mp4',
                 posterSrc: ''
               },
               headline: 'Fuse - Die Turnhalle der Zukunft',
@@ -832,18 +942,39 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/03_sports_visions/sports_visions_fuse_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330620/jerry-website-assets/sports_visions_fuse_a_neojdv.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330620/jerry-website-assets/sports_visions_fuse_a_neojdv.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330620/jerry-website-assets/sports_visions_fuse_a_neojdv.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330620/jerry-website-assets/sports_visions_fuse_a_neojdv.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330620/jerry-website-assets/sports_visions_fuse_a_neojdv.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330620/jerry-website-assets/sports_visions_fuse_a_neojdv.png',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/03_sports_visions/sports_visions_fuse_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330701/jerry-website-assets/sports_visions_fuse_b_sylv2k.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330701/jerry-website-assets/sports_visions_fuse_b_sylv2k.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330701/jerry-website-assets/sports_visions_fuse_b_sylv2k.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330701/jerry-website-assets/sports_visions_fuse_b_sylv2k.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330701/jerry-website-assets/sports_visions_fuse_b_sylv2k.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330701/jerry-website-assets/sports_visions_fuse_b_sylv2k.png',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/03_sports_visions/sports_visions_fuse_c.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330747/jerry-website-assets/sports_visions_fuse_c_o3hpjz.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330747/jerry-website-assets/sports_visions_fuse_c_o3hpjz.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330747/jerry-website-assets/sports_visions_fuse_c_o3hpjz.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330747/jerry-website-assets/sports_visions_fuse_c_o3hpjz.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330747/jerry-website-assets/sports_visions_fuse_c_o3hpjz.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330747/jerry-website-assets/sports_visions_fuse_c_o3hpjz.png',
+                  },
                   subline: ''
                 }
               ]
@@ -857,11 +988,18 @@ Vue.mixin({
               title: 'Sport Management Anwendungen',
               subline: 'IT-Systementwicklung',
               teaser: 'Auch im Sportbusiness gilt - wie können Prozesse nachhaltig optimiert werden? Wir entwickeln modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen.',
-              indexImg: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
               introMedia: {
                 type: 'img',
                 settings: {},
-                src: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png'
+                src: {
+                  default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                }
               },
               headline: 'Back to the roots',
               infoText: [
@@ -886,12 +1024,26 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/04_sports_management_tools/sports_management_tools_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/04_sports_management_tools/sports_management_tools_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                  },
                   subline: ''
                 }
               ]
@@ -905,7 +1057,7 @@ Vue.mixin({
               title: 'Sport Content',
               subline: 'Digitaler Image Clip',
               teaser: 'In kürzester Zeit ein emotionales Kommunikationsmittel mit höchster Effizienz schaffen - wie ist das möglich? Wir bündeln Markenkompetenz, Plattform-Know-how, direkten Zugriff auf Protagonisten sowie zielgerichtete Hands-on-Produktion und kreieren daraus multifunktionale digitale Produkte.',
-              indexImg: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900046/jerry-website-assets/sports_content_am_hero_startseite_a4qyyf.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -914,8 +1066,8 @@ Vue.mixin({
                   muted: false,
                   controls: true
                 },
-                src: 'show-cases/05_sports_content/sports_content_am_hero.mp4',
-                posterSrc: 'show-cases/05_sports_content/sports_content_am_poster_2560x1440.jpg'
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900100/jerry-website-assets/sports_content_am_hero_kqqpcb.mp4',
+                posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900052/jerry-website-assets/sports_content_am_poster_2560x1440_v9azi9.jpg'
               },
               headline: 'Mein Name ist Gandl - Stephan Gandl!',
               infoText: [
@@ -942,24 +1094,52 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_d.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_e.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                  },
                   subline: ''
                 }
               ]
@@ -981,7 +1161,7 @@ Vue.mixin({
               title: 'Sports Extended Reality',
               subline: 'Social Media AR Game',
               teaser: 'How do we generate high attention, high interaction rates and the best possible dissemination potential? We develop augmented reality filters and games that work within social media platforms and via web links.',
-              indexImg: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -990,7 +1170,7 @@ Vue.mixin({
                   muted: true,
                   controls: false
                 },
-                src: 'show-cases/01_sports_social_ar/AR_game_video.mp4',
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900018/jerry-website-assets/AR_game_video_bll3do.mp4',
                 posterSrc: ''
               },
               headline: '50 years of penalty shootout for good purpose',
@@ -1017,12 +1197,26 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_hero.jpg',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
+                  },
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/01_sports_social_ar/AR_game_iphone.jpg',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900016/jerry-website-assets/AR_game_iphone_upgryh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_iphone_upgryh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900016/jerry-website-assets/AR_game_iphone_upgryh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900016/jerry-website-assets/AR_game_iphone_upgryh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900016/jerry-website-assets/AR_game_iphone_upgryh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900016/jerry-website-assets/AR_game_iphone_upgryh.jpg',
+                  },
                   subline: ''
                 }
               ]
@@ -1036,7 +1230,7 @@ Vue.mixin({
               title: 'Sports Technology',
               subline: 'Triathlon Live-Tracking',
               teaser: 'To make endurance sports events experienceable from a distance and at the same time optimise the safety of the athletes - is that possible? Yes, by developing a responsive, web-based sports tracking application with integrated SOS function for the athletes.',
-              indexImg: 'show-cases/02_sports_tracking/sports_tracking_hero_startseite.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900023/jerry-website-assets/sports_tracking_hero_startseite_iu2f3i.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1045,7 +1239,7 @@ Vue.mixin({
                   muted: true,
                   controls: false
                 },
-                src: 'show-cases/02_sports_tracking/sports_tracking_hero_loop.mp4',
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900025/jerry-website-assets/sports_tracking_hero_loop_dnawx1.mp4',
                 posterSrc: ''
               },
               headline: 'Where is Horst?',
@@ -1073,18 +1267,39 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/02_sports_tracking/sports_tracking_tk_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330357/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900022/jerry-website-assets/sports_tracking_tk_a_ea7ily.png',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/02_sports_tracking/sports_tracking_tk_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330457/jerry-website-assets/sports_tracking_tk_b_u8f5vq.png',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/02_sports_tracking/sports_tracking_tk_c.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1595330498/jerry-website-assets/sports_tracking_tk_c_hytakt.png',
+                  },
                   subline: ''
                 }
               ]
@@ -1098,7 +1313,7 @@ Vue.mixin({
               title: 'Sport Visions',
               subline: 'Digital interactive presentation platform',
               teaser: 'How do we present something that does not yet exist? We collect facts, create the story, visualize it in a contemporary way and bundle the content digitally, interactively and web-based.',
-              indexImg: 'show-cases/03_sports_visions/sports_visions_hero_startseite.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900030/jerry-website-assets/sports_visions_hero_startseite_jcmupx.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1107,7 +1322,7 @@ Vue.mixin({
                   muted: true,
                   controls: false
                 },
-                src: 'show-cases/03_sports_visions/sports_visions_fuse_hero.mp4',
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900032/jerry-website-assets/sports_visions_fuse_hero_ipdl6s.mp4',
                 posterSrc: ''
               },
               headline: 'Fuse—The gym of the future',
@@ -1133,18 +1348,39 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/03_sports_visions/sports_visions_fuse_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900027/jerry-website-assets/sports_visions_fuse_a_sswo8m.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900027/jerry-website-assets/sports_visions_fuse_a_sswo8m.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900027/jerry-website-assets/sports_visions_fuse_a_sswo8m.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900027/jerry-website-assets/sports_visions_fuse_a_sswo8m.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900027/jerry-website-assets/sports_visions_fuse_a_sswo8m.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900027/jerry-website-assets/sports_visions_fuse_a_sswo8m.jpg',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/03_sports_visions/sports_visions_fuse_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900027/jerry-website-assets/sports_visions_fuse_b_obvjbl.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900027/jerry-website-assets/sports_visions_fuse_b_obvjbl.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900027/jerry-website-assets/sports_visions_fuse_b_obvjbl.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900027/jerry-website-assets/sports_visions_fuse_b_obvjbl.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900027/jerry-website-assets/sports_visions_fuse_b_obvjbl.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900027/jerry-website-assets/sports_visions_fuse_b_obvjbl.jpg',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/03_sports_visions/sports_visions_fuse_c.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900031/jerry-website-assets/sports_visions_fuse_c_nqgara.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900031/jerry-website-assets/sports_visions_fuse_c_nqgara.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900031/jerry-website-assets/sports_visions_fuse_c_nqgara.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900031/jerry-website-assets/sports_visions_fuse_c_nqgara.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900031/jerry-website-assets/sports_visions_fuse_c_nqgara.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900031/jerry-website-assets/sports_visions_fuse_c_nqgara.jpg',
+                  },
                   subline: ''
                 }
               ]
@@ -1158,11 +1394,18 @@ Vue.mixin({
               title: 'Sport Management Applications',
               subline: 'IT system development',
               teaser: 'Even essential in sports business - how can processes be optimized sustainably? We develop modular, scalable and solution-oriented IT systems and applications.',
-              indexImg: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
               introMedia: {
                 type: 'img',
                 settings: {},
-                src: 'show-cases/04_sports_management_tools/sports_management_tools_hero.png'
+                src: {
+                  default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                }
               },
               headline: 'Back to the roots',
               infoText: [
@@ -1187,12 +1430,26 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/04_sports_management_tools/sports_management_tools_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/04_sports_management_tools/sports_management_tools_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                  },
                   subline: ''
                 }
               ]
@@ -1206,7 +1463,7 @@ Vue.mixin({
               title: 'Sports Content',
               subline: 'Digital Image Clip',
               teaser: 'Creating an emotional means of communication with maximum efficiency in the shortest possible time - how is that possible? We bundle brand competence, platform know-how, direct access to protagonists as well as targeted hands-on production and create multifunctional digital products out of it.',
-              indexImg: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900046/jerry-website-assets/sports_content_am_hero_startseite_a4qyyf.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1215,8 +1472,8 @@ Vue.mixin({
                   muted: false,
                   controls: true
                 },
-                src: 'show-cases/05_sports_content/sports_content_am_hero.mp4',
-                posterSrc: 'show-cases/05_sports_content/sports_content_am_hero_startseite.jpg'
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1594900100/jerry-website-assets/sports_content_am_hero_kqqpcb.mp4',
+                posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900052/jerry-website-assets/sports_content_am_poster_2560x1440_v9azi9.jpg'
               },
               headline: 'My name is Gandl - Stephan Gandl!',
               infoText: [
@@ -1243,30 +1500,52 @@ Vue.mixin({
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_a.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900051/jerry-website-assets/sports_content_am_a_gyhii5.jpg',
+                  },
                   subline: ''
                 }, {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_b.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900050/jerry-website-assets/sports_content_am_b_vc70we.jpg',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_c.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900049/jerry-website-assets/sports_content_am_d_cajwur.jpg',
+                  },
                   subline: ''
                 },
                 {
                   type: 'img',
                   settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_d.png',
-                  subline: ''
-                },
-                {
-                  type: 'img',
-                  settings: {},
-                  src: 'show-cases/05_sports_content/sports_content_am_e.png',
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900048/jerry-website-assets/sports_content_am_e_fhggz6.jpg',
+                  },
                   subline: ''
                 }
               ]
