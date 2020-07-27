@@ -172,7 +172,70 @@ module.exports = {
       locales: ['de', 'en'],
       defaultLocale: 'de',
     }],
-    ['nuxt-interpolation']
+    ['nuxt-interpolation'],
+    ['@nuxtjs/sitemap', {
+      hostname: 'https://wirsindjerry.de',
+      gzip: true,
+      i18n: {
+      locales: ['de', 'en'],
+        routesNameSeparator: '___'
+      },
+      exclude: [
+        '/datenschutz',
+        '/en/privacy-policy',
+        '/impressum',
+        '/en/imprint'
+      ],
+      routes: [
+        {
+          url: '/projekte/sports-extended-reality',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-extended-reality' })),
+          priority: .5,
+        },
+        {
+          url: '/projects/sports-extended-reality',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-extended-reality' })),
+          priority: .5,
+        },
+        {
+          url: '/projekte/sports-technology',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-technology' })),
+          priority: .5,
+        },{
+          url: '/projects/sports-technology',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-technology' })),
+          priority: .5,
+        },
+        {
+          url: '/projekte/sport-visions',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-visions' })),
+          priority: .5,
+        },{
+          url: '/projects/sport-visions',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-visions' })),
+          priority: .5,
+        },
+        {
+          url: '/projekte/sport-management-applications',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-management-applications' })),
+          priority: .5,
+        },{
+          url: '/projects/sport-management-applications',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-management-applications' })),
+          priority: .5,
+        },
+        {
+          url: '/projects/sports-content',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-content' })),
+          priority: .5,
+        },
+        {
+          url: '/projects/sports-content',
+          links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-content' })),
+          priority: .5,
+        }
+      ]
+    }]
   ],
   cookies: {
     necessary: [

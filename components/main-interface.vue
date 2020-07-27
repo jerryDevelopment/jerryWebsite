@@ -58,7 +58,7 @@
                 <path :class="'path-3 ' + menuButtonFillColorClass" d="M29.67,18.41H1.29a1.29,1.29,0,1,0,0,2.58H29.67a1.29,1.29,0,0,0,0-2.58Z"/>
               </svg>
             </button>
-            <button v-else type="button" @click="$router.go(-1)">
+            <button v-else type="button" @click="gotoPageDigital()">
               <svg class="close-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.13 23.13">
                 <path :class="menuButtonFillColorClass" d="M13.39,11.56,22.75,2.2A1.29,1.29,0,0,0,20.92.38L11.56,9.74,2.2.38A1.27,1.27,0,0,0,.38.38a1.27,1.27,0,0,0,0,1.82l9.36,9.36L.38,20.92A1.29,1.29,0,1,0,2.2,22.75l9.36-9.36,9.36,9.36a1.33,1.33,0,0,0,.92.38,1.29,1.29,0,0,0,.91-.38,1.3,1.3,0,0,0,0-1.83Z"/>
               </svg>
@@ -133,6 +133,10 @@ export default {
     },
     gotoPageDigitalTop() {
       this.$router.push(this.localePath({ name: "digital" }));
+      $nuxt.$emit('changeSplitScreen', 'digital')
+    },
+    gotoPageDigital() {
+      this.$router.go(-1)
       $nuxt.$emit('changeSplitScreen', 'digital')
     }
   },
