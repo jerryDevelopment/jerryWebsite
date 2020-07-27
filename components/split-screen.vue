@@ -551,7 +551,7 @@ export default {
       }
     },
   },
-  created() {
+  mounted() {
 
     this.$watch(() => this.$route.name, this.changeSplitScreenOnRouteChange, {deep: true});
 
