@@ -193,7 +193,7 @@ module.exports = {
           priority: .5,
         },
         {
-          url: '/projects/sports-extended-reality',
+          url: '/en/projects/sports-extended-reality',
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-extended-reality' })),
           priority: .5,
         },
@@ -202,7 +202,7 @@ module.exports = {
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-technology' })),
           priority: .5,
         },{
-          url: '/projects/sports-technology',
+          url: '/en/projects/sports-technology',
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-technology' })),
           priority: .5,
         },
@@ -211,7 +211,7 @@ module.exports = {
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-visions' })),
           priority: .5,
         },{
-          url: '/projects/sport-visions',
+          url: '/en/projects/sport-visions',
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-visions' })),
           priority: .5,
         },
@@ -220,17 +220,17 @@ module.exports = {
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-management-applications' })),
           priority: .5,
         },{
-          url: '/projects/sport-management-applications',
+          url: '/en/projects/sport-management-applications',
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sport-management-applications' })),
           priority: .5,
         },
         {
-          url: '/projects/sports-content',
+          url: '/en/projects/sports-content',
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-content' })),
           priority: .5,
         },
         {
-          url: '/projects/sports-content',
+          url: '/en/projects/sports-content',
           links: ['de', 'en'].map((lang) => ({ lang, url: ( lang == 'en' ? 'en/projects' : 'projekte' ) + '/sports-content' })),
           priority: .5,
         }
