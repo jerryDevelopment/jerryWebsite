@@ -18,12 +18,12 @@
       <div class="c-area c-area-m">
         <div class="col col-100 pad-t-5 pad-resp-4-t-3 pad-b-7">
           <div class="col col-unit-4 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-2-5 pad-resp-2-b-4 float-left" :style="!isResp2 && !isResp3 && !isResp4 ? 'position: sticky; top: 7em;' : ''">
-            <h2 class="text-xxl c-grey-1">
+            <h1 class="text-xxl c-grey-1">
               Karsten &<br>
               Thomas &<br>
               Dieter =<br>
               <span class="c-yellow">Jerry</span>
-            </h2>
+            </h1>
           </div>
           <div class="col col-unit-8 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-2-5 pad-t-0-25 float-left">
             <div class="col col-unit-12 mar-b-2 mar-resp-4-b-3" v-for="(partner, index) in frontPageCurrentLanguage.partners.list" :key="index">
