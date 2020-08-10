@@ -24,7 +24,7 @@
               <h2 class="text-s c-grey-4">{{ projectCurrentLanguage.subline }}</h2>
             </div>
             <div class="col col-unit-6 col-resp-2-unit-12 pad-lr-0-75 pad-resp-4-lr-1 float-left">
-              <h1 class="text-xl c-white">{{ projectCurrentLanguage.headline }}</h1>
+              <h2 class="text-xl c-white">{{ projectCurrentLanguage.headline }}</h2>
             </div>
             <div class="col col-unit-6 pad-lr-0-75 pad-l-2 float-left" v-if="!isResp2 && !isResp3 && !isResp4">
               <h1 class="text-s c-white">{{ projectCurrentLanguage.title }}</h1>
