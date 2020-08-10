@@ -20,7 +20,6 @@ module.exports = {
   head: {
     meta: [
       { 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' },
-      { 'http-equiv': 'Content-Type', content: 'text/html; charset=ISO-8859-1' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'application-name', content: 'Jerry' },
       { name: 'mobile-web-app-capable', content: 'yes' },
