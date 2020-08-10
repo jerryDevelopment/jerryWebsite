@@ -19,11 +19,18 @@ import PopUp from '@/components/pop-up'
 
 export default {
   components: { MainMenu, MainInterface, SplitScreen, PopUp },
-    computed: {
-      isIndexOrDigital: function() {
-        return this.$route.name == 'index___de' || this.$route.name == 'index___en' || this.$route.name == 'digital___de' || this.$route.name == 'digital___en'
+  head() {
+      return {
+          htmlAttrs: {
+              lang: this.$i18n.locale
+          }
       }
+  },
+  computed: {
+    isIndexOrDigital: function() {
+      return this.$route.name == 'index___de' || this.$route.name == 'index___en' || this.$route.name == 'digital___de' || this.$route.name == 'digital___en'
     }
+  }
 }
 
 </script>
