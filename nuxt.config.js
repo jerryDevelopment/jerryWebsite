@@ -155,7 +155,6 @@ module.exports = {
         checkboxInactiveCircleBackground: '#fff',
         checkboxDisabledCircleBackground: '#fff',
       },
-
       text: {
         locale: {
           en: {
@@ -166,7 +165,6 @@ module.exports = {
           }
         },
       }
-
     }],
     ['nuxt-i18n', {
       locales: ['de', 'en'],

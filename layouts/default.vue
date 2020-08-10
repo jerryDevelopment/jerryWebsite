@@ -20,11 +20,14 @@ import PopUp from '@/components/pop-up'
 export default {
   components: { MainMenu, MainInterface, SplitScreen, PopUp },
   head() {
-      return {
-          htmlAttrs: {
-              lang: this.$i18n.locale
-          }
-      }
+    return {
+      htmlAttrs: {
+        lang: this.$i18n.locale
+      },
+      meta: [
+        { 'http-equiv': 'content-Language', content: this.$i18n.locale }
+      ]
+    }
   },
   computed: {
     isIndexOrDigital: function() {
