@@ -171,7 +171,7 @@ module.exports = {
     }],
     ['nuxt-interpolation'],
     ['@nuxtjs/sitemap', {
-      hostname: 'https://wirsindjerry.de',
+      hostname: 'https://www.wirsindjerry.de',
       gzip: true,
       i18n: {
       locales: ['de', 'en'],
