@@ -10,7 +10,7 @@ TEL;type=WORK;type=VOICE;type=pref:+49 89 44380601
 TEL;type=CELL;type=VOICE:+49 172 8988844
 item1.TEL:karstenstreng
 item1.X-ABLabel:skype
-item2.ADR;type=HOME;type=pref:;;Tengstrasse 24;München;;80798;Deutschland
+item2.ADR;type=HOME;type=pref:;;Liebherrstraße 5;München;;80538;Deutschland
 item2.X-ABADR:de
 item3.URL;type=pref:www.wirsindjerry.de
 item3.X-ABLabel:_$!<HomePage>!$_
