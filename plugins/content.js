@@ -99,7 +99,7 @@ Vue.mixin({
           city: '80538 München',
           phone: '+49 89 443 806 00',
           email: 'hallo@wirsindjerry.de',
-          gmapLink: 'https://goo.gl/maps/EpxWU13cYdfdVeka7'
+          gmapLink: 'https://goo.gl/maps/gavnXC8gCTrs4Zxz9'
         },
         de: {
           headline: 'Kontakt',
