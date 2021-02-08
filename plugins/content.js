@@ -87,7 +87,7 @@ Vue.mixin({
             vcf: 'karsten-streng.vcf',
           }, {
             name: 'Dieter Thoma',
-            phone: '+49 89 443 806 00',
+            phone: '+49 89 558 989 58',
             email: 'dieter@wirsindjerry.de',
             img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900007/jerry-website-assets/portrait_dieter_600x600_weq8kp.png',
             vcf: 'dieter-thoma.vcf',
@@ -97,7 +97,7 @@ Vue.mixin({
         address: {
           street: 'Liebherrstraße 5',
           city: '80538 München',
-          phone: '+49 89 443 806 00',
+          phone: '+49 89 558 989 58',
           email: 'hallo@wirsindjerry.de',
           gmapLink: 'https://goo.gl/maps/gavnXC8gCTrs4Zxz9'
         },
@@ -1572,7 +1572,7 @@ Vue.mixin({
           Thomas Wagner</p>
 
           <h2>Kontakt</h2>
-          <p>Telefon: +49 89 443 806 00<br>
+          <p>Telefon: +49 89 558 989 58‬<br>
           Telefax: +49 89 443 806 02<br>
           E-Mail: hallo@wirsindjerry.de</p>
 
@@ -1606,7 +1606,7 @@ Vue.mixin({
           Thomas Wagner</p>
 
           <h2>Contact</h2>
-          <p>Phone: +49 89 443 806 00<br>
+          <p>Phone: +49 89 558 989 58‬<br>
           Telefax: +49 89 443 806 02<br>
           E-mail: hallo@wirsindjerry.de</p>
 
@@ -1643,7 +1643,7 @@ Vue.mixin({
             Liebherrstraße 5<br />
             80538 München</p>
 
-            <p>Telefon: +49 89 443 806 00<br />
+            <p>Telefon: +49 89 558 989 58‬<br />
             E-Mail: hallo@wirsindjerry.de</p>
              <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
             <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3> <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
@@ -1702,7 +1702,7 @@ Vue.mixin({
             Liebherrstraße 5<br />
             80538 München</p>
 
-            <p>Phone: +49 89 443 806 00<br />
+            <p>Phone: +49 89 558 989 58‬<br />
             E-mail: hallo@wirsindjerry.de</p>
              <p>The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g. names, e-mail addresses, etc.).</p>
             <h3>Revocation of your consent to the processing of data</h3> <p>A wide range of data processing transactions are possible only subject to your express consent. You can also revoke at any time any consent you have already given us. This shall be without prejudice to the lawfulness of any data collection that occurred prior to your revocation.</p>
