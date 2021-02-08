@@ -1573,7 +1573,6 @@ Vue.mixin({
 
           <h2>Kontakt</h2>
           <p>Telefon: +49 89 558 989 58‬<br>
-          Telefax: +49 89 443 806 02<br>
           E-Mail: hallo@wirsindjerry.de</p>
 
           <h2>Umsatzsteuer-ID</h2>
@@ -1607,7 +1606,6 @@ Vue.mixin({
 
           <h2>Contact</h2>
           <p>Phone: +49 89 558 989 58‬<br>
-          Telefax: +49 89 443 806 02<br>
           E-mail: hallo@wirsindjerry.de</p>
 
           <h2>VAT ID</h2>
