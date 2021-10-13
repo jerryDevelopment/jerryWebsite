@@ -1579,6 +1579,12 @@ Vue.mixin({
           <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
           DE 310927054</p>
 
+          <h2>Gestaltung</h2>
+          <p><a href="https://hellofarm.de">hellofarm Design Studio</a></p>
+
+          <h2>Programmierung</h2>
+          <p><a href="https://tilgner-kempf.com">Sebastian Kempf</a></p>
+
           <h2>EU-Streitschlichtung</h2>
           <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
@@ -1611,6 +1617,12 @@ Vue.mixin({
           <h2>VAT ID</h2>
           <p>Sales tax identification number according to Sect. 27 a of the Sales Tax Law:<br>
           DE 310927054</p>
+
+          <h2>Design</h2>
+          <p><a href="https://hellofarm.de">hellofarm Design Studio</a></p>
+
+          <h2>Programming</h2>
+          <p><a href="https://tilgner-kempf.com">Sebastian Kempf</a></p>
 
           <h2>EU dispute resolution</h2>
           <p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br> Our e-mail address can be found above in the site notice.</p>
