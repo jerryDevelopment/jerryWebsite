@@ -749,11 +749,11 @@ Vue.mixin({
           list: [
             {
               meta: {
-                title: 'Jerry | Virtual Reality Experiences',
+                title: 'Jerry | Virtual Reality Experience',
                 description: 'Wir sind Jerry entwickelt mit ihrer Digital-Unit maßgeschneiderte Virtual Reality Strategien und setzt diese professionell um.'
               },
               url: 'virtual-reality-experiences',
-              title: 'Virtual Reality Experiences',
+              title: 'Virtual Reality Experience',
               subline: 'BMW i Motorsport Masterclasses',
               teaser: 'Trotz pandemischer Einschränkungen einmalige Erlebnisse schaffen und soziale Kontakte pflegen, wie geht das? Mit Virtual Reality und der richtigen Strategie!',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967321/jerry-website-assets/bmw-partnership-management-formel-e-garage-tour_kdycln.jpg',
@@ -768,7 +768,7 @@ Vue.mixin({
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1638888260/jerry-website-assets/bmw-partnership-management-formel-e-showreel_l4jksv.mp4',
                 posterSrc: ''
               },
-              headline: 'Virtual Reality Experiences',
+              headline: 'Inform – Inspire – Interact',
               infoText: [
                 {
                   headline: 'WHY – Was hat uns herausgefordert?',
@@ -1232,11 +1232,11 @@ Vue.mixin({
           list: [
             {
               meta: {
-                title: 'Jerry | Virtual Reality Experiences',
+                title: 'Jerry | Virtual Reality Experience',
                 description: 'Wir sind Jerry develops with their digital unit customized virtual reality strategies and implements them professionally.'
               },
               url: 'partnership-management-formel-e',
-              title: 'Virtual Reality Experiences',
+              title: 'Virtual Reality Experience',
               subline: 'BMW i Motorsport Masterclasses',
               teaser: 'How can you create unique experiences and maintain social contacts despite pandemic restrictions? With virtual reality and the right strategy!',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967321/jerry-website-assets/bmw-partnership-management-formel-e-garage-tour_kdycln.jpg',
@@ -1251,7 +1251,7 @@ Vue.mixin({
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1638888260/jerry-website-assets/bmw-partnership-management-formel-e-showreel_l4jksv.mp4',
                 posterSrc: ''
               },
-              headline: 'Virtual Reality Experiences',
+              headline: 'Inform – Inspire – Interact',
               infoText: [
                 {
                   headline: 'WHY – What challenged us?',
