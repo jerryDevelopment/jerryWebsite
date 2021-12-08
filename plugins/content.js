@@ -749,14 +749,14 @@ Vue.mixin({
           list: [
             {
               meta: {
-                title: 'Jerry | Partnership Management Formel E',
-                description: 'Innovative digitale Verlängerungen im Sport-Business werden immer wichtiger - insbesondere in Zeiten pandemischer Einschränkungen.'
+                title: 'Jerry | Virtual Reality Experiences',
+                description: 'Wir sind Jerry entwickelt mit ihrer Digital-Unit maßgeschneiderte Virtual Reality Strategien und setzt diese professionell um.'
               },
-              url: 'partnership-management-formel-e',
-              title: 'Partnership Management Formel E',
-              subline: 'Innovative digitale Verlängerungen',
-              teaser: 'Innovative digitale Verlängerungen im Sport-Business werden immer wichtiger - insbesondere in Zeiten pandemischer Einschränkungen.',
-              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
+              url: 'virtual-reality-experiences',
+              title: 'Virtual Reality Experiences',
+              subline: 'BMW i Motorsport Masterclasses',
+              teaser: 'Trotz pandemischer Einschränkungen einmalige Erlebnisse schaffen und soziale Kontakte pflegen, wie geht das? Mit Virtual Reality und der richtigen Strategie!',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967321/jerry-website-assets/bmw-partnership-management-formel-e-garage-tour_kdycln.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -768,17 +768,17 @@ Vue.mixin({
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1638888260/jerry-website-assets/bmw-partnership-management-formel-e-showreel_l4jksv.mp4',
                 posterSrc: ''
               },
-              headline: 'Partnership Management Formel E',
+              headline: 'Virtual Reality Experiences',
               infoText: [
                 {
                   headline: 'WHY – Was hat uns herausgefordert?',
                   text: 'Im Rahmen unserer Mandatierung für BMW i Motorsport, waren wir u.a. für das Partnership Management in der Formel E verantwortlich. Dies beinhaltete die Aufgabe und den eigenen Anspruch, den Team-Partnern (Sponsoren) größtmögliche Mehr- und Gegenwerte über die Saison zu liefern - und das in einer Zeit, in der pandemiebedingt Live-Veranstaltungen entweder gar nicht oder nur sehr eingeschränkt möglich waren.<br>Es galt also eine adäquate und ortsunabhängige Kommunikationsplattform zu entwicklen, welche nicht nur eine einmalige Live-Experience transportiert, sondern zugleich auch die Möglichkeit für Networking und Interaktion bietet - all das auf Basis technischer und inhaltlicher State-of-the-Art-Standards. Zudem sollte die Plattform auch für die Partner zur Verfügung stehen, um eigene Botschaften zu teilen und sich untereinander auszutauschen.'
                 }, {
                   headline: 'HOW – Wie haben wir gedacht?',
-                  text: 'Um die Erwartungen eines der innovativsten Unternehmens der Welt zu erfüllen und getreu unserer Philosophie, haben wir ein Expertenteam aus den Bereichen „Kommunikation“ und „Technologie“ zusammengestellt und gemeinsam mit BMW eine Virtual Reality Strategie entwickelt, mit der wir den Partnern nicht nur die Möglichkeit bieten konnten, sich räumlich zu treffen, sondern ihnen zugleich auch Inhalte zu präsentieren, die sich im realen Leben gar nicht abbilden lassen. Zudem war uns wichtig, dass die damit entstandene Kommunikationsplattform auch synergetisch und skalierbar für weitere Einsatzbegereiche oder Anlässe genutzt werden kann.<br>Um Qualität, Stabilität, Performance und Datensicherheit zu gewährleisten, haben wir das Konzept mit ENGAGE, dem Marktführer für interaktive und Multi-User VR-Plattformlösungen, Pico, dem führenden B2B-VR-Hardware Produzenten sowie der govar GmbH, unserem Premium-Partner für 3D Modellierung und VR Implementierung umgesetzt. Wir Sind Jerry war neben der inhaltlichen Konzeption und Redaktion für die gesamte Projektsteuerung und Partner-Kommunikation verantwortlich.'
+                  text: 'Um die Erwartungen eines der innovativsten Unternehmens der Welt zu erfüllen und getreu unserer Philosophie, haben wir ein Expertenteam aus den Bereichen „Kommunikation“ und „Technologie“ zusammengestellt und gemeinsam mit BMW eine Virtual Reality Strategie entwickelt, mit der wir den Partnern nicht nur die Möglichkeit bieten konnten, sich räumlich zu treffen, sondern ihnen zugleich auch Inhalte zu präsentieren, die sich im realen Leben gar nicht abbilden lassen. Zudem war uns wichtig, dass die damit entstandene Kommunikationsplattform synergetisch und skalierbar für weitere Einsatzbereiche und Anlässe sowie über alle digitalen Endgeräte, d.h. auch ohne VR Brillen, genutzt werden kann.<br><br>Um Qualität, Stabilität, Performance und Datensicherheit zu gewährleisten, haben wir das Konzept mit ENGAGE, dem Marktführer für interaktive und Multi-User VR-Plattformlösungen, Pico, dem führenden B2B-VR-Hardware Produzenten sowie der govar GmbH, unserem Premium-Partner für 3D Modellierung und VR Implementierung umgesetzt. Wir Sind Jerry war neben der inhaltlichen Konzeption und Redaktion für die gesamte Projektsteuerung und Partner-Kommunikation verantwortlich.'
                 }, {
                   headline: 'WHAT – Was hat die BMW-Partner fasziniert?',
-                  text: 'Im Ergebnis durften wir drei spektakuläre VR Sessions mit jeweils bis zu 50 Personen aus der ganzen Welt umsetzen. Eingebettet in die von uns konzipierte „3i Masterclass Serie“ (Inform - Inspire - Interact) wurden über Virtual Reality den Partnern einmalige Live-Experiences ermöglicht, u.a.:<br><ul><li> Virtuelle BMW i Motorsport Garage Touren mit den BMW Piloten und X-Ray Einblicke in das Innere der Formel E Boliden</li><li> Exklusiver und interaktiver digitaler Launch des BMW iX</li><li> Unter dem Motto „Neue Dimensionen“: Eine Weltraum-Mission zur ISS gemeinsam mit dem US Astronauten Steven Swanson</li><li> Live-Rennsport-Feeling als Beifahrer im Mini Electric-Pacesetter über den Stadtkurs von Monaco im Rahmen einer spektakulären 360-Grad-Lap</li></ul><br>Abgerundet wurde jede VR Session mit einem Get-together auf einer futuristischen Roof-Top-Bar.<br><br>Alles in allem ist es gelungen, einen innovativen Hospitalcity-Ansatz umzusetzen, der nicht nur in Zeiten von Corona eine perfekte Verlängerung von Live-Events darstellt.<br><br>Wir danken der BMW Group für ihr Vertrauen und den Partnern für das ausserordentlich positive Feedback.'
+                  text: 'Im Ergebnis durften wir drei spektakuläre VR Sessions mit jeweils bis zu 50 Personen aus der ganzen Welt umsetzen. Eingebettet in die von uns konzipierte „3i Masterclass Serie“ (Inform - Inspire - Interact) wurden über Virtual Reality den Partnern einmalige Live-Experiences ermöglicht, u.a.:<br><ul><li> Virtuelle BMW i Motorsport Garage Touren mit den BMW Piloten und X-Ray Einblicke in das Innere der Formel E Boliden</li><li> Exklusiver und interaktiver digitaler Launch des BMW iX</li><li> Unter dem Motto „Neue Dimensionen“: Eine Weltraum-Mission zur ISS gemeinsam mit dem US Astronauten Steven Swanson</li><li> Live-Rennsport-Feeling als Beifahrer im Mini Electric-Pacesetter über den Stadtkurs von Monaco im Rahmen einer spektakulären 360-Grad-Lap</li></ul><br>Abgerundet wurde jede VR Session mit einem Get-together auf einer futuristischen Roof-Top-Bar.<br><br>Alles in allem ist es gelungen, einen innovativen Hospitality-Ansatz umzusetzen, der nicht nur in Zeiten von Corona eine perfekte Verlängerung von Live-Events darstellt.<br><br>Wir danken der BMW Group für ihr Vertrauen und den Partnern für das ausserordentlich positive Feedback.'
                 }
               ],
               clients: [
@@ -790,36 +790,36 @@ Vue.mixin({
                   type: 'img',
                   settings: {},
                   src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
                   },
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
                   src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
                   },
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
                   src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
                   },
                   subline: ''
                 }
@@ -1232,14 +1232,14 @@ Vue.mixin({
           list: [
             {
               meta: {
-                title: 'Jerry | Partnership Management Formel E',
-                description: 'Innovative digital extensions in the sports business are becoming increasingly important - especially in times of pandemic constraints.'
+                title: 'Jerry | Virtual Reality Experiences',
+                description: 'Wir sind Jerry develops with their digital unit customized virtual reality strategies and implements them professionally.'
               },
               url: 'partnership-management-formel-e',
-              title: 'Partnership Management Formel E',
-              subline: 'Innovative digital extensions',
-              teaser: 'Innovative digital extensions in the sports business are becoming increasingly important - especially in times of pandemic constraints.',
-              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
+              title: 'Virtual Reality Experiences',
+              subline: 'BMW i Motorsport Masterclasses',
+              teaser: 'How can you create unique experiences and maintain social contacts despite pandemic restrictions? With virtual reality and the right strategy!',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967321/jerry-website-assets/bmw-partnership-management-formel-e-garage-tour_kdycln.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
@@ -1251,14 +1251,14 @@ Vue.mixin({
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1638888260/jerry-website-assets/bmw-partnership-management-formel-e-showreel_l4jksv.mp4',
                 posterSrc: ''
               },
-              headline: 'Partnership Management Formel E',
+              headline: 'Virtual Reality Experiences',
               infoText: [
                 {
                   headline: 'WHY – What challenged us?',
                   text: 'As part of our mandate for BMW i Motorsport, we were responsible for partnership management in Formula E, among other things. This included the task and our own requirement to provide the team partners (sponsors) with the greatest possible added value throughout the season - and this at a time when, due to the pandemic, live events were either not possible at all or only possible to a very limited extent.<br>The task was to develop an adequate and location-independent communication platform that not only transports a unique live experience, but also offers the opportunity for networking and interaction - all based on state-of-the-art technical and content standards. In addition, the platform should also be available for partners to share their own messages and exchange information with each other.'
                 }, {
                   headline: 'HOW – How did we think?',
-                  text: 'In order to meet the expectations of one of the most innovative companies in the world and following our philosophy, we put together a team of experts from the fields of “communication” and “technology” and developed a virtual reality strategy together with BMW. With this strategy, we were not only able to offer partners the possibility to meet each other spatially, but at the same time to present them with content that could not be depicted in real life at all. It was also important to us that the resulting communication platform could also be used synergistically and in a scalable manner for other areas of application or occasions.<br>To ensure quality, stability, performance and data security, we implemented the concept with ENGAGE, the market leader for interactive and multi-user VR platform solutions, Pico, the leading B2B VR hardware producer, and govar GmbH, our premium partner for 3D modeling and VR implementation. We Are Jerry was responsible for the entire project management and partner communication in addition to content conception and editing.'
+                  text: 'In order to meet the expectations of one of the most innovative companies in the world and true to our philosophy, we put together a team of experts from the fields of "communication" and "technology" and developed a virtual reality strategy together with BMW, with which we could not only offer partners the opportunity to meet spatially, but at the same time present them with content that could not be depicted at all in real life. It was also important to us that the resulting communication platform could be used synergistically and in a scalable manner for other areas of application and occasions, as well as via all digital end devices, i.e. even without VR glasses.<br><br>To ensure quality, stability, performance and data security, we implemented the concept with ENGAGE, the market leader for interactive and multi-user VR platform solutions, Pico, the leading B2B VR hardware producer as well as govar GmbH, our premium partner for 3D modeling and VR implementation. We Are Jerry was responsible for the entire project management and partner communication in addition to content conception and editing.'
                 }, {
                   headline: 'WHAT – What fascinated the BMW partners?',
                   text: 'As a result, we were allowed to implement three spectacular VR sessions, each with up to 50 people from all over the world. Embedded in the "3i Masterclass Series" (Inform - Inspire - Interact) designed by us, unique live experiences were made possible for the partners via virtual reality, including: <br><ul><li> Virtual BMW i Motorsport Garage tours with the BMW drivers and X-Ray insights into the interior of the Formula E bolides.</li><li> Exclusive and interactive digital launch of the BMW iX</li><li> Under the motto "New Dimensions": A space mission to the ISS together with US astronaut Steven Swanson</li><li> Live racing feeling as a co-driver in the Mini Electric-Pacesetter over the Monaco street circuit as part of a spectacular 360-degree lap</li></ul><br>Each VR session was rounded off with a get-together on a futuristic roof-top bar.<br><br>All in all, we succeeded in implementing an innovative hospitality approach that is a perfect extension of live events, not only in times of Corona.<br><br>We would like to thank the BMW Group for their trust and the partners for the extraordinarily positive feedback.'
@@ -1273,36 +1273,36 @@ Vue.mixin({
                   type: 'img',
                   settings: {},
                   src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888219/jerry-website-assets/bmw-partnership-management-formel-e-mobile_goywkg.jpg',
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-oculus-16-9_kgwfyh.jpg',
                   },
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
                   src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888218/jerry-website-assets/bmw-partnership-management-formel-e-oculus_e2ruzu.jpg',
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-desktop-16-9_jmzkpn.jpg',
                   },
                   subline: ''
                 },{
                   type: 'img',
                   settings: {},
                   src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638888216/jerry-website-assets/bmw-partnership-management-formel-e-desktop_ppovpf.jpg',
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1638967502/jerry-website-assets/bmw-partnership-management-formel-e-mobile-16-9_hfokf0.jpg',
                   },
                   subline: ''
                 }
