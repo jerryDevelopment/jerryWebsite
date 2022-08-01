@@ -5,12 +5,13 @@
         <h2 :class="'text-xxl mar-b-0-33 ' + textColorClass" v-html="contactCurrentLanguage.headline"></h2>
       </div>
       <div class="col col-unit-12 col-resp-2-unit-7 col-resp-4-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-t-2 pad-b-9 align-center">
-        <div :class="'col col-unit-4 col-resp-2-unit-12 pad-resp-2-b-4 pad-resp-4-b-6 float-left' + ( index == 1 ? ' align-center' : ( index == 0 ? ' align-left' : ' align-right' ) )" v-for="(partner, index) in contact.partners" :key="index">
+        <div :class="'col col-unit-4 col-resp-2-unit-12 pad-resp-2-b-4 pad-resp-4-b-6 inline-block' + ( index == 1 ? ' align-center' : ( index == 0 ? ' align-left' : ' align-right' ) )" v-for="(partner, index) in currentContact.partners" :key="index">
           <div class="col auto-width col-resp-2-unit-12 inline-block align-center">
             <div class="media-container mar-b-2"><img :class="(!isResp2 && !isResp3 && !isResp4 ? 'contact-portrait' : 'inline') + ' lazyload'" :data-src="partner.img"></div>
             <p :class="'text-m text-resp-4-m mar-b-1 ' + textColorClass" v-html="partner.name"></p>
-            <p :class="'text-s ' + textColorClass3" v-html="'T ' + partner.phone"></p>
+            <p v-if="partner.phone != ''" :class="'text-s ' + textColorClass3" v-html="'T ' + partner.phone"></p>
             <p :class="'text-s mar-b-2 ' + textColorClass3" v-html="partner.email"></p>
+            <p v-if="partner.phone == ''" :class="'text-s ' + textColorClass3">&nbsp;</p>
             <button type="button" class="download-button"><a :href="staticMediaSrcBase + 'vcf/' + partner.vcf">
               <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.17 16.84">
                 <polygon :class="fillColorClass" points="13.11 7.12 11.74 5.85 9.02 8.79 9.02 0 7.15 0 7.15 8.79 4.43 5.85 3.06 7.12 8.08 12.52 13.11 7.12"/>
@@ -23,12 +24,12 @@
       </div>
       <div class="col col-unit-12 pad-lr-0-75 pad-b-12-5">
         <div class="col col-unit-4 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-2-b-4 resp-2-align-center float-left">
-          <p :class="'text-m mar-b-0-66 ' + textColorClass" v-html="contact.companyName"></p>
-          <p :class="'text-s ' + textColorClass3" v-html="contact.address.street"></p>
-          <p :class="'text-s ' + textColorClass3" v-html="contact.address.city"></p>
-          <a :href="contact.address.gmapLink"><p :class="'text-s mar-b-1 ' + textColorClass3"><svg style="height: .75em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.42 10.98"><polygon :class="fillColorClassSocial" points="7.93 0 6.62 1.32 9.86 4.56 0 4.56 0 6.42 9.86 6.42 6.62 9.66 7.93 10.98 13.42 5.49 7.93 0"/></svg> Google Maps</p></a>
-          <a :href="'tel:' + contact.address.phone"><p :class="'text-s ' + textColorClass3" v-html="'T ' + contact.address.phone"></p></a>
-          <a :href="'mailto:' + contact.address.email"><p :class="'text-s mar-b-2 ' + textColorClass3" v-html="contact.address.email"></p></a>
+          <p :class="'text-m mar-b-0-66 ' + textColorClass" v-html="currentContact.companyName"></p>
+          <p :class="'text-s ' + textColorClass3" v-html="currentContact.address.street"></p>
+          <p :class="'text-s ' + textColorClass3" v-html="currentContact.address.city"></p>
+          <a :href="currentContact.address.gmapLink"><p :class="'text-s mar-b-1 ' + textColorClass3"><svg style="height: .75em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.42 10.98"><polygon :class="fillColorClassSocial" points="7.93 0 6.62 1.32 9.86 4.56 0 4.56 0 6.42 9.86 6.42 6.62 9.66 7.93 10.98 13.42 5.49 7.93 0"/></svg> Google Maps</p></a>
+          <a v-if="currentContact.address.phone != ''" :href="'tel:' + currentContact.address.phone"><p :class="'text-s ' + textColorClass3" v-html="'T ' + currentContact.address.phone"></p></a>
+          <a :href="'mailto:' + currentContact.address.email"><p :class="'text-s mar-b-2 ' + textColorClass3" v-html="currentContact.address.email"></p></a>
           <p :class="'text-s mar-b-1 ' + textColorClass3" v-html="contactCurrentLanguage.followUsText"></p>
           <a :href="navigation.socialLinks.facebook"><svg class="social-icon pad-tb-1 mar-r-1 mar-resp-2-lr-0-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
             <path :class="fillColorClassSocial" d="M27.78,0H2.21A2.19,2.19,0,0,0,0,2.16V27.84A2.19,2.19,0,0,0,2.21,30H16.08V18.43H12.19V13.91h3.89V10.58c0-3.86,2.35-6,5.79-6a30.37,30.37,0,0,1,3.48.18v4H23c-1.87,0-2.24.89-2.24,2.2v2.88h4.48l-.58,4.52h-3.9V30h7A2.19,2.19,0,0,0,30,27.84V2.16A2.19,2.19,0,0,0,27.78,0Z"/>
@@ -95,6 +96,9 @@ export default {
   computed: {
     isIndex: function(){
       return this.$route.name == 'index___de' || this.$route.name == 'index___en'
+    },
+    currentContact: function (){
+      return this.isIndex ? this.contact : this.contactJerryDigital
     },
     textColorClass: function(){
       return this.isIndex ? 'c-grey-1' : 'c-white'

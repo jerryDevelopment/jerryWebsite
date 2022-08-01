@@ -267,12 +267,12 @@
           </g>
         </svg>
         <div class="col col-unit-12 pad-lr-0-75 mar-b-3">
-          <p class="text-s c-white mar-b-1" v-html="contact.companyName"></p>
-          <p class="text-s c-white" v-html="contact.address.street + ' · ' + contact.address.city"></p>
-          <p class="text-s c-white">T <a :href="'tel:' + contact.address.phone" v-html="contact.address.phone"></a><span v-html=" isResp4 ? ' ' : ' · '"></span><a :href="'mailto:' + contact.address.email" v-html="contact.address.email"></a></p>
+          <p class="text-s c-white mar-b-1" v-html="currentContact.companyName"></p>
+          <p class="text-s c-white" v-html="currentContact.address.street + ' · ' + currentContact.address.city"></p>
+          <p class="text-s c-white"><span v-if="currentContact.address.phone != ''">T <a :href="'tel:' + currentContact.address.phone" v-html="currentContact.address.phone"></a><span v-html=" isResp4 ? ' ' : ' · '"></span></span><a :href="'mailto:' + currentContact.address.email" v-html="currentContact.address.email"></a></p>
         </div>
         <div class="col col-unit-12 pad-lr-0-75">
-          <p class="text-s c-white"><nuxt-link class="legal-link" :to="localePath('imprint')" v-html="navigationCurrentLanguage.imprintLinkText"></nuxt-link> | <nuxt-link class="legal-link" :to="localePath('privacy-policy')" v-html="navigationCurrentLanguage.privacyPolicyLinkText"></nuxt-link><br><span class="legal-link pointer" @click="$cookies.modal = true" v-html="navigationCurrentLanguage.cookiesButtonText"></span></p>
+          <p class="text-s c-white"><nuxt-link class="legal-link" :to="localePath( isIndex ? 'imprint' : 'imprint-jerry-digital' )" v-html="navigationCurrentLanguage.imprintLinkText"></nuxt-link> | <nuxt-link class="legal-link" :to="localePath(isIndex ? 'privacy-policy' : 'privacy-policy-jerry-digital')" v-html="navigationCurrentLanguage.privacyPolicyLinkText"></nuxt-link><br><span class="legal-link pointer" @click="$cookies.modal = true" v-html="navigationCurrentLanguage.cookiesButtonText"></span></p>
         </div>
       </div>
     </div>
@@ -291,6 +291,9 @@ export default {
   computed: {
     isIndex: function(){
       return this.$route.name == 'index___de' || this.$route.name == 'index___en'
+    },
+    currentContact: function (){
+      return this.isIndex ? this.contact : this.contactJerryDigital
     },
     glowSrc: function(){
       if(this.isResp4){
