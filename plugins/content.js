@@ -803,7 +803,7 @@ Vue.mixin({
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1666795091/jerry-website-assets/BDS_Fauli_Showreel_TR1_v1zpr9.mp4',
                 posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795642/fauli-poster_iwjvej.jpg'
               },
-              headline: 'Felix Fauli – Vorbild und Motivator für Spass an der Bewegung',
+              headline: 'Felix Fauli – Bringt unsere Kids in Bewegung',
               infoText: [
                 {
                   headline: 'WHY – Warum bewegen sich unsere Kids immer weniger?',
@@ -1367,7 +1367,7 @@ Vue.mixin({
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1666795091/jerry-website-assets/BDS_Fauli_Showreel_TR1_v1zpr9.mp4',
                 posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795642/fauli-poster_iwjvej.jpg'
               },
-              headline: 'Felix Fauli — role model and motivator for fun with exercise',
+              headline: 'Felix Fauli - Gets our kids moving',
               infoText: [
                 {
                   headline: 'WHY – Why do our kids move less and less?',
