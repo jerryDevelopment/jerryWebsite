@@ -784,7 +784,7 @@ Vue.mixin({
           list: [
             {
               meta: {
-                title: 'Jerry | Digitale Bewegtbild Konzepte im Sport',
+                title: 'Jerry | Character Design & Echtzeit-Video-Produktion',
                 description: 'Welches Tools geben wir den Kitas und Grundschulen an die Hand, um ihre Kids die Freude an der Bewegung zu vermitteln?'
               },
               url: 'felix-fauli',
