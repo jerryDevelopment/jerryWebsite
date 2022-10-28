@@ -784,6 +784,87 @@ Vue.mixin({
           list: [
             {
               meta: {
+                title: 'Jerry | Digitale Bewegtbild Konzepte im Sport',
+                description: 'Welches Tools geben wir den Kitas und Grundschulen an die Hand, um ihre Kids die Freude an der Bewegung zu vermitteln?'
+              },
+              url: 'felix-fauli',
+              title: 'Character Design & Echtzeit-Video-Produktion',
+              subline: 'Felix Neureuthers Beweg dich schlau! Videoclips für unsere Jüngsten',
+              teaser: 'Welches Tools geben wir den Kitas und Grundschulen an die Hand, um ihre Kids die Freude an der Bewegung zu vermitteln?',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795119/vids_tn3ou9.jpg',
+              introMedia: {
+                type: 'video',
+                settings: {
+                  autoplay: false,
+                  loop: false,
+                  muted: false,
+                  controls: true
+                },
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1666795091/jerry-website-assets/BDS_Fauli_Showreel_TR1_v1zpr9.mp4',
+                posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795642/fauli-poster_iwjvej.jpg'
+              },
+              headline: 'Felix Fauli – Vorbild und Motivator für Spass an der Bewegung',
+              infoText: [
+                {
+                  headline: 'WHY – Warum bewegen sich unsere Kids immer weniger?',
+                  text: 'Weil die Vorbilder hierfür auch immer weniger werden! Das wollten wir gemeinsam mit Felix Neureuther ändern! Der setzt sich nämlich sehr stark mit seiner Stiftung und dem Programm „Beweg dich schlau!“ (BDS) dafür ein, dass sich die Kinder und Jugendliche wieder mehr bewegen. Und damit können die Kids gar nicht früh genug beginnen. Um dies zu erreichen, haben wir ein Bewegtbildformat für Kitas und Grundschulen entwickelt, welches auf unterhaltsame und zeitgemäße Weise, Freude an der Bewegung vermittelt und zum Mitmachen animiert.'
+                },
+                {
+                  headline: 'HOW - Wie sprechen wir die Kids altersgerecht an?',
+                  text: 'Mit einem Vorbild, das sie lieben, dem Faultier FELIX FAULI, den wir als durchgängiges Maskottchen für das BDS-Programm entwickelt haben. Felix Fauli ist quasi der kindgerechte virtuelle Charakter des echten Felix. User Ziel war es, die beiden miteinander in Interaktion zu bringen, und auf kindliche Art und Weise die Kids zum Nachmachen lustiger Bewegungsübungen zu animieren. Mit Hilfe von Motion Capturing haben wir den digitalen 3D Fauli als zum Leben erweckt und ihn gemeinsam mit dem realen Felix in unterschiedlichste virtuelle Welten geschickt - auch um zu zeigen, wo und wie wir überall Freude an der Bewegung erleben können. Auf diese Weise war es möglich, ein Format zu produzieren, in dem unser virtueller Charakter in Echtzeit mit Felix interagieren konnte. Das alles klappt aber nur durch ein perfektes Zusammenspiel aus Echtzeit-Rendering-Maschinen, Motion-Tracking-Artists, hochwertigem Greenscreen Setup und natürlich einer erstklassigen Fauli-Schauspielerin, deren Stimme, Bewegung und Grimassen massgeblich für einen perfekten virtuellen Fauli notwendig sind.'
+                },
+                {
+                  headline: 'WHAT – Was durften wir den Kids übergeben?',
+                  text: 'Das Ergebnis war eine Staffel von jeweils 15 unterhaltsamen Felix Fauli Bewegungsvideos für Kita- und für Grundschulkinder, welche im Bezug auf die kognitiv-koordinativen Fähigkeiten der unterschiedlichen Altersgruppen abgestimmt sind. Diese dienen nun den Erziehern/-innen und Lehrern/-innen als zeitgemäßes und effektives Tool, ihre Kids täglich für den Spass an der Bewegung zu begeistern.'
+                }
+              ],              
+              clients: [
+                // 'Aston Martin München'
+              ],
+              partners: [
+                'Felix-Neureuther-Stiftung'
+              ],
+              media: [
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795119/vids_tn3ou9.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1666795119/vids_tn3ou9.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1666795119/vids_tn3ou9.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1666795119/vids_tn3ou9.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795119/vids_tn3ou9.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795119/vids_tn3ou9.jpg',
+                  },
+                  subline: ''
+                },{
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795107/2d_rhtk0r.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1666795107/2d_rhtk0r.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1666795107/2d_rhtk0r.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1666795107/2d_rhtk0r.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795107/2d_rhtk0r.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795107/2d_rhtk0r.jpg',
+                  },
+                  subline: ''
+                },{
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795114/character_rmbrkj.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1666795114/character_rmbrkj.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1666795114/character_rmbrkj.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1666795114/character_rmbrkj.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795114/character_rmbrkj.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795114/character_rmbrkj.jpg',
+                  },
+                  subline: ''
+                }
+              ]
+            }, {
+              meta: {
                 title: 'Jerry | Virtual Reality Experience',
                 description: 'Wir sind Jerry entwickelt mit ihrer Digital-Unit maßgeschneiderte Virtual Reality Strategien und setzt diese professionell um.'
               },
@@ -1266,6 +1347,87 @@ Vue.mixin({
           partnersHeadline: 'In Cooperation with',
           list: [
             {
+              meta: {
+                title: 'Jerry | Character Design & Real-Time Video Production',
+                description: 'What tools do we give to kindergartens and elementary schools to teach their kids the joy of movement?'
+              },
+              url: 'felix-fauli',
+              title: 'Character Design & Real-Time Video Production',
+              subline: 'Felix Neureuther’s Beweg dich schlau! Video clips for our youngest',
+              teaser: 'What tools do we give to kindergartens and elementary schools to teach their kids the joy of movement?',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795119/vids_tn3ou9.jpg',
+              introMedia: {
+                type: 'video',
+                settings: {
+                  autoplay: false,
+                  loop: false,
+                  muted: false,
+                  controls: true
+                },
+                src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1666795091/jerry-website-assets/BDS_Fauli_Showreel_TR1_v1zpr9.mp4',
+                posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795642/fauli-poster_iwjvej.jpg'
+              },
+              headline: 'Felix Fauli — role model and motivator for fun with exercise',
+              infoText: [
+                {
+                  headline: 'WHY – Why do our kids move less and less?',
+                  text: 'Because the role models for this are also becoming fewer and fewer! We wanted to change that together with Felix Neureuther! With his foundation and the program "Beweg dich schlau! (BDS) to get children and young people moving more again. And kids can’t start early enough. To achieve this, we have developed a video format for kindergartens and elementary schools that encourages children to get moving in an entertaining and up-to-date way.'
+                },
+                {
+                  headline: 'HOW - How do we address the kids in an age-appropriate way?',
+                  text: 'With a role model they love, the sloth FELIX FAULI, whom we developed as a consistent mascot for the BDS program. Felix Fauli is, so to speak, the child-friendly virtual character of the real Felix. User’s goal was to get the two of them interacting with each other, and to encourage kids to copy fun movement exercises in a childlike way. With the help of motion capturing, we brought the digital 3D Fauli to life and sent him into various virtual worlds together with the real Felix - also to show where and how we can experience the joy of movement everywhere. In this way, it was possible to produce a format in which our virtual character could interact with Felix in real time. But all this only works through a perfect interaction of real-time rendering machines, motion tracking artists, high-quality greenscreen setup and of course a first-class Fauli actress, whose voice, movement and grimaces are essential for a perfect virtual Fauli.'
+                },
+                {
+                  headline: 'WHAT – What were we allowed to hand over to the kids?',
+                  text: 'The result was a series of 15 entertaining Felix Fauli exercise videos for kindergarten and primary school children, which are in accordance with the cognitive-coordinative abilities of the different age groups. These now serve as a contemporary and effective tool for educators and teachers to inspire their kids to have fun with movement on a daily basis.'
+                }
+              ],              
+              clients: [
+                // 'Aston Martin München'
+              ],
+              partners: [
+                'Felix-Neureuther-Stiftung'
+              ],
+              media: [
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795119/vids_tn3ou9.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1666795119/vids_tn3ou9.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1666795119/vids_tn3ou9.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1666795119/vids_tn3ou9.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795119/vids_tn3ou9.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795119/vids_tn3ou9.jpg',
+                  },
+                  subline: ''
+                },{
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795107/2d_rhtk0r.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1666795107/2d_rhtk0r.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1666795107/2d_rhtk0r.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1666795107/2d_rhtk0r.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795107/2d_rhtk0r.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795107/2d_rhtk0r.jpg',
+                  },
+                  subline: ''
+                },{
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795114/character_rmbrkj.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1666795114/character_rmbrkj.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1666795114/character_rmbrkj.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1666795114/character_rmbrkj.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795114/character_rmbrkj.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1666795114/character_rmbrkj.jpg',
+                  },
+                  subline: ''
+                }
+              ]
+            }, {
               meta: {
                 title: 'Jerry | Virtual Reality Experience',
                 description: 'Wir sind Jerry develops with their digital unit customized virtual reality strategies and implements them professionally.'
