@@ -791,11 +791,11 @@ Vue.mixin({
               title: 'Character Design & Echtzeit-Video-Produktion',
               subline: 'Felix Neureuthers Beweg dich schlau! Videoclips für unsere Jüngsten',
               teaser: 'Welches Tools geben wir den Kitas und Grundschulen an die Hand, um ihre Kids die Freude an der Bewegung zu vermitteln?',
-              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795119/vids_tn3ou9.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1667378779/jerry-website-assets/Fauli_Felix_efgagz.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
-                  autoplay: false,
+                  autoplay: true,
                   loop: false,
                   muted: false,
                   controls: true
@@ -1355,11 +1355,11 @@ Vue.mixin({
               title: 'Character Design & Real-Time Video Production',
               subline: 'Felix Neureuther’s Beweg dich schlau! Video clips for our youngest',
               teaser: 'What tools do we give to kindergartens and elementary schools to teach their kids the joy of movement?',
-              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795119/vids_tn3ou9.jpg',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1667378779/jerry-website-assets/Fauli_Felix_efgagz.jpg',
               introMedia: {
                 type: 'video',
                 settings: {
-                  autoplay: false,
+                  autoplay: true,
                   loop: false,
                   muted: false,
                   controls: true
