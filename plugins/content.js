@@ -781,6 +781,7 @@ Vue.mixin({
           linkTextMore: 'mehr erfahren …',
           clientsHeadline: 'Auftraggeber',
           partnersHeadline: 'In Kooperation mit',
+          galleryHeadline: 'Galerie',
           list: [
             {
               meta: {
@@ -796,9 +797,9 @@ Vue.mixin({
                 type: 'video',
                 settings: {
                   autoplay: true,
-                  loop: false,
-                  muted: false,
-                  controls: true
+                  loop: true,
+                  muted: true,
+                  controls: false
                 },
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1666795091/jerry-website-assets/BDS_Fauli_Showreel_TR1_v1zpr9.mp4',
                 posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795642/fauli-poster_iwjvej.jpg'
@@ -1345,6 +1346,7 @@ Vue.mixin({
           linkTextMore: 'read more …',
           clientsHeadline: 'Clients',
           partnersHeadline: 'In Cooperation with',
+          galleryHeadline: 'Gallery',
           list: [
             {
               meta: {
@@ -1360,9 +1362,9 @@ Vue.mixin({
                 type: 'video',
                 settings: {
                   autoplay: true,
-                  loop: false,
-                  muted: false,
-                  controls: true
+                  loop: true,
+                  muted: true,
+                  controls: false
                 },
                 src: 'https://res.cloudinary.com/mt-website-dv7jumlqa/video/upload/v1666795091/jerry-website-assets/BDS_Fauli_Showreel_TR1_v1zpr9.mp4',
                 posterSrc: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1666795642/fauli-poster_iwjvej.jpg'

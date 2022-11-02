@@ -26,7 +26,7 @@
             <div class="col col-unit-6 col-resp-2-unit-12 pad-lr-0-75 pad-resp-4-lr-1 float-left">
               <h2 class="text-xl c-white">{{ projectCurrentLanguage.headline }}</h2>
             </div>
-            <div class="col col-unit-6 pad-lr-0-75 pad-l-2 float-left" v-if="!isResp2 && !isResp3 && !isResp4">
+            <div class="col col-unit-6 pad-lr-0-75 pad-l-2 pad-t-0-5 float-left" v-if="!isResp2 && !isResp3 && !isResp4">
               <h1 class="text-s c-white">{{ projectCurrentLanguage.title }}</h1>
               <h2 class="text-s c-grey-4">{{ projectCurrentLanguage.subline }}</h2>
             </div>
@@ -38,7 +38,7 @@
           <div class="col col-unit-6 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-0 float-left">
             <div class="col col-unit-12 pad-resp-4-lr-1" v-for="(text, index) in projectCurrentLanguage.infoText" :key="index">
               <h3 class="text-s c-white mar-b-1" v-html="text.headline"></h3>
-              <p class="text-s c-grey-4 mar-b-3" v-html="textFormated(text.text)"></p>
+              <p class="text-s c-grey-4 mar-b-0-75" :class="{ 'mar-b-3': index < projectCurrentLanguage.infoText.length - 1 }" v-html="textFormated(text.text)"></p>
             </div>
             <div class="col col-unit-12 pad-t-2 pad-b-4" v-if="isResp2 || isResp3 || isResp4">
               <div v-for="(media, index) in projectCurrentLanguage.media" :key="index">
@@ -50,17 +50,18 @@
                 </div>
                 <p class="text-xs c-grey-4 mar-t-0-5 mar-b-1" v-html="media.subline ? media.subline : '&nbsp;'"></p>
               </div>
-            </div>
-            <div class="col col-unit-12 pad-resp-4-lr-1 pad-t-2" v-if="projectCurrentLanguage.clients.length > 0">
-              <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.clientsHeadline"></h4>
-              <p class="text-xs c-grey-4 mar-b-1" v-html="projectCurrentLanguage.clients.join(', ')"></p>
-            </div>
-            <div class="col col-unit-12 pad-resp-4-lr-1 " v-if="projectCurrentLanguage.partners.length > 0">
-              <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.partnersHeadline"></h4>
-              <p class="text-xs c-grey-4 mar-b-1" v-html="projectCurrentLanguage.partners.join(', ')"></p>
+              <div class="col col-unit-12 pad-resp-4-lr-1 pad-t-2" v-if="projectCurrentLanguage.clients.length > 0">
+                <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.clientsHeadline"></h4>
+                <p class="text-xs c-grey-4 mar-b-1" v-html="projectCurrentLanguage.clients.join(', ')"></p>
+              </div>
+              <div class="col col-unit-12 pad-resp-4-lr-1" v-if="projectCurrentLanguage.partners.length > 0">
+                <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.partnersHeadline"></h4>
+                <p class="text-xs c-grey-4 mar-b-1" v-html="projectCurrentLanguage.partners.join(', ')"></p>
+              </div>
             </div>
           </div>
-          <div class="col col-unit-6 pad-lr-0-75 pad-l-2 float-left" v-if="!isResp2 && !isResp3 && !isResp4">
+          <div class="col col-unit-6 pad-lr-0-75 pad-l-2 float-left" style="position: sticky; top: 5em;" v-if="!isResp2 && !isResp3 && !isResp4">
+            <h4 class="text-s c-white mar-b-1" v-html="projectsCurrentLanguage.galleryHeadline"></h4>
             <div v-for="(media, index) in projectCurrentLanguage.media" :key="index">
               <div @click="activateSlideshow(index)" class="media-container media-container-css-height media-container-css-height-project-single-col w-per-100 pointer">
                 <img v-if="media.type == 'img'" class="obj-fit-cover lazyload" :data-src="media.src.mw769">
@@ -69,6 +70,14 @@
                 </video>
               </div>
               <p class="text-xs c-grey-4 mar-t-0-5 mar-b-1" v-html="media.subline ? media.subline : '&nbsp;'"></p>
+            </div>
+            <div class="col col-unit-12 pad-resp-4-lr-1 pad-t-2" v-if="projectCurrentLanguage.clients.length > 0">
+              <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.clientsHeadline"></h4>
+              <p class="text-xs c-grey-4 mar-b-1" v-html="projectCurrentLanguage.clients.join(', ')"></p>
+            </div>
+            <div class="col col-unit-12 pad-resp-4-lr-1" v-if="projectCurrentLanguage.partners.length > 0">
+              <h4 class="text-xs c-white" v-html="projectsCurrentLanguage.partnersHeadline"></h4>
+              <p class="text-xs c-grey-4 mar-b-1" v-html="projectCurrentLanguage.partners.join(', ')"></p>
             </div>
           </div>
         </div>
