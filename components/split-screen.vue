@@ -688,7 +688,7 @@ export default {
   opacity: .3;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 500px) {
 
   .split-screen-left  { clip-path: polygon(0 0, 100% 0, 100% 20%, 0 80%); }
   .split-screen-right { clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 80%); }

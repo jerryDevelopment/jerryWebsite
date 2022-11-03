@@ -17,10 +17,10 @@ Vue.mixin({
       return this.windowWidth <= 1024 && this.windowWidth > 768
     },
     isResp3: function () {
-      return this.windowWidth <= 768 && this.windowWidth > 425
+      return this.windowWidth <= 768 && this.windowWidth > 500
     },
     isResp4: function () {
-      return this.windowWidth <= 425
+      return this.windowWidth <= 500
     }
   },
   created(){
