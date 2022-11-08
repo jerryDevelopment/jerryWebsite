@@ -73,7 +73,7 @@
                   <source :src="media.src"/>
                 </video>
               </div>
-              <p class="text-xs c-grey-4 mar-t-0-5 mar-b-1" v-html="media.subline ? media.subline : '&nbsp;'"></p>
+              <p class="text-xs c-grey-4 mar-t-0-25 mar-b-0-5" v-html="media.subline ? media.subline : '&nbsp;'"></p>
             </div>
             <div class="col col-unit-12 pad-resp-4-lr-1 pad-t-2" v-if="projectCurrentLanguage.clients.length > 0">
               <h4 class="text-xs c-white" v-html="projectCurrentLanguage.clients.length > 1 ? projectsCurrentLanguage.clientsHeadline : projectsCurrentLanguage.clientHeadline"></h4>
