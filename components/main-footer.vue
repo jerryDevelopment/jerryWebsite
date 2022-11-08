@@ -269,7 +269,24 @@
         <div class="col col-unit-12 pad-lr-0-75 mar-b-3">
           <p class="text-s c-white mar-b-1" v-html="currentContact.companyName"></p>
           <p class="text-s c-white" v-html="currentContact.address.street + ' · ' + currentContact.address.city"></p>
-          <p class="text-s c-white"><span v-if="currentContact.address.phone != ''">T <a :href="'tel:' + currentContact.address.phone" v-html="currentContact.address.phone"></a><span v-html=" isResp4 ? ' ' : ' · '"></span></span><a :href="'mailto:' + currentContact.address.email" v-html="currentContact.address.email"></a></p>
+          <p class="text-s c-white mar-b-1"><span v-if="currentContact.address.phone != ''">T <a :href="'tel:' + currentContact.address.phone" v-html="currentContact.address.phone"></a><span v-html=" isResp4 ? ' ' : ' · '"></span></span><a :href="'mailto:' + currentContact.address.email" v-html="currentContact.address.email"></a></p>
+          <a :href="currentContact.address.gmapLink"><p :class="'text-s c-white mar-b-1 ' + textColorClass3"><svg style="height: .75em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.42 10.98"><polygon class="fill-white" points="7.93 0 6.62 1.32 9.86 4.56 0 4.56 0 6.42 9.86 6.42 6.62 9.66 7.93 10.98 13.42 5.49 7.93 0"/></svg> Google Maps</p></a>
+          <p :class="'text-s c-white mar-b-1 ' + textColorClass3" v-html="contactCurrentLanguage.followUsText"></p>
+          <a :href="navigation.socialLinks.facebook"><svg class="social-icon pad-tb-1 mar-r-1 mar-resp-2-lr-0-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <path class="fill-white" d="M27.78,0H2.21A2.19,2.19,0,0,0,0,2.16V27.84A2.19,2.19,0,0,0,2.21,30H16.08V18.43H12.19V13.91h3.89V10.58c0-3.86,2.35-6,5.79-6a30.37,30.37,0,0,1,3.48.18v4H23c-1.87,0-2.24.89-2.24,2.2v2.88h4.48l-.58,4.52h-3.9V30h7A2.19,2.19,0,0,0,30,27.84V2.16A2.19,2.19,0,0,0,27.78,0Z"/>
+          </svg></a>
+          <a :href="navigation.socialLinks.instagram"><svg class="social-icon pad-tb-1 mar-r-1 mar-resp-2-lr-0-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <path class="fill-white" d="M27.34,21.72a5.62,5.62,0,0,1-5.62,5.62H8.28a5.62,5.62,0,0,1-5.62-5.62V8.28A5.62,5.62,0,0,1,8.28,2.66H21.72a5.62,5.62,0,0,1,5.62,5.62ZM21.72,0H8.28A8.28,8.28,0,0,0,0,8.28V21.72A8.28,8.28,0,0,0,8.28,30H21.72A8.29,8.29,0,0,0,30,21.72V8.28A8.28,8.28,0,0,0,21.72,0"/>
+            <path class="fill-white" d="M15,20.07A5.07,5.07,0,1,1,20.07,15,5.08,5.08,0,0,1,15,20.07m0-12.8A7.73,7.73,0,1,0,22.73,15,7.74,7.74,0,0,0,15,7.27"/>
+            <path class="fill-white" d="M23.06,5a2,2,0,1,0,1.37.57A2,2,0,0,0,23.06,5"/>
+          </svg></a>
+          <a :href="navigation.socialLinks.linkedIn"><svg class="social-icon pad-tb-1 mar-r-1 mar-resp-2-lr-0-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <path class="fill-white" d="M25.56,25.56H21.12v-7c0-1.66,0-3.8-2.32-3.8s-2.66,1.81-2.66,3.68v7.08H11.69V11.25H16V13.2H16a4.68,4.68,0,0,1,4.21-2.31c4.5,0,5.33,3,5.33,6.82ZM6.67,9.29A2.58,2.58,0,1,1,9.25,6.71,2.59,2.59,0,0,1,6.67,9.29h0M8.9,25.56H4.45V11.25H8.9ZM27.78,0H2.21A2.19,2.19,0,0,0,0,2.16V27.84A2.19,2.19,0,0,0,2.21,30H27.78A2.19,2.19,0,0,0,30,27.84V2.16A2.19,2.19,0,0,0,27.78,0"/>
+          </svg></a>
+        
+        
+        
+        
         </div>
         <div class="col col-unit-12 pad-lr-0-75">
           <p class="text-s c-white"><nuxt-link class="legal-link" :to="localePath( isIndex ? 'imprint' : 'imprint-jerry-digital' )" v-html="navigationCurrentLanguage.imprintLinkText"></nuxt-link> | <nuxt-link class="legal-link" :to="localePath(isIndex ? 'privacy-policy' : 'privacy-policy-jerry-digital')" v-html="navigationCurrentLanguage.privacyPolicyLinkText"></nuxt-link><br><span class="legal-link pointer" @click="$cookies.modal = true" v-html="navigationCurrentLanguage.cookiesButtonText"></span></p>
@@ -278,7 +295,6 @@
     </div>
   </div>
 </template>
-
 <script>
 
 

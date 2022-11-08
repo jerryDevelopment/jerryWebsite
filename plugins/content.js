@@ -57,18 +57,18 @@ Vue.mixin({
           leftTagLine: 'sports business<br>consultants',
           leftText: 'Wir liefern <span class="c-yellow">Strategien</span><br>in Zeiten der Veränderung.',
           leftTextScrollDownButton: 'sports business consultants',
-          rightTagLine: 'sports business<br>solutions',
+          rightTagLine: 'software solutions for business<br>and brand experience',
           rightText: 'Wir liefern digitale <span class="c-blue">Lösungen</span><br>in Zeiten der Veränderung.',
-          rightTextScrollDownButton: 'sports business solutions'
+          rightTextScrollDownButton: 'software solutions for business and brand experience'
         },
         en: {
           welcomeMessage: 'hi, we are',
           leftTagLine: 'sports business<br>consultants',
           leftText: 'We deliver <span class="c-yellow">strategies</span><br>in times of change.',
           leftTextScrollDownButton: 'sports business consultants',
-          rightTagLine: 'sports business<br>solutions',
+          rightTagLine: 'software solutions for business<br>and brand experience',
           rightText: 'We deliver digital <span class="c-blue">solutions</span><br>in times of change.',
-          rightTextScrollDownButton: 'sports business solutions'
+          rightTextScrollDownButton: 'software solutions for business and brand experience'
         }
       },
       contact: {
@@ -593,8 +593,8 @@ Vue.mixin({
             description: 'Jerry Digital verbindet Sportbusiness mit medien-technologischem Know-How und begleitet Kommunikationsprojekte vom Konzept bis hin zur finalen Umsetzung.'
           },
           whoJerryDigital: {
-            headline: 'Wer ist Jerry Digital?',
-            text: 'Wir sind aus der langjährig am Markt bestehenden, international agierenden Medientools Solutions GmbH hervorgegangen und greifen damit auf die erforderlichen <span class="c-blue">IT-Kompetenzen</span> und <span class="c-blue">Entwickler-Kapazitäten</span> zu.'
+            headline: 'Wir verbinden Business Intelligence mit Management & Digital Knowhow',
+            text: 'In mehr als 20 Jahren im Beratungs- und Management-Sektor haben wir immer wieder mit erfahrenen internationalen Technologiepartnern für die Entwicklung unserer individuellen Softwarelösungen gearbeitet. Unser Anspruch an Qualität und Flexibilität hat uns schließlich dazu gebracht, eine Digitalagentur zu werden. Der Fokus von Jerry Digital liegt auf der <span class="c-blue">effizienten Lösung von Kommunikations- und Managementherausforderungen</span> für einen reibungslosen Entwicklungsprozess. Je nach Kundenprojekt arbeiten wir mit befreundeten deutschen und europäischen Experten zusammen und nutzen die <span class="c-blue">neuesten Technologien und Entwicklungstools</span>.'
           },
           whyJerryDigital: {
             headline: 'Warum Jerry Digital?',
@@ -687,8 +687,8 @@ Vue.mixin({
             description: 'Jerry Digital combines sports business with media technology know-how and supports communication projects from concept to final implementation.'
           },
           whoJerryDigital: {
-            headline: 'Who is Jerry Digital?',
-            text: 'We are affiliated under company law with Medientools Solutions GmbH and thus have access to the necessary <span class="c-blue">expertise</span> and <span class="c-blue">capacities</span> at all times.'
+            headline: 'We combine Business Intelligence with Management & Digital Knowhow',
+            text: 'In more than 20 years of consultancy and management work, we have always searched for experienced international technology partners for our custom software solutions. Our claim to quality and flexibility finally led us to become a digital agency. The focus of Jerry Digital is on the <span class="c-blue">efficient solution of communication and management challenges</span> for a flawless development process. Depending on the customer project, we work together with fellow German and European specialists using the <span class="c-blue">latest technologies and development tools</span>.'
           },
           whyJerryDigital: {
             headline: 'Why Jerry Digital?',
@@ -780,8 +780,10 @@ Vue.mixin({
           indexSectionHeadline: 'Show Cases',
           linkTextMore: 'mehr erfahren …',
           clientsHeadline: 'Auftraggeber',
+          clientHeadline: 'Auftraggeber',
           partnersHeadline: 'In Kooperation mit',
           galleryHeadline: 'Galerie',
+          expertiseHeadline: 'Expertise',
           list: [
             {
               meta: {
@@ -824,6 +826,15 @@ Vue.mixin({
               ],
               partners: [
                 'Felix-Neureuther-Stiftung'
+              ],
+              expertise: [
+                'Character Design',
+                '3D Modeling',
+                '2D & 3D Animation',
+                'Real-time Green Screen Video',
+                'Real-time Motion Capturing',
+                'Unreal Engine',
+                'Sound Design',
               ],
               media: [
                 {
@@ -902,6 +913,15 @@ Vue.mixin({
                 'BMW Group'
               ],
               partners: [],
+              expertise: [
+                '3D Modeling',
+                'Virtual Environment Design',
+                'Interaction Design',
+                'Unity 3D',
+                'QA & Testing',
+                'Training',
+                'Support & Troubleshooting',
+              ],
               media: [
                 {
                   type: 'img',
@@ -944,11 +964,89 @@ Vue.mixin({
             },
             {
               meta: {
+                title: 'Jerry | Sport Business Management Software und Anwendungen',
+                description: 'Jerry Digital entwickelt modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen für Prozess-Optimierung im Sport Business.'
+              },
+              url: 'sport-management-applications',
+              title: 'Business Intelligence Software',
+              subline: 'IT-Systementwicklung',
+              teaser: 'Auch im Sportbusiness gilt - wie können Prozesse nachhaltig optimiert werden? Wir entwickeln modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen.',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+              introMedia: {
+                type: 'img',
+                settings: {},
+                src: {
+                  default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                }
+              },
+              headline: 'Back to the roots',
+              infoText: [
+                {
+                  headline: 'WHY – Warum waren wir die Richtigen?',
+                  text: 'Für Sportstudenten gab und gibt es bis heute einen sehr attraktiven Job-Anbieter: die cip marketing GmbH. So waren auch wir damals Teil des cip Teams und durften zahlreiche Handels- und Eventmarketing Maßnahmen für große Sport-Brands, wie Adidas, Salomon, Reebok und Co. begleiten. Weil wir in der Sportfamilie immer irgendwie miteinander verbunden bleiben und wir die Anforderungen an das cip Agenturbusiness noch kennen, durften wir ein Upgrade für das in die Jahre gekommenes web-basiertes cip ERP System entwickeln, welches in Bezug auf komplexe Benutzeroberflächen, mobile Nutzung und lange Ladezeiten den aktuellen Agenturansprüchen nicht mehr gerecht wurde.'
+                },
+                {
+                  headline: 'HOW – Wie sind wir vorgegangen?',
+                  text: 'Zunächst galt es, ein Assessment des bestehenden ERP Systems zu erstellen. Die neutrale Bewertung ergab, dass der bestehende Funktionsumfang, die angedachten Verbesserungen sowie der gewünschte Performance-Boost nicht mit dem bestehenden Legacy-System erreicht werden können. Auch etablierte ERP-Systeme würden das nicht “out of the box” lösen können. Von daher entschied man sich für eine komplette Neuentwicklung des Systems.<br>Vorab erstellten wir einen Prototyp auf dem Stand der Technik. Damit wurde die flüssige Darstellung großer Datenmengen, rasche komplexe Datenabfragen sowie Echtzeit-Aktualisierungen in einer ansprechenden Benutzeroberfläche demonstriert.<br>Um die Arbeitsprozesse von cip optimal zu unterstützen, wählten wir eine agile Projektsteuerungs-Methodologie mit einer sprintbasierten Modul-für-Modul-Implementierung. Unser agiles Entwicklungsteam besteht aus Fullstack-Entwicklern, die zugleich an der Front- und Backend-Implementierung neuer Funktionen arbeiten. Wir bieten flexible Teamgrößen, um effizient und ressourcensparend auf Peak- und Downzeiten im Entwicklungsprozess reagieren zu können. Ein durchgängiges Kernteam aus Projektmanagern, Softwarearchitekten und Developern lässt uns schnell auf neue Kundenanforderungen reagieren.'
+                },
+                {
+                  headline: 'WHAT – Was ist das Produkt?',
+                  text: 'Jerry Digital entwickelte ein maßgeschneidertes System, das bereits für einzelne Kunden und Regionen in Betrieb ist und dessen genereller Rollout kurz bevorsteht.<br>Mit ihm lassen sich vollumfänglich sämtliche Prozesse in den Bereichen Personalwesen, Projektmanagement, Terminkoordination, Finanzen, POS-/Event-Aktionen, etc. verwalten. Neben der Desktop-Anwendung wurde für externe Mitarbeiter (Brand Ambassadors) eine Ionic basierte Progressive Web App (PWA) erstellt.<br>Zur Technologie: Auf Basis von Node.js wurde eine API und ein service-zentriertes modulares Backend erstellt. Als übergreifendes Frontend-Framework der verschiedenen Anwendungen nutzten wir Angular. Mit Material Design wurde ein weit verbreitetes Design System für die Benutzeroberfläche des ERP-Systems gewählt.'
+                }
+              ],              
+              clients: [
+                'cip marketing GmbH'
+              ],
+              partners: [],
+              expertise: [
+                'Web App Development',
+                'Mobile App Development',
+                'UI/UX Design',
+                'DevOps',
+                'QA & Testing',
+                'Product Co-Ownership',
+                'Support & Troubleshooting',
+              ],
+              media: [
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                  },
+                  subline: ''
+                }, {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                  },
+                  subline: ''
+                }
+              ]
+            },
+            {
+              meta: {
                 title: 'Jerry | Social Media AR Sports Game und Filter',
                 description: 'Jerry Digital entwickelt Augmented Reality Filter und Sport Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.'
               },
               url: 'sports-extended-reality',
-              title: 'Sports Extended Reality',
+              title: 'Charity XR',
               subline: 'Social Media AR Game',
               teaser: 'Wie generieren wir hohe Aufmerksamkeit, große Interaktionsraten und bestmögliches Verbreitungspotenzial? Wir entwickeln Augmented Reality Filter und Spiele, die innerhalb der Social Media Plattformen sowie über Web-Links funktionieren.',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
@@ -981,6 +1079,12 @@ Vue.mixin({
               ],
               partners: [
                 'RedaktionsNetzwerk Deutschland und #GABFAF'
+              ],
+              expertise: [
+                'Character Design',
+                'Game Design',
+                '3D Modeling',
+                'Spark AR (Facebook/Instagram)',
               ],
               media: [
                 {
@@ -1052,6 +1156,13 @@ Vue.mixin({
               partners: [
                 'SAS Technologies (Live Rank) und der DATEV Challenge Roth'
               ],
+              expertise: [
+                'GIS',
+                'UI/UX Design',
+                'Web App Development',
+                'QA & Testing',
+                'Support & Troubleshooting',
+              ],
               media: [
                 {
                   type: 'img',
@@ -1099,7 +1210,7 @@ Vue.mixin({
                 description: 'Innovative Showcase einer Sportanlage  als Web-Präsentation und 3D Facility-Walkthrough'
               },
               url: 'sport-visions',
-              title: 'Sport Visionen',
+              title: 'Sport Facility Visionen',
               subline: 'Digitale interaktive Präsentations-Plattform',
               teaser: 'Wie präsentieren wir etwas, dass es noch nicht gibt? Wir sammeln Fakten, kreieren die Story, visualisieren zeitgemäß und bündeln die Inhalte digital, interaktiv und web-basiert.',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900030/jerry-website-assets/sports_visions_hero_startseite_jcmupx.jpg',
@@ -1133,6 +1244,11 @@ Vue.mixin({
                 'Sportplan GmbH'
               ],
               partners: [],
+              expertise: [
+                'Web Development',
+                '3D Modeling',
+                'WebGL',
+              ],
               media: [
                 {
                   type: 'img',
@@ -1176,80 +1292,11 @@ Vue.mixin({
             },
             {
               meta: {
-                title: 'Jerry | Sport Business Management Software und Anwendungen',
-                description: 'Jerry Digital entwickelt modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen für Prozess-Optimierung im Sport Business.'
-              },
-              url: 'sport-management-applications',
-              title: 'Sport Management Anwendungen',
-              subline: 'IT-Systementwicklung',
-              teaser: 'Auch im Sportbusiness gilt - wie können Prozesse nachhaltig optimiert werden? Wir entwickeln modulare, skalierbare und lösungsorientierte IT-Systeme und -Anwendungen.',
-              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-              introMedia: {
-                type: 'img',
-                settings: {},
-                src: {
-                  default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                }
-              },
-              headline: 'Back to the roots',
-              infoText: [
-                {
-                  headline: 'WHY – Warum waren wir die Richtigen?',
-                  text: 'Für Sportstudenten gab und gibt es bis heute einen sehr attraktiven Job-Anbieter: die cip marketing GmbH. So waren auch wir damals Teil des cip Teams und durften zahlreiche Handels- und Eventmarketing Maßnahmen für große Sport-Brands, wie Adidas, Salomon, Reebok und Co. begleiten. Weil wir in der Sportfamilie immer irgendwie miteinander verbunden bleiben und wir die Anforderungen an das cip Agenturbusiness noch kennen, durften wir ein Upgrade für das in die Jahre gekommenes web-basiertes cip ERP System entwickeln, welches in Bezug auf komplexe Benutzeroberflächen, mobile Nutzung und lange Ladezeiten den aktuellen Agenturansprüchen nicht mehr gerecht wurde.'
-                },
-                {
-                  headline: 'HOW – Wie sind wir vorgegangen?',
-                  text: 'Zunächst galt es, ein Assessment des bestehenden ERP Systems zu erstellen. Die neutrale Bewertung ergab, dass der bestehende Funktionsumfang, die angedachten Verbesserungen sowie der gewünschte Performance-Boost nicht mit dem bestehenden Legacy-System erreicht werden können. Auch etablierte ERP-Systeme würden das nicht “out of the box” lösen können. Von daher entschied man sich für eine komplette Neuentwicklung des Systems.<br>Vorab erstellten wir einen Prototyp auf dem Stand der Technik. Damit wurde die flüssige Darstellung großer Datenmengen, rasche komplexe Datenabfragen sowie Echtzeit-Aktualisierungen in einer ansprechenden Benutzeroberfläche demonstriert.<br>Um die Arbeitsprozesse von cip optimal zu unterstützen, wählten wir eine agile Projektsteuerungs-Methodologie mit einer sprintbasierten Modul-für-Modul-Implementierung. Unser agiles Entwicklungsteam besteht aus Fullstack-Entwicklern, die zugleich an der Front- und Backend-Implementierung neuer Funktionen arbeiten. Wir bieten flexible Teamgrößen, um effizient und ressourcensparend auf Peak- und Downzeiten im Entwicklungsprozess reagieren zu können. Ein durchgängiges Kernteam aus Projektmanagern, Softwarearchitekten und Developern lässt uns schnell auf neue Kundenanforderungen reagieren.'
-                },
-                {
-                  headline: 'WHAT – Was ist das Produkt?',
-                  text: 'Jerry Digital entwickelte ein maßgeschneidertes System, das bereits für einzelne Kunden und Regionen in Betrieb ist und dessen genereller Rollout kurz bevorsteht.<br>Mit ihm lassen sich vollumfänglich sämtliche Prozesse in den Bereichen Personalwesen, Projektmanagement, Terminkoordination, Finanzen, POS-/Event-Aktionen, etc. verwalten. Neben der Desktop-Anwendung wurde für externe Mitarbeiter (Brand Ambassadors) eine Ionic basierte Progressive Web App (PWA) erstellt.<br>Zur Technologie: Auf Basis von Node.js wurde eine API und ein service-zentriertes modulares Backend erstellt. Als übergreifendes Frontend-Framework der verschiedenen Anwendungen nutzten wir Angular. Mit Material Design wurde ein weit verbreitetes Design System für die Benutzeroberfläche des ERP-Systems gewählt.'
-                }
-              ],              
-              clients: [
-                'cip marketing GmbH'
-              ],
-              partners: [],
-              media: [
-                {
-                  type: 'img',
-                  settings: {},
-                  src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                  },
-                  subline: ''
-                }, {
-                  type: 'img',
-                  settings: {},
-                  src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                  },
-                  subline: ''
-                }
-              ]
-            },
-            {
-              meta: {
                 title: 'Jerry | Digitale Bewegtbild Konzepte im Sport',
                 description: 'Jerry Digital bündelt Markenkompetenz, Plattform-Know-how, Zugriff auf Protagonisten sowie effiziente Produktion und kreiert multifunktionale digitale Produkte.'
               },
               url: 'sports-content',
-              title: 'Sport Content',
+              title: 'Video Content',
               subline: 'Digitaler Image Clip',
               teaser: 'In kürzester Zeit ein emotionales Kommunikationsmittel mit höchster Effizienz schaffen - wie ist das möglich? Wir bündeln Markenkompetenz, Plattform-Know-how, direkten Zugriff auf Protagonisten sowie zielgerichtete Hands-on-Produktion und kreieren daraus multifunktionale digitale Produkte.',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900046/jerry-website-assets/sports_content_am_hero_startseite_a4qyyf.jpg',
@@ -1284,6 +1331,11 @@ Vue.mixin({
               ],
               partners: [
                 'LG42 GmbH'
+              ],
+              expertise: [
+                'Story Board',
+                'Video Shooting',
+                'Video Editing',
               ],
               media: [
                 {
@@ -1345,8 +1397,10 @@ Vue.mixin({
           indexSectionHeadline: 'Show Cases',
           linkTextMore: 'read more …',
           clientsHeadline: 'Clients',
+          clientHeadline: 'Client',
           partnersHeadline: 'In Cooperation with',
           galleryHeadline: 'Gallery',
+          expertiseHeadline: 'Expertise',
           list: [
             {
               meta: {
@@ -1389,6 +1443,15 @@ Vue.mixin({
               ],
               partners: [
                 'Felix-Neureuther-Stiftung'
+              ],
+              expertise: [
+                'Character Design',
+                '3D Modeling',
+                '2D & 3D Animation',
+                'Real-time Green Screen Video',
+                'Real-time Motion Capturing',
+                'Unreal Engine',
+                'Sound Design',
               ],
               media: [
                 {
@@ -1467,6 +1530,15 @@ Vue.mixin({
                 'BMW Group'
               ],
               partners: [],
+              expertise: [
+                '3D Modeling',
+                'Virtual Environment Design',
+                'Interaction Design',
+                'Unity 3D',
+                'QA & Testing',
+                'Training',
+                'Support & Troubleshooting',
+              ],
               media: [
                 {
                   type: 'img',
@@ -1509,11 +1581,89 @@ Vue.mixin({
             },
             {
               meta: {
+                title: 'Jerry | Sports Business Management Software and Applications',
+                description: 'Jerry Digital develops modular, scalable and solution-oriented IT systems and applications for process optimization in the sports business.'
+              },
+              url: 'sport-management-applications',
+              title: 'Business Intelligence Software',
+              subline: 'IT system development',
+              teaser: 'Even essential in sports business - how can processes be optimized sustainably? We develop modular, scalable and solution-oriented IT systems and applications.',
+              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+              introMedia: {
+                type: 'img',
+                settings: {},
+                src: {
+                  default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                  mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
+                }
+              },
+              headline: 'Back to the roots',
+              infoText: [
+                {
+                  headline: 'WHY—Why were we the right ones?',
+                  text: 'For sports students there was and still is a very attractive job provider: cip marketing GmbH. We were part of the cip team at that time and were able to accompany numerous trade and event marketing measures for major sports brands such as Adidas, Salomon, Reebok and Co. Because we always remain somehow connected to each other in the sports family and because we still know the demands on the cip agency business, we were allowed to develop an upgrade for the outdated web-based cip ERP system, which no longer met the current agency requirements in terms of complex user interfaces, mobile use and long loading times.'
+                },
+                {
+                  headline: 'HOW—How did we proceed?',
+                  text: 'The first step was to create an assessment of the existing ERP system. The neutral assessment showed that the existing functionality, the planned improvements and the desired performance boost could not be achieved with the existing legacy system. Even established ERP systems would not be able to solve this “out of the box”. For this reason, the decision was made to develop a completely new system.<br>In advance, we created a state-of-the-art prototype. This demonstrated the smooth display of large amounts of data, rapid complex data queries and real-time updates in an attractive user interface.<br>To optimally support cip’s work processes, we chose an agile project management methodology with a sprint-based module-by-module implementation. Our agile development team consists of full-stack developers who work simultaneously on the front- and back-end implementation of new functions. We offer flexible team sizes to be able to react efficiently and resource-saving to peak and down times in the development process. An integrated core team of project managers, software architects and developers allows us to react quickly to new customer requirements.'
+                },
+                {
+                  headline: 'WHAT—What is the product?',
+                  text: 'Jerry Digital developed a custom system that is already in operation for individual customers and regions and is about to be rolled out in general. It can be used to fully manage all processes in the areas of human resources, project management, schedule coordination, finance, POS/event promotions, etc. In addition to the desktop application, an Ionic-based Progressive Web App (PWA) was created for external employees (brand ambassadors). About the technology: Based on Node.js, an API and a service-centric modular backend was created. We used Angular as a comprehensive front-end framework for the various applications. With Material Design a widely used design system was chosen for the user interface of the ERP system.'
+                }
+              ],              
+              clients: [
+                'cip marketing GmbH'
+              ],
+              partners: [],
+              expertise: [
+                'Web App Development',
+                'Mobile App Development',
+                'UI/UX Design',
+                'DevOps',
+                'QA & Testing',
+                'Product Co-Ownership',
+                'Support & Troubleshooting',
+              ],
+              media: [
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
+                  },
+                  subline: ''
+                }, {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
+                  },
+                  subline: ''
+                }
+              ]
+            },
+            {
+              meta: {
                 title: 'Jerry | Social media AR sports game and filter',
                 description: 'Jerry Digital develops augmented reality filters and sports games that work within social media platforms and via web links.'
               },
               url: 'sports-extended-reality',
-              title: 'Sports Extended Reality',
+              title: 'Charity XR',
               subline: 'Social Media AR Game',
               teaser: 'How do we generate high attention, high interaction rates and the best possible dissemination potential? We develop augmented reality filters and games that work within social media platforms and via web links.',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900016/jerry-website-assets/AR_game_hero_smvrbs.jpg',
@@ -1548,6 +1698,12 @@ Vue.mixin({
                 'We ourselves'
               ],
               partners: [],
+              expertise: [
+                'Character Design',
+                'Game Design',
+                '3D Modeling',
+                'Spark AR (Facebook/Instagram)',
+              ],
               media: [
                 {
                   type: 'img',
@@ -1618,6 +1774,13 @@ Vue.mixin({
               partners: [
                 'SAS Technologies (Live Rank) and the DATEV Challenge Roth'
               ],
+              expertise: [
+                'GIS',
+                'UI/UX Design',
+                'Web App Development',
+                'QA & Testing',
+                'Support & Troubleshooting',
+              ],
               media: [
                 {
                   type: 'img',
@@ -1665,7 +1828,7 @@ Vue.mixin({
                 description: 'Innovative showcase of a sports facility as a web presentation and 3D facility walkthrough'
               },
               url: 'sport-visions',
-              title: 'Sport Visions',
+              title: 'Sport Facility Visions',
               subline: 'Digital interactive presentation platform',
               teaser: 'How do we present something that does not yet exist? We collect facts, create the story, visualize it in a contemporary way and bundle the content digitally, interactively and web-based.',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900030/jerry-website-assets/sports_visions_hero_startseite_jcmupx.jpg',
@@ -1699,6 +1862,11 @@ Vue.mixin({
                 'Sportplan GmbH'
               ],
               partners: [],
+              expertise: [
+                'Web Development',
+                '3D Modeling',
+                'WebGL',
+              ],
               media: [
                 {
                   type: 'img',
@@ -1742,80 +1910,11 @@ Vue.mixin({
             },
             {
               meta: {
-                title: 'Jerry | Sports Business Management Software and Applications',
-                description: 'Jerry Digital develops modular, scalable and solution-oriented IT systems and applications for process optimization in the sports business.'
-              },
-              url: 'sport-management-applications',
-              title: 'Sport Management Applications',
-              subline: 'IT system development',
-              teaser: 'Even essential in sports business - how can processes be optimized sustainably? We develop modular, scalable and solution-oriented IT systems and applications.',
-              indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-              introMedia: {
-                type: 'img',
-                settings: {},
-                src: {
-                  default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                  mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900036/jerry-website-assets/sports_management_tools_hero_ghclp7.jpg',
-                }
-              },
-              headline: 'Back to the roots',
-              infoText: [
-                {
-                  headline: 'WHY—Why were we the right ones?',
-                  text: 'For sports students there was and still is a very attractive job provider: cip marketing GmbH. We were part of the cip team at that time and were able to accompany numerous trade and event marketing measures for major sports brands such as Adidas, Salomon, Reebok and Co. Because we always remain somehow connected to each other in the sports family and because we still know the demands on the cip agency business, we were allowed to develop an upgrade for the outdated web-based cip ERP system, which no longer met the current agency requirements in terms of complex user interfaces, mobile use and long loading times.'
-                },
-                {
-                  headline: 'HOW—How did we proceed?',
-                  text: 'The first step was to create an assessment of the existing ERP system. The neutral assessment showed that the existing functionality, the planned improvements and the desired performance boost could not be achieved with the existing legacy system. Even established ERP systems would not be able to solve this “out of the box”. For this reason, the decision was made to develop a completely new system.<br>In advance, we created a state-of-the-art prototype. This demonstrated the smooth display of large amounts of data, rapid complex data queries and real-time updates in an attractive user interface.<br>To optimally support cip’s work processes, we chose an agile project management methodology with a sprint-based module-by-module implementation. Our agile development team consists of full-stack developers who work simultaneously on the front- and back-end implementation of new functions. We offer flexible team sizes to be able to react efficiently and resource-saving to peak and down times in the development process. An integrated core team of project managers, software architects and developers allows us to react quickly to new customer requirements.'
-                },
-                {
-                  headline: 'WHAT—What is the product?',
-                  text: 'Jerry Digital developed a custom system that is already in operation for individual customers and regions and is about to be rolled out in general. It can be used to fully manage all processes in the areas of human resources, project management, schedule coordination, finance, POS/event promotions, etc. In addition to the desktop application, an Ionic-based Progressive Web App (PWA) was created for external employees (brand ambassadors). About the technology: Based on Node.js, an API and a service-centric modular backend was created. We used Angular as a comprehensive front-end framework for the various applications. With Material Design a widely used design system was chosen for the user interface of the ERP system.'
-                }
-              ],              
-              clients: [
-                'cip marketing GmbH'
-              ],
-              partners: [],
-              media: [
-                {
-                  type: 'img',
-                  settings: {},
-                  src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900034/jerry-website-assets/sports_management_tools_a_nwy7vf.jpg',
-                  },
-                  subline: ''
-                }, {
-                  type: 'img',
-                  settings: {},
-                  src: {
-                    default: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_2560/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw1441: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1440/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw1025: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_1024/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw769: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw426: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                    mw0: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_425/v1594900035/jerry-website-assets/sports_management_tools_b_k6oxeh.jpg',
-                  },
-                  subline: ''
-                }
-              ]
-            },
-            {
-              meta: {
                 title: 'Jerry | Digital video concepts in sports',
                 description: 'Jerry Digital combines brand expertise, platform know-how, access to protagonists and efficient production to create multifunctional digital products.'
               },
               url: 'sports-content',
-              title: 'Sports Content',
+              title: 'Video Content',
               subline: 'Digital Image Clip',
               teaser: 'Creating an emotional means of communication with maximum efficiency in the shortest possible time - how is that possible? We bundle brand competence, platform know-how, direct access to protagonists as well as targeted hands-on production and create multifunctional digital products out of it.',
               indexImg: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_768/v1594900046/jerry-website-assets/sports_content_am_hero_startseite_a4qyyf.jpg',
@@ -1850,6 +1949,11 @@ Vue.mixin({
               ],
               partners: [
                 'LG42 GmbH'
+              ],
+              expertise: [
+                'Story Board',
+                'Video Shooting',
+                'Video Editing',
               ],
               media: [
                 {

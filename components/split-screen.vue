@@ -410,6 +410,9 @@ export default {
     }
   },
   computed: {
+    isIndex: function(){
+      return this.$route.name == 'index___de' || this.$route.name == 'index___en'
+    },
     activeClassLeft: function() {
       if(this.$store.state.splitScreenActiveState) {
         if(this.leftIsActive) {

@@ -23,11 +23,8 @@
 
 /*--- font ---------------------------*/
 
-.footer-index .legal-link:hover,
-.partner-contact-link:hover,
 .c-black  { color: #000000; }
 
-.page-index .result-container:hover span,
 .c-grey-1 { color: #191919; }
 .c-grey-2 { color: #4b4b4b; }
 .c-grey-3 { color: #878787; }
@@ -36,19 +33,10 @@
 
 .c-white  { color: #ffffff; }
 
-.contact-index .download-button:hover p,
-.contact-index a:hover p,
-.main-menu-index .menu-link:hover,
-.main-menu-index .lang-link:hover,
 .main-menu-index .lang-link.nuxt-link-exact-active,
 .c-yellow { color: #ffcc33; }
 
-.page-digital .result-container:hover span,
-.footer-digital .legal-link:hover,
-.contact-digital .download-button:hover p,
 .contact-digital a:hover p,
-.main-menu-digital .menu-link:hover,
-.main-menu-digital .lang-link:hover,
 .main-menu-digital .lang-link.nuxt-link-exact-active,
 .c-blue   { color: #002dff; }
 
@@ -68,37 +56,161 @@
 
 .fill-black    { fill: #000000; }
 
-.interface-index .header-logo:hover path,
-.interface-index .menu-button-icon.on-shade:hover path,
-.pop-up .close-button-icon:hover path,
 .fill-grey-1   { fill: #191919; }
 .fill-grey-2   { fill: #4b4b4b; }
 .fill-grey-3   { fill: #878787; }
 
 
-.legal-container .close-button-icon:hover path,
 .fill-grey-4   { fill: #aaaaaa; }
 .fill-grey-5   { fill: #f5f5f5; }
 
-.interface-digital .header-logo:hover path,
-.interface-digital .header-logo:hover rect,
-.scroll-down-button-container:hover svg path,
-.close-button-icon:hover path,
 .menu-button-icon.is-active path,
-.interface-digital .menu-button-icon:hover path,
-.interface-index .menu-button-icon:hover path,
 .fill-white    { fill: #ffffff; }
 
-.main-menu-index .social-icon:hover path,
-.contact-index a:hover p svg polygon,
-.contact-index .social-icon:hover path,
 .fill-yellow   { fill: #ffcc33; }
 
-.main-menu-digital .social-icon:hover path,
-.contact-digital a:hover p svg polygon,
-.contact-digital .social-icon:hover path,
 .fill-blue     { fill: #002dff; }
 .fill-raw-blue { fill: #0000ff; }
 
 
 .stroke-white { stroke: #ffffff; }
+
+/*--- hover states -------------------*/
+
+@media (hover: hover) {
+
+    .footer-index .legal-link:hover,
+    .partner-contact-link:hover { 
+    color: #000000; 
+    }
+
+    .page-index .result-container:hover span { 
+    color: #191919; 
+    }
+
+    .contact-index .download-button:hover p,
+    .contact-index a:hover p,
+    .footer-index a:hover p,
+    .footer-index p a:hover,
+    .main-menu-index .menu-link:hover,
+    .main-menu-index .lang-link:hover { 
+    color: #ffcc33; 
+    }
+
+    .page-digital .read-more-link:hover,
+    .page-digital .result-container:hover span,
+    .footer-digital .legal-link:hover,
+    .contact-digital .download-button:hover p,
+    .contact-digital a:hover p,
+    .footer-digital a:hover p,
+    .footer-digital p a:hover,
+    .main-menu-digital .menu-link:hover,
+    .main-menu-digital .lang-link:hover { 
+    color: #002dff; 
+    }
+
+    .interface-index .header-logo:hover path,
+    .interface-index .menu-button-icon.on-shade:hover path,
+    .pop-up .close-button-icon:hover path { 
+    fill: #191919;
+    }
+
+
+    .legal-container .close-button-icon:hover path { 
+    fill: #aaaaaa; 
+    }
+
+    .interface-digital .header-logo:hover path,
+    .interface-digital .header-logo:hover rect,
+    .scroll-down-button-container:hover svg path,
+    .close-button-icon:hover path,
+    .interface-digital .menu-button-icon:hover path,
+    .interface-index .menu-button-icon:hover path { 
+    fill: #ffffff; 
+    }
+
+    .main-menu-index .social-icon:hover path,
+    .contact-index a:hover p svg polygon,
+    .footer-index .social-icon:hover path,
+    .contact-index a:hover p svg polygon,
+    .footer-index .social-icon:hover path { 
+    fill: #ffcc33;
+    }
+
+    .main-menu-digital .social-icon:hover path,
+    .contact-digital a:hover p svg polygon,
+    .contact-digital .social-icon:hover path,
+    .footer-digital a:hover p svg polygon,
+    .footer-digital .social-icon:hover path { 
+    fill: #002dff;
+    }
+}
+
+@media (hover: none) {
+
+    .footer-index .legal-link,
+    .partner-contact-link { 
+    color: #000000; 
+    }
+
+    .page-index .result-container span { 
+    color: #191919; 
+    }
+
+    .contact-index .download-button p,
+    .contact-index a p,
+    .footer-index a p,
+    .footer-index p a,
+    .main-menu-index .menu-link,
+    .main-menu-index .lang-link { 
+    color: #ffcc33; 
+    }
+
+    .page-digital .read-more-link,
+    .page-digital .result-container span,
+    .footer-digital .legal-link,
+    .contact-digital .download-button p,
+    .contact-digital a p,
+    .footer-digital a p,
+    .footer-digital p a,
+    .main-menu-digital .menu-link,
+    .main-menu-digital .lang-link { 
+    color: #002dff; 
+    }
+
+    .interface-index .header-logo path,
+    .interface-index .menu-button-icon.on-shade path,
+    .pop-up .close-button-icon path { 
+    fill: #191919;
+    }
+
+
+    .legal-container .close-button-icon path { 
+    fill: #aaaaaa; 
+    }
+
+    .interface-digital .header-logo path,
+    .interface-digital .header-logo rect,
+    .scroll-down-button-container svg path,
+    .close-button-icon path,
+    .interface-digital .menu-button-icon path,
+    .interface-index .menu-button-icon path { 
+    fill: #ffffff; 
+    }
+
+    .main-menu-index .social-icon path,
+    .contact-index a p svg polygon,
+    .footer-index .social-icon path,
+    .contact-index a p svg polygon,
+    .footer-index .social-icon path { 
+    fill: #ffcc33;
+    }
+
+    .main-menu-digital .social-icon path,
+    .contact-digital a p svg polygon,
+    .contact-digital .social-icon path,
+    .footer-digital a p svg polygon,
+    .footer-digital .social-icon path { 
+    fill: #002dff;
+    }
+}

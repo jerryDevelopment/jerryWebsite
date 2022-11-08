@@ -3,10 +3,10 @@
     <div class="c-frame bg-black" id="who">
       <div class="c-area c-area-m">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-12 pad-resp-4-t-10 pad-b-9 align-center">
-          <h2 class="text-xl mar-b-0-33 c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.headline"></h2>
-          <div class="media-container media-container-css-height media-container-css-height-digital-1 w-per-100 mar-t-2 mar-b-4">
+          <h2 class="text-xl lh-1-2 mar-b-0-66 c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.headline"></h2>
+          <!-- <div class="media-container media-container-css-height media-container-css-height-digital-1 w-per-100 mar-t-2 mar-b-4">
             <img class="obj-fit-cover lazyload" :data-src="staticMediaSrcBase + 'images/pictograms/' + digitalPage.pictogramWhoJerryDigital">
-          </div>
+          </div> -->
           <p class="text-l c-white" v-html="digitalPageCurrentLanguage.whoJerryDigital.text"></p>
         </div>
       </div>
@@ -144,7 +144,7 @@
             </div>
             <div class="col col-unit-6 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-l-1-5 float-left">
               <p class="text-s c-grey-4" v-html="project.teaser"></p>
-              <nuxt-link class="text-s c-grey-4 float-right mar-t-1" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
+              <nuxt-link class="text-s c-grey-4 float-right mar-t-1 read-more-link" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
             </div>
           </div>
           <div class="col col-unit-12" v-else>
@@ -159,7 +159,7 @@
               <h4 class="text-l c-white" v-html="project.title"></h4>
               <h5 class="text-s c-grey-4 mar-b-2 mar-resp-4-b-2" v-html="project.subline"></h5>
               <p class="text-s c-grey-4" v-html="project.teaser"></p>
-              <nuxt-link class="text-s c-grey-4 float-right mar-t-1" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
+              <nuxt-link class="text-s c-grey-4 float-right mar-t-1 read-more-link" :to="localePath({ name: 'projects-slug', params: { slug: project.url } })" v-html="projectsCurrentLanguage.linkTextMore"></nuxt-link>
             </div>
           </div>
         </div>
@@ -240,7 +240,6 @@ export default {
       selectedResult: {},
       popUpIsActive: false,
       isReload: false
-
     }
   },
   methods: {
