@@ -593,8 +593,8 @@ Vue.mixin({
             description: 'Jerry Digital verbindet Sportbusiness mit medien-technologischem Know-How und begleitet Kommunikationsprojekte vom Konzept bis hin zur finalen Umsetzung.'
           },
           whoJerryDigital: {
-            headline: 'Wir verbinden Business Intelligence mit Management & Digital Knowhow',
-            text: 'In mehr als 20 Jahren im Beratungs- und Management-Sektor haben wir immer wieder mit erfahrenen internationalen Technologiepartnern für die Entwicklung unserer individuellen Softwarelösungen gearbeitet. Unser Anspruch an Qualität und Flexibilität hat uns schließlich dazu gebracht, eine Digitalagentur zu werden. Der Fokus von Jerry Digital liegt auf der <span class="c-blue">effizienten Lösung von Kommunikations- und Managementherausforderungen</span> für einen reibungslosen Entwicklungsprozess. Je nach Kundenprojekt arbeiten wir mit befreundeten deutschen und europäischen Experten zusammen und nutzen die <span class="c-blue">neuesten Technologien und Entwicklungstools</span>.'
+            headline: 'Wer ist Jerry Digital?',
+            text: 'Wir verbinden <span class="c-blue">Business Intelligence</span> mit <span class="c-blue">Digital Knowhow</span><br><br>Der Fokus von Jerry Digital liegt auf der <span class="c-blue">effizienten Lösung von Kommunikations- und Managementherausforderungen</span> für einen <span class="c-blue">reibungslosen Entwicklungsprozess</span>. Je nach Kundenprojekt arbeiten wir mit befreundeten <span class="c-blue">deutschen und europäischen Experten zusammen</span> und nutzen die <span class="c-blue">neuesten Technologien und Entwicklungstools</span>.'
           },
           whyJerryDigital: {
             headline: 'Warum Jerry Digital?',
@@ -687,8 +687,8 @@ Vue.mixin({
             description: 'Jerry Digital combines sports business with media technology know-how and supports communication projects from concept to final implementation.'
           },
           whoJerryDigital: {
-            headline: 'We combine Business Intelligence with Management & Digital Knowhow',
-            text: 'In more than 20 years of consultancy and management work, we have always searched for experienced international technology partners for our custom software solutions. Our claim to quality and flexibility finally led us to become a digital agency. The focus of Jerry Digital is on the <span class="c-blue">efficient solution of communication and management challenges</span> for a flawless development process. Depending on the customer project, we work together with fellow German and European specialists using the <span class="c-blue">latest technologies and development tools</span>.'
+            headline: 'Who is Jerry Digital?',
+            text: 'We combine <span class="c-blue">Business Intelligence</span> with <span class="c-blue">Digital Knowhow</span><br><br>The focus of Jerry Digital is on the <span class="c-blue">efficient solution of communication and management challenges</span> for a <span class="c-blue">flawless development process</span>. Depending on the customer project, we work together with fellow <span class="c-blue">German and European specialists</span> using the <span class="c-blue">latest technologies and development tools</span>.'
           },
           whyJerryDigital: {
             headline: 'Why Jerry Digital?',
