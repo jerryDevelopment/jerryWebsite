@@ -17,6 +17,7 @@
         <li @click="closeMenu();" class="menu-link text-menu mar-b-0-25 c-white pointer" v-if="!isIndex">
           <nuxt-link :to="localePath('index')" v-html="navigation.menuLinks.jerryConsulting"></nuxt-link>
         </li>
+        <li class="menu-link text-menu mar-b-0-25 c-white pointer" v-if="!isIndex"><a href="https://xrupgrade.digital/" target="blank_" v-html="navigation.menuLinks.xrupgrade"></a></li>
         <li @click="closeMenu();" v-scroll-to="'#contact'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.contact"></li>
         <li class="mar-t-5">
           <a :href="navigation.socialLinks.facebook"><svg class="social-icon mar-l-0-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">

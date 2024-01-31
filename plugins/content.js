@@ -8,6 +8,7 @@ Vue.mixin({
           jerryDigital: 'Jerry Digital',
           jerryConsulting: 'Jerry Consulting',
           showCases: 'Show Cases',
+          xrupgrade: 'XR upgrade',
         },
         socialLinks: {
           facebook: 'https://www.facebook.com/wirsindjerry/',
