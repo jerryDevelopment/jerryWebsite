@@ -96,8 +96,8 @@ Vue.mixin({
         ],
         companyName: 'Wir sind Jerry GmbH',
         address: {
-          street: 'Volkartstrasse 50',
-          city: '80636 München',
+          street: 'Föhringer Allee 6',
+          city: '85774 Unterföhring',
           phone: '',
           email: 'hallo@wirsindjerry.de',
           gmapLink: 'https://goo.gl/maps/FChRWgWP9SABn6us8'
@@ -131,8 +131,8 @@ Vue.mixin({
         ],
         companyName: 'Jerry Digital GmbH',
         address: {
-          street: 'Volkartstrasse 50',
-          city: '80636 München',
+          street: 'Föhringer Allee 6',
+          city: '85774 Unterföhring',
           phone: '',
           email: 'hallo@jerry-digital.de',
           gmapLink: 'https://goo.gl/maps/FChRWgWP9SABn6us8'
@@ -2021,8 +2021,8 @@ Vue.mixin({
           text: `
           <h1>Impressum</h1>
           <h2>Angaben gemäß § 5 TMG</h2>
-          <p>Volkartstrasse 50<br>
-          80636 München</p>
+          <p>Föhringer Allee 6<br>
+          85774 Unterföhring</p>
 
           <p>Handelsregister: HRB 231281<br>
           Registergericht: Amstgericht München</p>
@@ -2059,8 +2059,8 @@ Vue.mixin({
           <h1>Site Notice</h1>
           <h2>Information pursuant to Sect. 5 German Telemedia Act (TMG)</h2>
           <p>Wir sind Jerry GmbH<br>
-          Volkartstrasse 50<br>
-          80636 München</p>
+          Föhringer Allee 6<br>
+          85774 Unterföhring</p>
 
           <p>Commercial Register: HRB 231281<br>
           Registration court: Amstgericht München</p>
@@ -2098,8 +2098,8 @@ Vue.mixin({
           text: `
           <h1>Impressum</h1>
           <h2>Angaben gemäß § 5 TMG</h2>
-          <p>Volkartstrasse 50<br>
-          80636 München</p>
+          <p>Föhringer Allee 6<br>
+          85774 Unterföhring</p>
 
           <p>Handelsregister: HRB 212742<br>
           Registergericht: Amstgericht München</p>
@@ -2136,8 +2136,8 @@ Vue.mixin({
           <h1>Site Notice</h1>
           <h2>Information pursuant to Sect. 5 German Telemedia Act (TMG)</h2>
           <p>Wir sind Jerry GmbH<br>
-          Volkartstrasse 50<br>
-          80636 München</p>
+          Föhringer Allee 6<br>
+          85774 Unterföhring</p>
 
           <p>Commercial Register: HRB 212742<br>
           Registration court: Amstgericht München</p>
@@ -2184,8 +2184,8 @@ Vue.mixin({
             <h2>3. Allgemeine Hinweise und Pflicht­informationen</h2>
             <h3>Datenschutz</h3> <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p> <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p> <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
             <h3>Hinweis zur verantwortlichen Stelle</h3> <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p> <p>Wir sind Jerry GmbH<br />
-            Volkartstrasse 50<br />
-            80636 München</p>
+            Föhringer Allee 6<br />
+            85774 Unterföhring</p>
 
             <p>E-Mail: hallo@wirsindjerry.de</p>
              <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
@@ -2242,8 +2242,8 @@ Vue.mixin({
             <h2>3. General information and mandatory information</h2>
             <h3>Data protection</h3> <p>The operators of this website and its pages take the protection of your personal data very seriously. Hence, we handle your personal data as confidential information and in compliance with the statutory data protection regulations and this Data Protection Declaration.</p> <p>Whenever you use this website, a variety of personal information will be collected. Personal data comprises data that can be used to personally identify you. This Data Protection Declaration explains which data we collect as well as the purposes we use this data for. It also explains how, and for which purpose the information is collected.</p> <p>We herewith advise you that the transmission of data via the Internet (i.e. through e-mail communications) may be prone to security gaps. It is not possible to completely protect data against third party access.</p>
             <h3>Information about the responsible party (referred to as the “controller” in the GDPR)</h3> <p>The data processing controller on this website is:</p> <p>Wir sind Jerry GmbH<br />
-            Volkartstrasse 50<br />
-            80636 München</p>
+            Föhringer Allee 6<br />
+            85774 Unterföhring</p>
 
             <p>E-mail: hallo@wirsindjerry.de</p>
              <p>The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g. names, e-mail addresses, etc.).</p>
@@ -2302,8 +2302,8 @@ Vue.mixin({
             <h2>3. Allgemeine Hinweise und Pflicht­informationen</h2>
             <h3>Datenschutz</h3> <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p> <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p> <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
             <h3>Hinweis zur verantwortlichen Stelle</h3> <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p> <p>Jerry Digital GmbH<br />
-            Volkartstrasse 50<br />
-            80636 München</p>
+            Föhringer Allee 6<br />
+            85774 Unterföhring</p>
 
             <p>E-Mail: hallo@jerry-digital.de</p>
              <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
@@ -2360,8 +2360,8 @@ Vue.mixin({
             <h2>3. General information and mandatory information</h2>
             <h3>Data protection</h3> <p>The operators of this website and its pages take the protection of your personal data very seriously. Hence, we handle your personal data as confidential information and in compliance with the statutory data protection regulations and this Data Protection Declaration.</p> <p>Whenever you use this website, a variety of personal information will be collected. Personal data comprises data that can be used to personally identify you. This Data Protection Declaration explains which data we collect as well as the purposes we use this data for. It also explains how, and for which purpose the information is collected.</p> <p>We herewith advise you that the transmission of data via the Internet (i.e. through e-mail communications) may be prone to security gaps. It is not possible to completely protect data against third party access.</p>
             <h3>Information about the responsible party (referred to as the “controller” in the GDPR)</h3> <p>The data processing controller on this website is:</p> <p>Jerry Digital GmbH<br />
-            Volkartstrasse 50<br />
-            80636 München</p>
+            Föhringer Allee 6<br />
+            85774 Unterföhring</p>
 
             <p>E-mail: hallo@jerry-digital.de</p>
              <p>The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g. names, e-mail addresses, etc.).</p>

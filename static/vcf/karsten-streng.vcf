@@ -9,7 +9,7 @@ EMAIL;type=INTERNET;type=WORK;type=pref:karsten@wirsindjerry.de
 TEL;type=CELL;type=VOICE:+49 172 8988844
 item1.TEL:karstenstreng
 item1.X-ABLabel:skype
-item2.ADR;type=HOME;type=pref:;;Volkartstrasse 50;München;;80636;Deutschland
+item2.ADR;type=HOME;type=pref:;;Föhringer Allee 6;Unterföhring;;85774;Deutschland
 item2.X-ABADR:de
 item3.URL;type=pref:www.wirsindjerry.de
 item3.X-ABLabel:_$!<HomePage>!$_
