@@ -1,6 +1,6 @@
 # nuxt-js-test
 
-> NuxtJS Test
+> Wir sind Jerry Website (Nuxt JS)
 
 ## Build Setup
 
