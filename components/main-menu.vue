@@ -2,9 +2,9 @@
   <div :class="'screen bg-black-trans' + ( !$store.state.mainMenuActiveState ? ' top-out' : '' ) + ' main-menu ' + ( isIndex ? ' main-menu-index' : ' main-menu-digital' )" style="z-index: 3;" v-if="isNotLegal">
     <div class="cor-tr">
       <ul class="pad-lr-2 pad-tb-7 align-right">
-        <li @click="closeMenu();" v-scroll-to="'#who'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.about"></li>
+        <li @click="closeMenu();" v-scroll-to="'#why'" class="menu-link text-menu mar-b-0-25 c-white pointer" v-html="navigationCurrentLanguage.menuLinks.about"></li>
         <ul>
-          <li @click="closeMenu();" v-scroll-to="'#who'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whoJerry : navigationCurrentLanguage.menuLinks.whoJerryDigital"></li>
+          <li @click="closeMenu();" v-scroll-to="'#why'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whoJerry : navigationCurrentLanguage.menuLinks.whoJerryDigital"></li>
           <li @click="closeMenu();" v-scroll-to="'#why'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whyJerry : navigationCurrentLanguage.menuLinks.whyJerryDigital"></li>
           <li @click="closeMenu();" v-scroll-to="'#how'" class="menu-link text-m mar-b-0-25 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.howJerry : navigationCurrentLanguage.menuLinks.howJerryDigital"></li>
           <li @click="closeMenu();" v-scroll-to="'#what'" class="menu-link text-m mar-b-0-5 c-white pointer" v-html="isIndex ? navigationCurrentLanguage.menuLinks.whatJerry : navigationCurrentLanguage.menuLinks.whatJerryDigital"></li>

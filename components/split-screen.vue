@@ -63,7 +63,7 @@
             </div>
           </transition>
         </div>
-        <div class="edge-b scroll-down-button-container" v-scroll-to="'#who'">
+        <div class="edge-b scroll-down-button-container" v-scroll-to="'#why'">
           <div class="c-frame">
             <div class="c-area">
               <transition name="fade">
@@ -357,7 +357,7 @@
             </transition>
           </svg>
         </div>
-        <div class="edge-b scroll-down-button-container" v-scroll-to="'#who'">
+        <div class="edge-b scroll-down-button-container" v-scroll-to="'#why'">
           <div class="c-frame">
             <div class="c-area">
               <transition name="fade">

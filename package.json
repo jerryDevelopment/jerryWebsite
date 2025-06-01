@@ -14,27 +14,27 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
-    "lazysizes": "^5.2.2",
-    "nuxt": "^2.13.0",
+    "@splidejs/vue-splide": "^0.6.12",
+    "lazysizes": "^5.3.2",
+    "nuxt": "^2.18.1",
     "nuxt-cookie-control": "^1.8.6",
-    "nuxt-i18n": "^6.12.2",
+    "nuxt-i18n": "^6.28.1",
     "nuxt-interpolation": "^0.2.2",
-    "vue-flickity": "^1.2.1",
+    "sass": "^1.70.0",
+    "vue": "^2.7.16",
     "vue-in-viewport-directive": "^2.0.0",
     "vue-instagram": "^3.0.0",
     "vue-packery-plugin": "^1.4.8",
     "vue-parallax-js": "^0.2.3",
-    "vue-scrollto": "^2.18.1",
-    "vue-video-player": "^5.0.2"
+    "vue-scrollto": "^2.20.0",
+    "vue-server-renderer": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^5.0.0",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^3.0.4",
-    "eslint-plugin-vue": "^5.2.3",
-    "node-sass": "^4.14.1",
-    "raw-loader": "^4.0.1",
-    "sass-loader": "^7.3.1"
+    "@babel/eslint-parser": "^7.23.0",
+    "@nuxt/eslint-config": "^0.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.19.0",
+    "sass-loader": "^10.4.1"
   }
 }

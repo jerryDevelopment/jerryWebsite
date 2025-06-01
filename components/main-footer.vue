@@ -311,6 +311,9 @@ export default {
     currentContact: function (){
       return this.isIndex ? this.contact : this.contactJerryDigital
     },
+    textColorClass3: function(){
+      return this.isIndex ? 'c-grey-3' : 'c-grey-4'
+    },
     glowSrc: function(){
       if(this.isResp4){
         return this.staticMediaSrcBase + 'images/jerry-digital-split-screen-glow-425.png'
