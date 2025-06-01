@@ -1,5 +1,44 @@
 <template>
   <section class="container page-index">
+    <div class="c-frame bg-white" id="who">
+      <div class="c-area">
+        <div class="col col-100">
+          <div class="media-container media-container-css-height media-container-css-height-index-partner w-per-100">
+            <picture class="obj-fit-cover">
+              <source media="(min-width: 1441px)" :data-srcset="frontPage.imgPartner.mw1441">
+              <source media="(min-width: 1025px)" :data-srcset="frontPage.imgPartner.mw1025">
+              <source media="(min-width: 769px)" :data-srcset="frontPage.imgPartner.mw769">
+              <source media="(min-width: 426px)" :data-srcset="frontPage.imgPartner.mw426">
+              <source media="(min-width: 0px)" :data-srcset="frontPage.imgPartner.mw0">
+              <img class="obj-fit-cover lazyload" :data-src="frontPage.imgPartner.default">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="c-area c-area-m">
+        <div class="col col-100 pad-t-5 pad-resp-4-t-3 pad-b-7">
+          <div class="col col-unit-4 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-2-5 pad-resp-2-b-4 float-left" :style="!isResp2 && !isResp3 && !isResp4 ? 'position: sticky; top: 7em;' : ''">
+            <h1 class="text-xxl c-grey-1">
+              Karsten &<br>
+              Thomas &<br>
+              Dieter =<br>
+              <span class="c-yellow">Jerry</span>
+            </h1>
+          </div>
+          <div class="col col-unit-8 col-resp-2-unit-12 pad-lr-0-75 pad-resp-2-lr-3-5 pad-resp-4-lr-2-5 pad-t-0-25 float-left">
+            <div class="col col-unit-12 mar-b-2 mar-resp-4-b-3" v-for="(partner, index) in frontPageCurrentLanguage.partners.list" :key="index">
+              <h4 class="text-m text-resp-4-m c-grey-1 mar-b-1" v-html="partner.name"></h4>
+              <ul class="pad-l-1" style="list-style: disc; list-style-position: outside;">
+                <li class="text-s c-grey-3" v-for="(listEntry, index2) in partner.list" :key="index2" v-html="listEntry"></li>
+              </ul>
+              <div :class="isResp4 ? 'col col-unit-12 mar-t-2' : 'cor-tr'">
+                <span v-scroll-to="'#contact'" class="text-s c-yellow partner-contact-link pointer" v-html="frontPageCurrentLanguage.partners.contactLinkText"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="c-frame bg-black" id="why" :style="!isResp4 && !isResp3 ? 'margin-bottom: 37.5em;' : ''">
       <div class="c-area c-area-m bg-black" style="z-index: 1;">
         <div class="col col-unit-10 col-resp-4-unit-12 pad-lr-0-75 pad-resp-4-lr-1 pad-t-6-5 pad-b-3 align-center">

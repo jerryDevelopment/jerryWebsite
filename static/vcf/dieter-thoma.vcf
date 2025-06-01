@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Dieter Thoma
+N:Thoma;Dieter;;;
+ORG:Jerry Digital
+TITLE:Partner
+EMAIL:dieter@jerry.digital
+TEL;TYPE=WORK,VOICE:+49 30 87654321
+URL:https://jerry.digital
+ADR;TYPE=WORK:;;Musterstraße 123;Berlin;;10115;Germany
+END:VCARD 

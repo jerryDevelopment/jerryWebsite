@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Thomas Wagner
+N:Wagner;Thomas;;;
+ORG:Jerry Digital
+TITLE:Partner
+EMAIL:thomas@jerry.digital
+TEL;TYPE=WORK,VOICE:+49 30 12345678
+URL:https://jerry.digital
+ADR;TYPE=WORK:;;Musterstraße 123;Berlin;;10115;Germany
+END:VCARD 

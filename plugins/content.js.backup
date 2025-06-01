@@ -80,18 +80,6 @@ Vue.mixin({
             email: 'karsten@wirsindjerry.de',
             img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900006/jerry-website-assets/portrait_karsten_600x600_v5yusf.png',
             vcf: 'karsten-streng.vcf',
-          }, {
-            name: 'Thomas Wagner',
-            phone: '+49 171 99 101 01',
-            email: 'thomas@wirsindjerry.de',
-            img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900006/jerry-website-assets/portrait_thomas_600x600_muy7gl.png',
-            vcf: 'thomas-wagner.vcf',
-          }, {
-            name: 'Dieter Thoma',
-            phone: '',
-            email: 'dieter@wirsindjerry.de',
-            img: 'https://res.cloudinary.com/mt-website-dv7jumlqa/image/upload/t_jerry_w_375/v1594900007/jerry-website-assets/portrait_dieter_600x600_weq8kp.png',
-            vcf: 'dieter-thoma.vcf',
           }
         ],
         companyName: 'Wir sind Jerry GmbH',
@@ -245,27 +233,7 @@ Vue.mixin({
                   'ist fest verankert in der Motorsport-, Ausdauersport- & Golfszene',
                 ]
               }
-, {
-                name: 'Thomas Wagner',
-                list: [
-                  'arbeitet seit mehr als 15 Jahren im Sport Business',
-                  'analysiert scharfsinnig mit Blick auf das Wesentliche',
-                  'legt höchsten Wert auf Effektivität und Effizienz',
-                  'konzipiert, plant und setzt erfolgreich um',
-                  'denkt und handelt mit dem Blick eines Unternehmers',
-                  'kennt alle Perspektiven im Fußball-Umfeld',
-                ]
-              }, {
-                name: 'Dieter Thoma',
-                list: [
-                  'war 15 Jahre erfolgreicher Hochleistungssportler',
-                  'ist seit dem Jahr 2000 TV-Experte für Wintersport',
-                  'ist seit über 30 Jahren Unternehmer im Sport- und Medien Business',
-                  'überzeugt als visionärer Berater und provokanter Querdenker',
-                  'setzt die Werte des Sports immer an die erste Stelle',
-                  'kaum jemand ist im Wintersport und Golf besser vernetzt als er',
-                ]
-              }             ],
+            ],
             contactLinkText: 'Kontakt'
           },
           whyJerry: {
@@ -411,26 +379,6 @@ Vue.mixin({
                   'specializes in clear brand management with an emphasis on trust',
                   'develops communications strategies and concepts',
                   'is deeply embedded in the motorsports, endurance sports and golf scene',
-                ]
-              }, {
-                name: 'Thomas Wagner',
-                list: [
-                  'working in the sports business for over 15 years',
-                  'a shrewd analyst with a keen sense of what\'s essential',
-                  'places the greatest value on effectiveness and efficiency',
-                  'designs, plans and successfully implements strategies',
-                  'thinks and acts with an entrepreneurial mindset',
-                  'knows every aspect of the football world',
-                ]
-              }, {
-                name: 'Dieter Thoma',
-                list: [
-                  'competed as a top-level ski jumper for 15 years',
-                  'working as a winter sports analyst for TV since the year 2000',
-                  'has over 30 years\' experience as an entrepreneur in the sports and media business',
-                  'wins people over as a visionary consultant and a maverick thinker',
-                  'always puts sporting values first',
-                  'has an almost unrivalled network in winter sports and golf',
                 ]
               }
             ],
