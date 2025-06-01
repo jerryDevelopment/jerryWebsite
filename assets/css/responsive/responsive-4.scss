@@ -142,12 +142,129 @@
   }
 
 .cookieControl__ModalButtons {
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+  gap: 0.75em !important;
+  justify-content: center !important;
 }
 
 .cookieControl__ModalButtons button {
-  width: 100%;
-  margin: 0 auto .5em auto !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 6em !important;
+  max-width: 8em !important;
+  margin: 0 !important;
+  padding: 0.6em 0.8em !important;
+  border: 1px solid #fff !important;
+  border-radius: 0 !important;
+  font-size: 0.9rem !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.cookieControl__ModalButtons button:first-child {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.cookieControl__ModalButtons button:first-child:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.cookieControl__ModalButtons button:not(:first-child):hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.cookieControl__ModalContent {
+  padding: 2em 1.5em !important;
+  max-height: 90vh !important;
+  border: 1px solid #333 !important;
+  overflow-y: auto !important;
+}
+
+/* Ensure all cookie categories are visible on mobile */
+.cookieControl__ModalContent ul {
+  display: block !important;
+}
+
+.cookieControl__ModalContent li {
+  display: flex !important;
+  margin-bottom: 1em !important;
+  padding: 1em !important;
+  border: 1px solid #333 !important;
+  background: transparent !important;
+  align-items: flex-start !important;
+  gap: 0.75em !important;
+}
+
+.cookieControl__ModalContent li span {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+.cookieControl__ModalContent li p {
+  font-size: 0.9rem !important;
+  color: #ccc !important;
+  margin: 0.5em 0 0 0 !important;
+  text-align: left !important;
+}
+
+.cookieControl__ModalContent h3 {
+  text-align: center !important;
+  margin-bottom: 1.5em !important;
+}
+
+.cookieControl__ModalContent > p {
+  text-align: center !important;
+  margin-bottom: 1.5em !important;
+}
+
+.cookieControl__ControlButton {
+  left: 1em !important;
+  right: auto !important;
+  bottom: 1.5em !important;
+  width: 2em !important;
+  height: 2em !important;
+  min-width: 2em !important;
+  min-height: 2em !important;
+  border-radius: 1.8em !important;
+  background-color: #000 !important;
+  border: none !important;
+  box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3) !important;
+  transition: all 0.2s ease !important;
+  padding: 0.5em !important;
+}
+
+.cookieControl__ControlButton:hover,
+.cookieControl__ControlButton:active,
+.cookieControl__ControlButton:focus {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.5) !important;
+}
+
+.cookieControl__ControlButton svg,
+.cookieControl__ControlButton path,
+.cookieControl__ControlButton * {
+  filter: brightness(0) invert(1) !important;
+  transition: filter 0.2s ease !important;
+}
+
+.cookieControl__ControlButton:hover svg,
+.cookieControl__ControlButton:active svg,
+.cookieControl__ControlButton:focus svg,
+.cookieControl__ControlButton:hover path,
+.cookieControl__ControlButton:active path,
+.cookieControl__ControlButton:focus path,
+.cookieControl__ControlButton:hover *,
+.cookieControl__ControlButton:active *,
+.cookieControl__ControlButton:focus * {
+  filter: brightness(0) invert(0) !important;
 }
 
 }

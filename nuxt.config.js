@@ -78,40 +78,123 @@ module.exports = {
    ],
    modules: [
      ['nuxt-cookie-control', {
-        colors: {
+       controlButton: true,
+       blockIframe: true,
+       colors: {
          barTextColor: '#fff',
          modalOverlay: '#000',
          barBackground: '#000',
-         barButtonColor: '#191919',
-         modalTextColor: '#000',
-         modalBackground: '#fff',
+         barButtonColor: '#fff',
+         modalTextColor: '#fff',
+         modalBackground: '#000',
          modalOverlayOpacity: 0.8,
-         modalButtonColor: '#fff',
+         modalButtonColor: '#000',
          modalUnsavedColor: '#fff',
-         barButtonHoverColor: '#fff',
+         barButtonHoverColor: '#000',
          barButtonBackground: '#fff',
          modalButtonHoverColor: '#fff',
-         modalButtonBackground: '#191919',
+         modalButtonBackground: '#fff',
          controlButtonIconColor: '#000',
          controlButtonBackground: '#fff',
          barButtonHoverBackground: '#333',
-         checkboxActiveBackground: '#000',
-         checkboxInactiveBackground: '#000',
-         modalButtonHoverBackground: '#878787',
-         checkboxDisabledBackground: '#ddd',
+         checkboxActiveBackground: '#fff',
+         checkboxInactiveBackground: '#333',
+         modalButtonHoverBackground: '#333',
+         checkboxDisabledBackground: '#666',
          controlButtonIconHoverColor: '#fff',
          controlButtonHoverBackground: '#000',
-         checkboxActiveCircleBackground: '#fff',
+         checkboxActiveCircleBackground: '#000',
          checkboxInactiveCircleBackground: '#fff',
-         checkboxDisabledCircleBackground: '#fff',
+         checkboxDisabledCircleBackground: '#999',
+       },
+       cookies: {
+         necessary: [
+           {
+             name: {
+               en: 'Essential Cookies',
+               de: 'Notwendige Cookies'
+             },
+             description: {
+               en: 'These cookies are essential for the basic functionality of our website. They enable core features such as security, network management, and accessibility.',
+               de: 'Diese Cookies sind für die grundlegende Funktionalität unserer Website unerlässlich. Sie ermöglichen Kernfunktionen wie Sicherheit, Netzwerkverwaltung und Barrierefreiheit.'
+             },
+             cookies: ['cookie-control-consent', 'cookie-control-enabled-cookies', 'PHPSESSID', 'csrf_token']
+           }
+         ],
+         optional: [
+           {
+             name: 'Functional',
+             identifier: 'functional',
+             description: {
+               en: 'These cookies enable enhanced functionality and personalization, such as remembering your preferences, language settings, and providing live chat support.',
+               de: 'Diese Cookies ermöglichen erweiterte Funktionalität und Personalisierung, wie das Speichern Ihrer Einstellungen, Spracheinstellungen und die Bereitstellung von Live-Chat-Support.'
+             },
+             initialState: false,
+             cookies: ['language_preference', 'theme_preference', 'user_settings', 'chat_session']
+           },
+           {
+             name: 'Analytics',
+             identifier: 'analytics',
+             description: {
+               en: 'These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve our website performance and user experience.',
+               de: 'Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und melden. Dies hilft uns, die Leistung unserer Website und die Benutzererfahrung zu verbessern.'
+             },
+             initialState: false,
+             cookies: ['_ga', '_ga_*', '_gat', '_gid', '_gat_gtag_*', 'gtag']
+           },
+           {
+             name: 'Marketing',
+             identifier: 'marketing',
+             description: {
+               en: 'These cookies are used to track visitors across websites to display relevant advertisements and measure the effectiveness of our marketing campaigns.',
+               de: 'Diese Cookies werden verwendet, um Besucher über Websites hinweg zu verfolgen, um relevante Werbung anzuzeigen und die Wirksamkeit unserer Marketingkampagnen zu messen.'
+             },
+             initialState: false,
+             cookies: ['_fbp', '_fbc', 'fr', 'tr', 'ads/ga-audiences', 'NID', 'DSID', 'IDE', 'test_cookie', 'linkedin_oauth_*', 'li_*', 'bcookie', 'bscookie']
+           },
+           {
+             name: 'Preferences',
+             identifier: 'preferences',
+             description: {
+               en: 'These cookies remember your choices and preferences to provide a more personalized experience on future visits.',
+               de: 'Diese Cookies merken sich Ihre Entscheidungen und Präferenzen, um bei zukünftigen Besuchen eine personalisiertere Erfahrung zu bieten.'
+             },
+             initialState: false,
+             cookies: ['user_preferences', 'display_mode', 'notification_settings', 'layout_preference']
+           }
+         ]
        },
        text: {
          locale: {
            en: {
-             barDescription:  'Our website uses cookies that help us to improve our website, to offer the best possible service and to provide an optimal customer experience. You can manage your settings here. By clicking on "Accept all" you agree that your cookies will be used for this purpose.',
+             barTitle: 'Cookie Consent',
+             barDescription: 'We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies for these purposes. You can customize your preferences or decline non-essential cookies.',
+             acceptAll: 'Accept All',
+             declineAll: 'Decline All',
+             manageCookies: 'Manage Preferences',
+             unsaved: 'You have unsaved settings',
+             close: 'Close',
+             save: 'Save Preferences',
+             necessary: 'Essential',
+             optional: 'Optional',
+             functional: 'Functional',
+             blockedIframe: 'To see this content, please enable functional cookies',
+             here: 'here'
            },
            de: {
-             barDescription:  'Unsere Website verwendet Cookies, die uns helfen, unsere Website zu verbessern, den bestmöglichen Service zu bieten und ein optimales Kundenerlebnis zu ermöglichen. Hier können Sie Ihre Einstellungen verwalten. Indem Sie auf "Alle Akzeptieren" klicken, erklären Sie sich damit einverstanden, dass Ihre Cookies für diesen Zweck verwendet werden.',
+             barTitle: 'Cookie-Einwilligung',
+             barDescription: 'Wir verwenden Cookies, um Ihr Browsing-Erlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Traffic zu analysieren. Durch Klicken auf "Alle akzeptieren" stimmen Sie unserer Verwendung von Cookies für diese Zwecke zu. Sie können Ihre Einstellungen anpassen oder nicht-wesentliche Cookies ablehnen.',
+             acceptAll: 'Alle akzeptieren',
+             declineAll: 'Alle ablehnen',
+             manageCookies: 'Einstellungen verwalten',
+             unsaved: 'Sie haben ungespeicherte Einstellungen',
+             close: 'Schließen',
+             save: 'Einstellungen speichern',
+             necessary: 'Notwendig',
+             optional: 'Optional',
+             functional: 'Funktional',
+             blockedIframe: 'Um diesen Inhalt zu sehen, aktivieren Sie bitte funktionale Cookies',
+             here: 'hier'
            }
          },
        }
