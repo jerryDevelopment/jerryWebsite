@@ -21,6 +21,7 @@
     "nuxt-i18n": "^6.28.1",
     "nuxt-interpolation": "^0.2.2",
     "sass": "^1.70.0",
+    "video.js": "^8.23.3",
     "vue": "^2.7.16",
     "vue-in-viewport-directive": "^2.0.0",
     "vue-instagram": "^3.0.0",
@@ -28,7 +29,9 @@
     "vue-parallax-js": "^0.2.3",
     "vue-scrollto": "^2.20.0",
     "vue-server-renderer": "^2.7.16",
-    "vue-template-compiler": "^2.7.16"
+    "vue-template-compiler": "^2.7.16",
+    "vue-video-player": "^5.0.2",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.0",

@@ -49,12 +49,15 @@
 export default {
   computed: {
     isIndex: function(){
+      if (!this.$route.name) return true
       return this.$route.name == 'index___de' || this.$route.name == 'index___en'
     },
     isNotLegal: function() {
+      if (!this.$route.name) return true
       return this.$route.name != 'imprint___de' && this.$route.name != 'imprint___en' && this.$route.name != 'privacy-policy___de' && this.$route.name != 'privacy-policy___en'
     },
     localeDeLinkOptions: function(){
+      if (!this.$route.name) return { name: 'index___de' }
 
       let localeDeLinkOptions = {
         name: (this.$route.name.split('___')[0] + '___de')
@@ -63,6 +66,7 @@ export default {
       return localeDeLinkOptions
     },
     localeEnLinkOptions: function(){
+      if (!this.$route.name) return { name: 'index___en' }
 
       let localeEnLinkOptions = {
         name: (this.$route.name.split('___')[0] + '___en')

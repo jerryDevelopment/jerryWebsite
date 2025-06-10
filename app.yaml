@@ -1,4 +1,4 @@
-runtime: nodejs10
+runtime: nodejs20
 
 instance_class: F2
 
@@ -6,11 +6,18 @@ handlers:
   - url: /_nuxt
     static_dir: .nuxt/dist/client
     secure: always
+    http_headers:
+      Cache-Control: "public, max-age=31536000, immutable"
+      X-Content-Type-Options: "nosniff"
+      X-Frame-Options: "SAMEORIGIN"
+      X-XSS-Protection: "1; mode=block"
 
   - url: /(.*\.(gif|png|jpg|ico|txt))$
     static_files: static/\1
     upload: static/.*\.(gif|png|jpg|ico|txt)$
     secure: always
+    http_headers:
+      Cache-Control: "public, max-age=86400"
 
   - url: /.*
     script: auto

@@ -15,6 +15,18 @@ module.exports = {
        meta: [
          { 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' },
          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+         { hid: 'description', name: 'description', content: 'Jerry Digital delivers strategic experience consulting and creative solutions for digital transformation. Specializing in innovative digital experiences and brand activations.' },
+         { hid: 'keywords', name: 'keywords', content: 'digital agency, experience consulting, creative solutions, digital transformation, brand activation, strategic consulting, Jerry Digital' },
+         { hid: 'author', name: 'author', content: 'Jerry Digital' },
+         { hid: 'robots', name: 'robots', content: 'index, follow' },
+         { hid: 'og:type', property: 'og:type', content: 'website' },
+         { hid: 'og:title', property: 'og:title', content: 'Jerry Digital - Strategic Experience Consulting' },
+         { hid: 'og:description', property: 'og:description', content: 'Jerry Digital delivers strategic experience consulting and creative solutions for digital transformation.' },
+         { hid: 'og:site_name', property: 'og:site_name', content: 'Jerry Digital' },
+         { hid: 'og:url', property: 'og:url', content: 'https://www.wirsindjerry.de' },
+         { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+         { hid: 'twitter:title', name: 'twitter:title', content: 'Jerry Digital - Strategic Experience Consulting' },
+         { hid: 'twitter:description', name: 'twitter:description', content: 'Strategic experience consulting and creative solutions for digital transformation.' },
          { name: 'application-name', content: 'Jerry' },
          { name: 'mobile-web-app-capable', content: 'yes' },
          { name: 'apple-mobile-web-app-capable', content: 'yes' },
@@ -66,7 +78,8 @@ module.exports = {
        scss: {
          implementation: require('sass'),
        }
-     }
+     },
+     extractCSS: true
    },
    plugins: [
      { src: '~/plugins/content', ssr: true },
@@ -74,7 +87,9 @@ module.exports = {
      { src: '~/plugins/vue-scrollto', ssr: true },
      { src: '~/plugins/window-size-and-scroll-position', ssr: true },
      { src: '~/plugins/vue-in-viewport-directive', ssr: false },
-     { src: '~/plugins/vue-parallax', ssr: true }
+     { src: '~/plugins/vue-parallax', ssr: true },
+     { src: '~/plugins/vue-video-player', ssr: false },
+     { src: '~/plugins/vue-youtube', ssr: false }
    ],
    modules: [
      ['nuxt-cookie-control', {

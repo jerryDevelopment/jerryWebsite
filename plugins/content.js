@@ -788,6 +788,86 @@ Vue.mixin({
           list: [
             {
               meta: {
+                title: 'Jerry | BMW Next Gen Game Court – Das erste digitale Spielfeld Deutschlands',
+                description: 'Strategische Experience-Beratung & Konzeptentwicklung für den BMW Park. Markenstrategie. Sportinnovation. Erlebnisdesign.'
+              },
+              url: 'bmw-next-gen-game-court',
+              title: 'BMW Next Gen Game Court – Das erste digitale Spielfeld Deutschlands',
+              subline: 'Strategische Experience-Beratung & Konzeptentwicklung',
+              teaser: 'Strategie. Emotion. Innovation. Im neuen BMW Park. Wir durften BMW strategisch, konzeptionell und operativ dabei unterstützen, diese Vision rund um die Partnerschaft mit Leben zu füllen – und haben mit dem BMW Next Gen Game Court ein Leuchtturmprojekt initiiert, das deutschlandweit neue Standards setzt.',
+              indexImg: '/images/projects/led-thumbnail.jpg',
+              introMedia: {
+                type: 'youtube',
+                settings: {
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false
+                },
+                src: 'https://www.youtube.com/watch?v=iQEH_x76rgk'
+              },
+              headline: 'Strategie. Emotion. Innovation. Im neuen BMW Park.',
+              infoText: [
+                {
+                  headline: 'WHY – Warum braucht es im BMW Park mehr als nur einen neuen Namen?',
+                  text: 'Weil BMW nicht einfach nur umbenennt, sondern umdenkt. Mit dem BMW Park entsteht ein Ort, der weit über Basketball hinausreicht – ein Ort, der Identität stiftet, Erlebnis schafft und Innovation inszeniert. Der neue Markenauftritt von BMW als offizieller Partner des FC Bayern Basketball ist nicht nur ein Commitment zum Sport, sondern Ausdruck einer klaren Vision: Die Zukunft der Mobilität erlebbar machen – emotional, nahbar und elektrisierend.<br><br>Wir durften BMW strategisch, konzeptionell und operativ dabei unterstützen, diese Vision rund um die Partnerschaft mit Leben zu füllen – und haben mit dem BMW Next Gen Game Court ein Leuchtturmprojekt initiiert, das deutschlandweit und darüber hinaus neue Standards setzt.'
+                },
+                {
+                  headline: 'HOW – Wie wird aus Markenwerten ein Spielfeld der Zukunft?',
+                  text: 'Indem wir Technologie, Content und Experience Design intelligent verzahnen. Das Herzstück: der ASB GlassFloor Full LED – eine Deutschland- und BBL-Premiere. Als permanente Installation im BMW Park verwandelt er das Spielfeld in eine digitale Bühne für Innovation, Sport und Markeninszenierung. Ob Spieltag, Training oder Show – der Court passt sich dynamisch an und wird zur interaktiven Plattform mit echtem Mehrwert für Fans, Teams und Partner.<br><br>In enger Zusammenarbeit mit BMW, dem FCBB und ASB haben wir eine modulare Nutzungsidee entwickelt, die Entertainment, sportliche Performance, Markenkommunikation und Vermarktungspotenziale auf eine neue Ebene hebt.'
+                },
+                {
+                  headline: 'WHAT – Was haben wir ermöglicht?',
+                  text: 'Wir haben den ersten voll-digitalisierten Basketball-Court Deutschlands mitkonzipiert und in der Spielstätte des FC Bayern Basketball realisiert. Der BMW Next Gen Game Court vereint Spiel, Show und Marke zu einem einzigartigen Erlebnisraum. Durch die Integration des ASB GlassFloor Full LED entstand eine multifunktionale Plattform, die neue Standards für Live-Entertainment, Vermarktung, Trainingsanalytik und Fanbindung setzt.<br><br>Der Court ermöglicht beeindruckende Echtzeit-Visualisierungen bei Heimspielen, immersive Spielerlebnisse und aufmerksamkeitsstarke Markendarstellung direkt auf dem Spielfeld. Damit entstehen neue Formen der Emotionalisierung, Aktivierung und Monetarisierung – für Clubs, Partner und das gesamte Ökosystem. Darüber hinaus lässt sich der Court flexibel für Side-Events, Showformate oder Roadshows einsetzen – digital, mobil, erlebnisstark.<br><br>Das mediale Echo war entsprechend gewaltig: Berichterstattung von Kicker, ran, Horizont, W&V, Business Punk, umfassende Reichweite über Social-Media-Kanäle, Sportnetzwerke, Tech-Plattformen – und sogar Inspiration für Formate wie das NBA All-Star Game 2024. Der BMW Park ist damit nicht nur ein neuer Name – sondern ein Meilenstein für die Verbindung von Marke, Sport und Technologie.<br><br>Wir sind stolz darauf, mit unserer Idee und Konzeption ein Stück Sportgeschichte mitgeschrieben zu haben.'
+                }
+              ],
+              clients: [
+                'BMW Group'
+              ],
+              partners: [
+                'Sponsorplan',
+                'ASB GlassFloor'
+              ],
+              expertise: [
+                'Strategische Experience-Beratung',
+                'Konzeptentwicklung',
+                'Markenstrategie',
+                'Sportinnovation',
+                'Erlebnisdesign',
+                'Content-Strategie',
+                'Technologie-Integration'
+              ],
+              media: [
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: '/images/projects/led-gallery1.jpg',
+                    mw1441: '/images/projects/led-gallery1.jpg',
+                    mw1025: '/images/projects/led-gallery1.jpg',
+                    mw769: '/images/projects/led-gallery1.jpg',
+                    mw426: '/images/projects/led-gallery1.jpg',
+                    mw0: '/images/projects/led-gallery1.jpg',
+                  },
+                  subline: ''
+                },
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: '/images/projects/led-gallery2.jpg',
+                    mw1441: '/images/projects/led-gallery2.jpg',
+                    mw1025: '/images/projects/led-gallery2.jpg',
+                    mw769: '/images/projects/led-gallery2.jpg',
+                    mw426: '/images/projects/led-gallery2.jpg',
+                    mw0: '/images/projects/led-gallery2.jpg',
+                  },
+                  subline: ''
+                }
+              ]
+            },
+            {
+              meta: {
                 title: 'Jerry | Character Design & Echtzeit-Video-Produktion',
                 description: 'Welches Tools geben wir den Kitas und Grundschulen an die Hand, um ihre Kids die Freude an der Bewegung zu vermitteln?'
               },
@@ -1403,6 +1483,86 @@ Vue.mixin({
           galleryHeadline: 'Gallery',
           expertiseHeadline: 'Expertise',
           list: [
+            {
+              meta: {
+                title: 'Jerry | BMW Next Gen Game Court – Germany\'s First Fully Digital Sports Floor',
+                description: 'Strategic Experience Consulting & Concept Development for the BMW Park. Brand Strategy. Sports Innovation. Experience Design.'
+              },
+              url: 'bmw-next-gen-game-court',
+              title: 'BMW Next Gen Game Court – Germany\'s First Fully Digital Sports Floor',
+              subline: 'Strategic Experience Consulting & Concept Development',
+              teaser: 'Strategy. Emotion. Innovation. At the new BMW Park. Our role: to support BMW with strategic, conceptual, and operational excellence – and to develop an experience that would set new standards. The result: the BMW Next Gen Game Court – Germany\'s first fully digital basketball floor.',
+              indexImg: '/images/projects/led-thumbnail.jpg',
+              introMedia: {
+                type: 'youtube',
+                settings: {
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false
+                },
+                src: 'https://www.youtube.com/watch?v=iQEH_x76rgk'
+              },
+              headline: 'Strategy. Emotion. Innovation. At the new BMW Park.',
+              infoText: [
+                {
+                  headline: 'WHY – Why does the BMW Park need more than just a new name?',
+                  text: 'Because BMW isn\'t just changing signage – they\'re creating a statement. The transformation of the former Audi Dome into the BMW Park marks more than a name change: it establishes a new venue that connects identity, emotion, and innovation. As the new home of FC Bayern Basketball and a strategic partner of the club, BMW is building a physical and emotional space that reflects the brand\'s core vision – bringing the future of mobility to life in a way that\'s immersive, electrifying, and deeply human.<br><br>Our role: to support BMW with strategic, conceptual, and operational excellence – and to develop an experience that would set new standards. The result: the BMW Next Gen Game Court – Germany\'s first fully digital basketball floor, and a game-changing innovation in the world of sports and brand activation.'
+                },
+                {
+                  headline: 'HOW – How do you turn brand values into a next-gen arena experience?',
+                  text: 'By intelligently integrating technology, content, and design into a single platform. At the center: the ASB GlassFloor Full LED – a first of its kind in Germany and the Basketball Bundesliga. This permanent installation transforms the court into a dynamic stage for game-day storytelling, immersive entertainment, and brand interaction. Whether for training, games, or events – the surface adapts in real-time, turning the arena into a flexible canvas for performance and experience.<br><br>In close collaboration with BMW, FCBB, and ASB, we developed a modular usage concept that connects entertainment, sports, brand presence, and commercial potential – all aligned with BMW\'s innovation leadership.'
+                },
+                {
+                  headline: 'WHAT – What did we deliver?',
+                  text: 'We developed and implemented Germany\'s first fully digital basketball court at the new BMW Park – a hybrid of sports surface, event stage, and media platform. With the ASB GlassFloor Full LED as its core, the BMW Next Gen Game Court enables immersive real-time visuals, next-level storytelling, enhanced training capabilities, and unprecedented brand integration right on the floor.<br><br>The court creates new dimensions of fan engagement, sponsor activation, and monetization. Whether it\'s pre-game shows, branded experiences, data-driven drills, or highlight-driven content formats – this is where sport meets spectacle. The system is also built for flexibility: ideal for roadshows, side events, or mobile brand showcases.<br><br>The media impact has been exceptional: coverage by Kicker, ran, Horizont, W&V, Business Punk, and major traction across social media, sports platforms, and innovation networks. The BMW Next Gen Game Court even served as inspiration for formats like the NBA All-Star Game 2024.<br><br>We\'re proud to have contributed the core idea and concept to this milestone – and to have written a small but powerful chapter in sports history.'
+                }
+              ],
+              clients: [
+                'BMW Group'
+              ],
+              partners: [
+                'Sponsorplan',
+                'ASB GlassFloor'
+              ],
+              expertise: [
+                'Strategic Experience Consulting',
+                'Concept Development',
+                'Brand Strategy',
+                'Sports Innovation',
+                'Experience Design',
+                'Content Strategy',
+                'Technology Integration'
+              ],
+              media: [
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: '/images/projects/led-gallery1.jpg',
+                    mw1441: '/images/projects/led-gallery1.jpg',
+                    mw1025: '/images/projects/led-gallery1.jpg',
+                    mw769: '/images/projects/led-gallery1.jpg',
+                    mw426: '/images/projects/led-gallery1.jpg',
+                    mw0: '/images/projects/led-gallery1.jpg',
+                  },
+                  subline: ''
+                },
+                {
+                  type: 'img',
+                  settings: {},
+                  src: {
+                    default: '/images/projects/led-gallery2.jpg',
+                    mw1441: '/images/projects/led-gallery2.jpg',
+                    mw1025: '/images/projects/led-gallery2.jpg',
+                    mw769: '/images/projects/led-gallery2.jpg',
+                    mw426: '/images/projects/led-gallery2.jpg',
+                    mw0: '/images/projects/led-gallery2.jpg',
+                  },
+                  subline: ''
+                }
+              ]
+            },
             {
               meta: {
                 title: 'Jerry | Character Design & Real-Time Video Production',

@@ -1,7 +1,14 @@
 <template>
   <section class="container">
     <div class="c-frame bg-black">
-      <div class="c-area pad-t-4 pad-b-6 pad-resp-2-b-1">
+      <div class="c-area pad-t-2 pad-b-2">
+        <div class="col col-unit-12 pad-lr-0-75">
+          <nuxt-link :to="localePath('/digital') + '#show-cases'" class="back-to-projects-link text-s c-grey-4">
+            ← Back to Show Cases
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="c-area pad-t-2 pad-b-6 pad-resp-2-b-1">
         <div v-if="projectCurrentLanguage.introMedia.type == 'img'" class="media-container media-container-css-height media-container-css-height-project-single-col w-per-100">
           <picture class="obj-fit-cover">
             <source media="(min-width: 1441px)" :data-srcset="projectCurrentLanguage.introMedia.src.mw1441">
@@ -12,7 +19,20 @@
             <img class="obj-fit-cover lazyload" :data-src="projectCurrentLanguage.introMedia.src.default">
           </picture>
         </div>
-        <div v-else class="media-container">
+        <div v-else-if="projectCurrentLanguage.introMedia.type == 'youtube'" class="media-container media-container-css-height media-container-css-height-project-single-col w-per-100">
+          <youtube 
+            :video-id="getYouTubeId(projectCurrentLanguage.introMedia.src)" 
+            :player-vars="youtubePlayerVars"
+            :width="'100%'"
+            :height="'100%'"
+            class="youtube-player"
+            @ready="onYouTubeReady"
+            @playing="onYouTubePlaying"
+            @ended="onYouTubeEnded"
+            ref="youtube">
+          </youtube>
+        </div>
+        <div v-else class="media-container media-container-css-height media-container-css-height-project-single-col w-per-100">
           <video-player class="vjs-custom-skin vjs-big-play-centered inline" ref="videoPlayer" :options="videoOptions(projectCurrentLanguage.introMedia)"></video-player>
         </div>
       </div>
@@ -189,6 +209,20 @@ export default {
       staticMediaSrcBase: process.env.staticMediaSrcBase,
       slideshowIsActive: false,
       currentSlideIndex: 1,
+      youtubePlayerVars: {
+        autoplay: 1,
+        controls: 0,
+        disablekb: 1,
+        fs: 0,
+        modestbranding: 1,
+        playsinline: 1,
+        rel: 0,
+        showinfo: 0,
+        mute: 1,
+        cc_load_policy: 0,
+        iv_load_policy: 3,
+        enablejsapi: 1
+      },
       flickityOptions: {
         prevNextButtons: true,
         pageDots: false,
@@ -225,6 +259,25 @@ export default {
         poster: media.posterSrc
       }
     },
+    getYouTubeId(url) {
+      const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+      const match = url.match(regExp);
+      return (match && match[2].length === 11) ? match[2] : null;
+    },
+    onYouTubeReady(event) {
+      // Ensure video is muted and starts playing
+      event.target.mute();
+      event.target.playVideo();
+    },
+    onYouTubePlaying(event) {
+      // Video is playing, ensure it's muted
+      event.target.mute();
+    },
+    onYouTubeEnded(event) {
+      // Loop the video when it ends
+      event.target.seekTo(0);
+      event.target.playVideo();
+    },
     textFormated(text) {
       let formattedText = text.split('<ul>').join('<ul class="pad-l-1" style="list-style: disc; list-style-position: outside;">')
       formattedText = formattedText.split('<li>').join('<li class="text-s">')
@@ -234,12 +287,24 @@ export default {
     activateSlideshow(index) {
       this.slideshowIsActive = true
       setTimeout( () => {
-        console.log(this.$refs.singlePageFlickity)
-        this.$refs.singlePageFlickity.select(index, true, true)
+        if (this.$refs.singlePageFlickity && typeof this.$refs.singlePageFlickity.select === 'function') {
+          this.$refs.singlePageFlickity.select(index, true, true)
+        }
       },1)
     }
   },
   created() {
+  },
+  mounted() {
+    // Ensure YouTube video starts playing after mount
+    if (this.projectCurrentLanguage.introMedia.type === 'youtube') {
+      setTimeout(() => {
+        if (this.$refs.youtube && this.$refs.youtube.player && typeof this.$refs.youtube.player.mute === 'function') {
+          this.$refs.youtube.player.mute();
+          this.$refs.youtube.player.playVideo();
+        }
+      }, 1000);
+    }
   }
 }
 
@@ -280,6 +345,50 @@ export default {
     width: 80%;
     height: 80%;
     object-fit: contain;
+  }
+
+  .youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+  }
+
+  .vjs-custom-skin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vjs-custom-skin .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .back-to-projects-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .back-to-projects-link:hover {
+    color: #002dff !important;
   }
 
 </style>

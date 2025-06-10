@@ -80,7 +80,9 @@ export default {
           }
         })
         .catch(error => {
-          throw error
+          this.loading = false
+          this.error = error.response?.data?.error?.message || 'Instagram feed unavailable'
+          console.warn('Instagram API Error:', error.response?.status, error.response?.data)
         })
     }
   }
